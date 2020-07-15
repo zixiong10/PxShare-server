@@ -1,0 +1,1016 @@
+[2020-06-14T18:37:17.270] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3641' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<li><i class="fa-li fa fa-spinner fa-spin" style="margin-left: 60px;margin-top: 20px;"></i><span style="margin-left: 30px;">PxShare</span></li>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li><img src="" alt="user_photo" class="photo"></li>\r\n\t\t\t\t<li >钢铁直男</li>\r\n\t\t\t\t<li><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<i class="fa fa-user-plus" aria-hidden="true" style="font-size:18px;"></i> 管理员</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf;font-size: 22px;"><i class="fa fa-power-off" aria-hidden="true"></i></span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t  <a href=\'/users/plus\' target="iframe1">新增用户</a></div>\r\n\r\n\r\n\t\t\t\t  <!-- <div class="btn-group open">\r\n\t\t\t\t\t<a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> 用户管理</a>\r\n\t\t\t\t\t<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">\r\n\t\t\t\t\t  <span class="fa fa-caret-down" title="打开下拉菜单"></span>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<ul class="dropdown-menu">\r\n\t\t\t\t\t  <li><a href="/users/userlist"><i class="fa fa-pencil fa-fw"></i> 用户列表</a></li>\r\n\t\t\t\t\t  <li><a href="/users/zjia"><i class="fa fa-trash-o fa-fw"></i> 新增用户</a></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t  </div> -->\r\n\r\n\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/datas/datalist\' target="iframe1">素材备库</a>\r\n\t\t\t\t <a href=\'/datas/check\' target="iframe1">审核素材</a>\r\n\t\t\t\t <a href=\'/datas/plus\' target="iframe1">上传素材</a>\r\n\t\t\t\t</div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/courses/courselist\' target="iframe1">教程备库</a>\r\n\t\t\t\t <a href=\'/courses/check\' target="iframe1">审核教程</a>\r\n\t\t\t\t <a href=\'/courses/plus\' target="iframe1">上传教程</a>\r\n\t\t\t\t</div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/publishs/publishlist\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n\t\t   <li>\r\n\t\t\t\t<h4 class="M4" ><span></span>交易详情</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/buys/buylist\' target="iframe1">购买记录</a></div>\r\n\t\t   </li>\r\n\t\t   \r\n\t\t\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n<script>\r\n\r\n\t$(function() {\r\n\t\t  if(\'29swaihvjj1590828788505.png\'){\r\n\t\t\t  $(\'.photo\').attr(\'src\', \'/images/upload/29swaihvjj1590828788505.png\')\r\n\t\t  }else{\r\n\t\t\t  $(\'.photo\').parents(\'li\').remove();\r\n\t\t  }\r\n\t\r\n\t})\r\n\t\r\n\t</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-06-14T18:37:19.223] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2796' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">1</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:37:23.043] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 42,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:37:24.189] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 45,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:37:25.883] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 293,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 5555,
+        money: 32,
+        picture: '3fy8clp401591971573370.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' },
+     date: '2020-06-14T10:37:24.194Z' },
+  costTime: 126,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T18:37:26.252] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:37:27.029] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:37:28.726] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2796' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">1</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:37:29.894] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2796' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">1</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:38:45.964] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:38:48.157] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:38:53.036] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:38:54.057] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:38:54.302] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:38:55.841] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:38:57.074] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:39:08.377] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:39:08.431] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T18:39:08.606] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:39:09.689] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:39:10.089] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:47:48.174] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 40,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2796' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">1</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:47:50.496] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 53,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:47:51.799] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:47:53.634] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 261,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T10:47:51.856Z' },
+  costTime: 138,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T18:47:53.763] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:47:54.014] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 44,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:47:55.654] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3969' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">1</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">2</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:48:19.513] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 53,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3971' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:49:58.807] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 50,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:50:01.877] [INFO] response - { method: 'GET',
+  url: '/buys/delect/30',
+  body: {},
+  costTime: 65,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T18:50:33.885] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 88,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:50:36.572] [INFO] response - { method: 'GET',
+  url: '/buys/delect/30',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/buys/buylist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '57' },
+     body: 'Redirecting to <a href="/buys/buylist">/buys/buylist</a>.' } }
+[2020-06-14T18:50:36.689] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 40,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:50:39.819] [INFO] response - { method: 'GET',
+  url: '/buys/delect/30',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/buys/buylist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '57' },
+     body: 'Redirecting to <a href="/buys/buylist">/buys/buylist</a>.' } }
+[2020-06-14T18:50:39.906] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 44,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:51:39.014] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 48,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:51:40.905] [INFO] response - { method: 'GET',
+  url: '/buys/delect/30',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T18:51:42.053] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:52:08.412] [INFO] response - { method: 'GET',
+  url: '/buys/delect/30',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/buys/buylist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '57' },
+     body: 'Redirecting to <a href="/buys/buylist">/buys/buylist</a>.' } }
+[2020-06-14T18:52:08.498] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 62,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:52:43.841] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 103,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3963' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 17:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:47</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/30" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:52:45.408] [INFO] response - { method: 'GET',
+  url: '/buys/delect/30',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/buys/buylist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '57' },
+     body: 'Redirecting to <a href="/buys/buylist">/buys/buylist</a>.' } }
+[2020-06-14T18:52:45.441] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1626' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:52:46.750] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1626' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:57:55.231] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1626' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:58:12.067] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:13.005] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:14.779] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 251,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T10:58:13.044Z' },
+  costTime: 148,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T18:58:14.901] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:15.118] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:18.344] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2794' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/1" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T18:58:21.031] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:22.480] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:23.824] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 241,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T10:58:22.484Z' },
+  costTime: 259,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T18:58:24.164] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:24.416] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T18:58:27.022] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3962' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/1" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/2" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }

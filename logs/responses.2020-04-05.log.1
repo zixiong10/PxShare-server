@@ -1,0 +1,546 @@
+[2020-04-05T13:44:43.294] [INFO] response - { method: 'GET',
+  url: '/users/zjia',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1872' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/sent" method="POST">\r\n            <table  style="BORDER-LEFT-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px" borderColor=#12b6b6 height=280 cellPadding=3 width=350 align=center bgColor=white >\r\n            <thead>\r\n                <br>\r\n                <a href="./userlist" >返回</a>\r\n              <tr>\r\n                  <th>增加用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID: <input type="text" name="user_id" placeholder="用户ID" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text"name="user_name" placeholder="用户名称" required></td>\r\n              </tr>\r\n              <tr>\r\n                <td>用户密码: <input type="text"name="password" placeholder="用户密码" required></td>\r\n            </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="1">普通用户</option>\r\n                          <option value="2">超市店员</option>\r\n                          <option value="3">管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            \r\n              <tr>\r\n                <th>\r\n                <button type="submit" class="btn btn-primary">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-04-05T13:44:49.546] [INFO] response - { method: 'POST',
+  url: '/users/sent',
+  body:
+   { user_id: '3030',
+     user_name: '123',
+     password: '123456',
+     role: '1' },
+  costTime: 160,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-04-05T13:45:08.539] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5564' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T13:45:10.136] [INFO] response - { method: 'GET',
+  url: '/users/delect/3030',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T13:45:10.191] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 43,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5564' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T13:45:10.657] [INFO] response - { method: 'GET',
+  url: '/users/delect/3030',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T13:45:10.679] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5149' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T13:45:11.646] [INFO] response - { method: 'GET',
+  url: '/users/zjia',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1872' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/sent" method="POST">\r\n            <table  style="BORDER-LEFT-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px" borderColor=#12b6b6 height=280 cellPadding=3 width=350 align=center bgColor=white >\r\n            <thead>\r\n                <br>\r\n                <a href="./userlist" >返回</a>\r\n              <tr>\r\n                  <th>增加用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID: <input type="text" name="user_id" placeholder="用户ID" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text"name="user_name" placeholder="用户名称" required></td>\r\n              </tr>\r\n              <tr>\r\n                <td>用户密码: <input type="text"name="password" placeholder="用户密码" required></td>\r\n            </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="1">普通用户</option>\r\n                          <option value="2">超市店员</option>\r\n                          <option value="3">管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            \r\n              <tr>\r\n                <th>\r\n                <button type="submit" class="btn btn-primary">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-04-05T13:45:17.504] [INFO] response - { method: 'POST',
+  url: '/users/sent',
+  body:
+   { user_id: '3030',
+     user_name: '123',
+     password: '123456',
+     role: '1' },
+  costTime: 149,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T13:45:17.523] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5564' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T13:46:02.164] [INFO] response - { method: 'GET',
+  url: '/users/zjia',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1872' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/sent" method="POST">\r\n            <table  style="BORDER-LEFT-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px" borderColor=#12b6b6 height=280 cellPadding=3 width=350 align=center bgColor=white >\r\n            <thead>\r\n                <br>\r\n                <a href="./userlist" >返回</a>\r\n              <tr>\r\n                  <th>增加用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID: <input type="text" name="user_id" placeholder="用户ID" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text"name="user_name" placeholder="用户名称" required></td>\r\n              </tr>\r\n              <tr>\r\n                <td>用户密码: <input type="text"name="password" placeholder="用户密码" required></td>\r\n            </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="1">普通用户</option>\r\n                          <option value="2">超市店员</option>\r\n                          <option value="3">管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            \r\n              <tr>\r\n                <th>\r\n                <button type="submit" class="btn btn-primary">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-04-05T13:46:08.113] [INFO] response - { method: 'POST',
+  url: '/users/sent',
+  body:
+   { user_id: '4040', user_name: '4', password: '4', role: '1' },
+  costTime: 192,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T13:46:08.130] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5977' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>8</td>  \r\n                  <td>4040</td>\r\n                    <td>4</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/4040" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/4040" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T13:47:04.389] [INFO] response - { method: 'GET',
+  url: '/users/zjia',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1872' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/sent" method="POST">\r\n            <table  style="BORDER-LEFT-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px" borderColor=#12b6b6 height=280 cellPadding=3 width=350 align=center bgColor=white >\r\n            <thead>\r\n                <br>\r\n                <a href="./userlist" >返回</a>\r\n              <tr>\r\n                  <th>增加用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID: <input type="text" name="user_id" placeholder="用户ID" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text"name="user_name" placeholder="用户名称" required></td>\r\n              </tr>\r\n              <tr>\r\n                <td>用户密码: <input type="text"name="password" placeholder="用户密码" required></td>\r\n            </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="1">普通用户</option>\r\n                          <option value="2">超市店员</option>\r\n                          <option value="3">管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            \r\n              <tr>\r\n                <th>\r\n                <button type="submit" class="btn btn-primary">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-04-05T13:47:09.356] [INFO] response - { method: 'POST',
+  url: '/users/sent',
+  body: { user_id: '505', user_name: '5', password: '5', role: '1' },
+  costTime: 138,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T13:47:09.375] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6387' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>8</td>  \r\n                  <td>4040</td>\r\n                    <td>4</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/4040" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/4040" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>9</td>  \r\n                  <td>505</td>\r\n                    <td>5</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/505" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/505" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T13:47:27.276] [INFO] response - { method: 'GET',
+  url: '/users/zjia',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1872' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/sent" method="POST">\r\n            <table  style="BORDER-LEFT-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px" borderColor=#12b6b6 height=280 cellPadding=3 width=350 align=center bgColor=white >\r\n            <thead>\r\n                <br>\r\n                <a href="./userlist" >返回</a>\r\n              <tr>\r\n                  <th>增加用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID: <input type="text" name="user_id" placeholder="用户ID" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text"name="user_name" placeholder="用户名称" required></td>\r\n              </tr>\r\n              <tr>\r\n                <td>用户密码: <input type="text"name="password" placeholder="用户密码" required></td>\r\n            </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="1">普通用户</option>\r\n                          <option value="2">超市店员</option>\r\n                          <option value="3">管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            \r\n              <tr>\r\n                <th>\r\n                <button type="submit" class="btn btn-primary">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-04-05T13:47:34.847] [INFO] response - { method: 'POST',
+  url: '/users/sent',
+  body: { user_id: '2', user_name: '2', password: '2', role: '1' },
+  costTime: 158,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T13:47:34.866] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6792' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>8</td>  \r\n                  <td>4040</td>\r\n                    <td>4</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/4040" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/4040" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>9</td>  \r\n                  <td>505</td>\r\n                    <td>5</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/505" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/505" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>10</td>  \r\n                  <td>2</td>\r\n                    <td>2</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T14:12:21.765] [INFO] response - { method: 'GET',
+  url: '/logout',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1035' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>无痕超市</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-04-05T14:12:32.694] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1003', password: '123456' },
+  costTime: 76,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-04-05T14:12:32.842] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1675' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M4"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n\t\t  <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t  <a href=\'/foods/finish\' target="iframe1">取货订单</a>\r\n        </div>\r\n\t  </li>\r\n\t  <li>\r\n\t\t<h4   class="M9" ><span></span>黑名单</h4>\r\n\t\t<div class="list-item none">\r\n\t\t  <a href=\'/foods/hei\' target="iframe1">黑名单</a>\r\n\t\t</div>\r\n\t  </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-04-05T14:12:34.714] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6792' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>8</td>  \r\n                  <td>4040</td>\r\n                    <td>4</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/4040" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/4040" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>9</td>  \r\n                  <td>505</td>\r\n                    <td>5</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/505" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/505" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>10</td>  \r\n                  <td>2</td>\r\n                    <td>2</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T14:12:38.589] [INFO] response - { method: 'GET',
+  url: '/users/delect/2',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T14:12:38.663] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 62,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6387' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>8</td>  \r\n                  <td>4040</td>\r\n                    <td>4</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/4040" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/4040" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>9</td>  \r\n                  <td>505</td>\r\n                    <td>5</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/505" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/505" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T14:12:40.158] [INFO] response - { method: 'GET',
+  url: '/users/delect/505',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T14:12:40.179] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5977' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>8</td>  \r\n                  <td>4040</td>\r\n                    <td>4</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/4040" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/4040" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T14:12:41.368] [INFO] response - { method: 'GET',
+  url: '/users/delect/4040',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T14:12:41.394] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5564' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }
+[2020-04-05T14:12:42.256] [INFO] response - { method: 'GET',
+  url: '/users/delect/3030',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-04-05T14:12:42.288] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5564' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-info">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>工号/帐号</th>\r\n                <th>姓名</th>\r\n                <th>角色</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1002</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                     超市店员\r\n                        </td>\r\n                    <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>3</td>  \r\n                  <td>1003</td>\r\n                    <td>cookie</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>4</td>  \r\n                  <td>1004</td>\r\n                    <td>子雄</td>\r\n                    <td>\r\n                          管理员\r\n                             </td>\r\n                    <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>5</td>  \r\n                  <td>1005</td>\r\n                    <td>tfboy</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/1005" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>6</td>  \r\n                  <td>2020</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                    \r\n                <tr>\r\n                  <td>7</td>  \r\n                  <td>3030</td>\r\n                    <td>123</td>\r\n                    <td>\r\n                     普通用户\r\n                      </td>\r\n                    <td><a href="/users/edit/3030" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/users/delect/3030" class="btn btn-danger">删除</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./zjia" class="btn btn-info">增加用户</a>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n\r\n</html>' } }

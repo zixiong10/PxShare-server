@@ -1,0 +1,714 @@
+[2020-05-20T15:30:44.455] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2356' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<h4 class="M4"><span></span>PxShare</h4>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li><img src="" alt="user_photo" class="photo"></li>\r\n\t\t\t\t<li >钢铁直男大米先生</li>\r\n\t\t\t\t<li><h4 class="M10"><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t Admin</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf">Logout</span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/datas/datalist\' target="iframe1">免费素材</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">付费素材</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">上传素材库</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">免费教程</a></div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/foods/hei\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n<script>\r\n\r\n\t$(function() {\r\n\t\t  if(\'bni1j6j6u1589940435284.png\'){\r\n\t\t\t  $(\'.photo\').attr(\'src\', \'/images/upload/bni1j6j6u1589940435284.png\')\r\n\t\t  }else{\r\n\t\t\t  $(\'.photo\').parents(\'li\').remove();\r\n\t\t  }\r\n\t\r\n\t})\r\n\t\r\n\t</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-20T15:30:52.043] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1854' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>角色id</th>\r\n              <th>角色名</th>\r\n              <th>角色描述</th>\r\n              <th>增加时间</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:31:52.395] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1854' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n \r\n\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:32:34.806] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1848' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 100px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:32:49.753] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1846' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:33:08.997] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1758' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  \r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:33:36.294] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1850' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n      </div>\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:33:44.324] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1838' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:33:58.286] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1846' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n  </div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:33:58.941] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1846' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n  </div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:33:59.351] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T15:33:59.776] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1846' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n  </div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:50:48.885] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1846' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 20px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:50:50.062] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1846' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 20px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:51:03.207] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1846' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 20px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:51:12.838] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1845' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:52:48.374] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 67,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1845' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:52:49.189] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1845' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 0px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:53:07.801] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1847' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:53:34.546] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2259' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:56:14.345] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2262' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:56:29.845] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2262' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 50px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:56:37.409] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2263' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 250px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:56:55.111] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2246' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div style="margin-bottom: 250px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:56:55.201] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2246' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div style="margin-bottom: 250px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:56:56.345] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2246' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div style="margin-bottom: 250px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:56:56.893] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2246' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div style="margin-bottom: 250px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:57:02.586] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 52,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T15:57:03.134] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2263' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 250px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:57:21.822] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2253' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="height:100%"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:57:30.146] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2263' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 250px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:57:40.357] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2263' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:58:21.942] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2291' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>1jev447y8e01589940329586.png</td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T15:58:42.088] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T15:58:43.382] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2291' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>1jev447y8e01589940329586.png</td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T16:00:03.236] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2415' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>1jev447y8e01589940329586.png</td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td><img src="/uploads/kobe" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td><img src="/uploads/jordan" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T16:00:03.303] [INFO] response - { method: 'GET',
+  url: '/uploads/kobe',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T16:00:03.305] [INFO] response - { method: 'GET',
+  url: '/uploads/jordan',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T16:00:04.027] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2415' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>1jev447y8e01589940329586.png</td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td><img src="/uploads/kobe" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td><img src="/uploads/jordan" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T16:00:04.103] [INFO] response - { method: 'GET',
+  url: '/uploads/kobe',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T16:00:04.105] [INFO] response - { method: 'GET',
+  url: '/uploads/jordan',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T16:00:47.744] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2415' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td>1jev447y8e01589940329586.png</td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td><img src="/uploads/kobe" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td><img src="/uploads/jordan" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }

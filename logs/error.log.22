@@ -1,0 +1,1267 @@
+[2020-03-28T13:46:55.836] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:36
+       34|                   </select>
+       35|                 </td>
+    >> 36|                     <td><%=info.role%></td>
+       37|                     <td><a href="/foods/delect/<%=data[i].foodlist%>" class="btn btn-primary">删除</a></td>
+       38|                     <td><a href="/foods/edit/<%=data[i].foodlist%>" class="btn btn-primary">提交</a></td>
+       39|                     <%}%>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }
+[2020-03-28T13:47:29.215] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:36
+       34|                   </select>
+       35|                 </td>
+    >> 36|                     <td><%=info.role%></td>
+       37|                     <td><a href="/foods/delect/<%=data[i].foodlist%>" class="btn btn-primary">删除</a></td>
+       38|                     <td><a href="/foods/edit/<%=data[i].foodlist%>" class="btn btn-primary">提交</a></td>
+       39|                     <%}%>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }
+[2020-03-28T13:47:29.833] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:36
+       34|                   </select>
+       35|                 </td>
+    >> 36|                     <td><%=info.role%></td>
+       37|                     <td><a href="/foods/delect/<%=data[i].foodlist%>" class="btn btn-primary">删除</a></td>
+       38|                     <td><a href="/foods/edit/<%=data[i].foodlist%>" class="btn btn-primary">提交</a></td>
+       39|                     <%}%>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }
+[2020-03-28T13:47:31.824] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:36
+       34|                   </select>
+       35|                 </td>
+    >> 36|                     <td><%=info.role%></td>
+       37|                     <td><a href="/foods/delect/<%=data[i].foodlist%>" class="btn btn-primary">删除</a></td>
+       38|                     <td><a href="/foods/edit/<%=data[i].foodlist%>" class="btn btn-primary">提交</a></td>
+       39|                     <%}%>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }
+[2020-03-28T13:47:33.326] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:36
+       34|                   </select>
+       35|                 </td>
+    >> 36|                     <td><%=info.role%></td>
+       37|                     <td><a href="/foods/delect/<%=data[i].foodlist%>" class="btn btn-primary">删除</a></td>
+       38|                     <td><a href="/foods/edit/<%=data[i].foodlist%>" class="btn btn-primary">提交</a></td>
+       39|                     <%}%>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }
+[2020-03-28T13:48:09.234] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:36
+       34|                   </select>
+       35|                 </td>
+    >> 36|                     <td><%=info.role%></td>
+       37|                     <td><a href="/foods/delect/<%=data[i].foodlist%>" class="btn btn-primary">删除</a></td>
+       38|                     <td><a href="/foods/edit/<%=data[i].foodlist%>" class="btn btn-primary">提交</a></td>
+       39|                     <%}%>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }
+[2020-03-28T13:48:10.087] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:36
+       34|                   </select>
+       35|                 </td>
+    >> 36|                     <td><%=info.role%></td>
+       37|                     <td><a href="/foods/delect/<%=data[i].foodlist%>" class="btn btn-primary">删除</a></td>
+       38|                     <td><a href="/foods/edit/<%=data[i].foodlist%>" class="btn btn-primary">提交</a></td>
+       39|                     <%}%>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:17:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }
+[2020-03-28T21:37:50.497] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: food_role is not defined
+       at Function.updatefood (C:\Users\ASUS\Desktop\gamermis_server\service\food_dao.js:96:17)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:16:39) }
+[2020-03-28T21:37:51.781] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: food_role is not defined
+       at Function.updatefood (C:\Users\ASUS\Desktop\gamermis_server\service\food_dao.js:96:17)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:16:39) }
+[2020-03-28T22:24:28.499] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T22:25:01.417] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T22:25:02.863] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T22:26:22.997] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T22:26:24.773] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T22:26:43.072] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T22:41:27.674] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Could not find matching close tag for "<%".
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:519:19
+       at Array.forEach (<anonymous>)
+       at Template.generateSource (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:505:15)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:427:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T22:42:11.584] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:24:02.191] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:24:05.683] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:24:57.648] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:24:58.314] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:25:02.406] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:25:59.834] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:26:00.395] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:26:00.944] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:26:02.648] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:26:11.183] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:28:10.007] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:28:40.042] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:28:49.509] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:30:58.974] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:31:52.838] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:31:54.929] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:31:55.848] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:31:58.201] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:31:58.913] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:31:59.606] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:34:27.221] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:34:27.854] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T10:34:28.886] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token catch in C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-29T13:07:06.595] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: food is not defined
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:32:36)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-03-29T13:09:14.812] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: [user.findAll,food.findAll] is not a function
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:49)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-03-29T13:09:15.493] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: [user.findAll,food.findAll] is not a function
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:49)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-03-29T13:36:56.073] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: {(intermediate value)(intermediate value)}.findAll is not a function
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:34)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-03-29T13:43:59.422] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:44:00.054] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:44:00.720] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:44:01.081] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:44:01.321] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:44:04.201] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:44:11.740] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:45:13.065] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:45:14.583] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:45:15.175] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:45:24.268] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Include unexpected. Element has to be either a Model, an Association or an object.
+       at Function._conformInclude (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:390:11)
+       at options.include.options.include.map.include (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:59)
+       at Array.map (<anonymous>)
+       at Function._conformIncludes (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:326:39)
+       at Function._baseMerge (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:791:10)
+       at Function._defaultsOptions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:828:17)
+       at Function._injectScope (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3288:10)
+       at Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1707:12)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Function.Promise.attempt.Promise.try (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\method.js:39:29)
+       at Function.findAll (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1706:23)
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:33:27)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16 }
+[2020-03-29T13:46:15.844] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:38:17)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-03-29T13:46:16.433] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: user_id is not defined
+       at Function.getAllUser (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:38:17)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }

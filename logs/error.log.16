@@ -1,0 +1,1418 @@
+[2020-04-17T08:44:57.720] [ERROR] error - { method: 'POST',
+  url: '/allfoods/suo',
+  body: { chaxun: '肉' },
+  costTime: undefined,
+  err:
+   Error: Invalid value { id: 6, food_name: '鸭肉', food_number: '20', food_price: '24' }
+       at Object.escape (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\sql-string.js:65:11)
+       at MySQLQueryGenerator.escape (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:986:22)
+       at _joinKeyValue.value.map.item (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2486:69)
+       at Array.map (<anonymous>)
+       at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2486:52)
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2268:19)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14) }
+[2020-04-17T08:46:34.264] [ERROR] error - { method: 'POST',
+  url: '/allfoods/suo',
+  body: { chaxun: '肉' },
+  costTime: undefined,
+  err:
+   Error: Invalid value { id: 6, food_name: '鸭肉', food_number: '20', food_price: '24' }
+       at Object.escape (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\sql-string.js:65:11)
+       at MySQLQueryGenerator.escape (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:986:22)
+       at _joinKeyValue.value.map.item (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2486:69)
+       at Array.map (<anonymous>)
+       at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2486:52)
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2268:19)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14) }
+[2020-04-17T08:47:14.159] [ERROR] error - { method: 'GET',
+  url: '/allfoods/edit/%E9%B8%AD%E8%82%89',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鸭肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鸭肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鸭肉\' LIMIT NaN, 1;',
+     parameters: undefined } }
+[2020-04-17T08:47:17.358] [ERROR] error - { method: 'GET',
+  url: '/allfoods/edit/%E7%89%9B%E8%82%89',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'牛肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'牛肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'牛肉\' LIMIT NaN, 1;',
+     parameters: undefined } }
+[2020-04-17T08:47:25.398] [ERROR] error - { method: 'GET',
+  url: '/allfoods/edit/%E9%B1%BC%E8%82%89',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+     parameters: undefined } }
+[2020-04-17T08:48:04.002] [ERROR] error - { method: 'GET',
+  url: '/allfoods/edit/%E9%B1%BC%E8%82%89',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+     parameters: undefined } }
+[2020-04-17T08:48:12.629] [ERROR] error - { method: 'GET',
+  url: '/allfoods/edit/%E9%B8%A1%E8%82%89',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鸡肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鸡肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鸡肉\' LIMIT NaN, 1;',
+     parameters: undefined } }
+[2020-04-17T08:48:20.068] [ERROR] error - { method: 'GET',
+  url: '/allfoods/edit/%E9%B1%BC%E8%82%89',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`food_name` = \'鱼肉\' LIMIT NaN, 1;',
+     parameters: undefined } }
+[2020-04-17T08:49:47.274] [ERROR] error - { method: 'GET',
+  url: '/allfoods/edit/%E9%B8%A1%E8%82%89',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: id is not defined
+       at Function.getallfoodInfo (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:54:27)
+       at edit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:93:39)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15) }
+[2020-04-17T08:58:22.283] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfood.findAll(...) is not a function
+       at Function.getApplicationLog (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:39:33)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:33:35) }
+[2020-04-17T09:00:47.375] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfoodDao.getLog is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:33:35) }
+[2020-04-17T09:01:04.386] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: index is not defined
+       at Function.Log (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:44:32)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:33:35) }
+[2020-04-17T09:01:46.468] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfood.findAll(...) is not a function
+       at Function.getApplicationLog (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:39:33)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37) }
+[2020-04-17T09:02:42.101] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfood.findAll(...) is not a function
+       at Function.getApplicationLog (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:39:33)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37) }
+[2020-04-17T09:02:54.619] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfood.findAll(...) is not a function
+       at Function.getApplicationLog (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:39:33)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37) }
+[2020-04-17T09:03:06.103] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfood.findAll(...) is not a function
+       at Function.getApplicationLog (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:39:33)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37) }
+[2020-04-17T09:03:33.344] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfood.findAll(...) is not a function
+       at Function.getApplicationLog (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:39:33)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37) }
+[2020-04-17T09:03:53.249] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfood.findAll(...) is not a function
+       at Function.getApplicationLog (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:39:39)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37) }
+[2020-04-17T09:12:08.619] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: data2 is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:59:19) }
+[2020-04-17T09:12:24.342] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'length' of undefined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:59:25) }
+[2020-04-17T09:12:25.072] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'length' of undefined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:59:25) }
+[2020-04-17T09:54:32.191] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:21
+       19|             <li><a href="/allfoods/allfoodlist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+       20|             <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+    >> 21|             <li><a href="/allfoods/allfoodlist?page=&keyword=<%=put%><%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+       22|             <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+       23|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       24|             <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">添加食品</span></a></li>
+   
+   put is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-17T11:20:56.514] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Could not find matching close tag for "<%=".
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:519:19
+       at Array.forEach (<anonymous>)
+       at Template.generateSource (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:505:15)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:427:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-04-17T11:21:17.819] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Could not find matching close tag for "<%=".
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:519:19
+       at Array.forEach (<anonymous>)
+       at Template.generateSource (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:505:15)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:427:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-04-17T11:21:53.096] [ERROR] error - { method: 'GET',
+  url:
+   '/allfoods/allfoodlist?page=if(info==undefined%20){%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%201}',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+     parameters: undefined } }
+[2020-04-17T11:22:56.448] [ERROR] error - { method: 'GET',
+  url:
+   '/allfoods/allfoodlist?page=if(info==undefined%20){%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%201}%20%20%20%20%20%20%20%20%20%20%20%20%20%20else{%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%201%20%20%20%20%20%20%20%20%20%20%20%20%20%20}',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+     parameters: undefined } }
+[2020-04-17T12:02:26.778] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:21
+       19|             <li><a href="/allfoods/allfoodlist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+       20|             <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+    >> 21|             <li><a href="/allfoods/allfoodlist?page=#keyword<%=chaxun%><%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+       22|             <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+       23|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       24|             <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">添加食品</span></a></li>
+   
+   chaxun is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-17T12:02:31.535] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:21
+       19|             <li><a href="/allfoods/allfoodlist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+       20|             <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+    >> 21|             <li><a href="/allfoods/allfoodlist?page=#keyword<%=chaxun%><%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+       22|             <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+       23|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       24|             <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">添加食品</span></a></li>
+   
+   chaxun is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-17T12:02:41.051] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { TypeError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:21
+       19|             <li><a href="/allfoods/allfoodlist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+       20|             <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+    >> 21|             <li><a href="/allfoods/allfoodlist?page=#keyword<%=info.chaxun%><%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+       22|             <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+       23|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       24|             <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">添加食品</span></a></li>
+   
+   Cannot read property 'chaxun' of undefined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:28)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-17T12:03:15.489] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { TypeError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:21
+       19|             <li><a href="/allfoods/allfoodlist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+       20|             <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+    >> 21|             <li><a href="/allfoods/allfoodlist?page=#keyword<%=info.chaxun%><%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+       22|             <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+       23|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       24|             <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">添加食品</span></a></li>
+   
+   Cannot read property 'chaxun' of undefined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:28)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-17T12:04:16.852] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { TypeError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:21
+       19|             <li><a href="/allfoods/allfoodlist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+       20|             <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+    >> 21|             <li><a href="/allfoods/allfoodlist?page=#keyword<%=info.chaxun%> <%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+       22|             <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+       23|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       24|             <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">添加食品</span></a></li>
+   
+   Cannot read property 'chaxun' of undefined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:28)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-17T12:05:29.952] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token ) in C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-04-17T12:30:41.466] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { TypeError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:22
+       20|             <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+       21|             <li><a href="
+    >> 22|               if(<%=info.chaxun%>==undefined){
+       23|               /allfoods/allfoodlist?page=<%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>
+       24|               }
+       25|               else{
+   
+   Cannot read property 'chaxun' of undefined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:28)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-17T12:34:30.718] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist?page=2}',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+     parameters: undefined } }
+[2020-04-17T13:53:27.163] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfoodDao.fenye is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:30:54) }
+[2020-04-17T13:55:47.327] [ERROR] error - { method: 'POST',
+  url: '/allfoods/suo',
+  body: { chaxun: '肉' },
+  costTime: undefined,
+  err:
+   TypeError: allfoodDao.searchfenyee is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:39:53) }
+[2020-04-17T13:56:01.462] [ERROR] error - { method: 'POST',
+  url: '/allfoods/suo',
+  body: { chaxun: '肉' },
+  costTime: undefined,
+  err:
+   TypeError: allfoodDao.searchfenyee is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:39:53) }
+[2020-04-17T14:38:38.130] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: userDao.getAlluser is not a function
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:40:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\users.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-17T14:39:30.289] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: Op is not defined
+       at Function.getAlluserlist (C:\Users\ASUS\Desktop\gamermis_server\service\user_dao.js:38:21)
+       at userlist (C:\Users\ASUS\Desktop\gamermis_server\controllers\user.js:49:32) }
+[2020-04-17T14:40:05.149] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'user.user_name_name' in 'where clause'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'user.user_name_name' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user.user_name_name\' in \'where clause\'',
+        sql:
+         'SELECT `id`, `user_id`, `password`, `user_name`, `solt`, `role` FROM `user` AS `user` WHERE (`user`.`user_name_name` LIKE \'%undefined%\' OR `user`.`user_id` LIKE \'%undefined\' OR `user`.`role` LIKE \'%undefined\') ORDER BY `user`.`id` ASC;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'user.user_name_name' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user.user_name_name\' in \'where clause\'',
+        sql:
+         'SELECT `id`, `user_id`, `password`, `user_name`, `solt`, `role` FROM `user` AS `user` WHERE (`user`.`user_name_name` LIKE \'%undefined%\' OR `user`.`user_id` LIKE \'%undefined\' OR `user`.`role` LIKE \'%undefined\') ORDER BY `user`.`id` ASC;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `password`, `user_name`, `solt`, `role` FROM `user` AS `user` WHERE (`user`.`user_name_name` LIKE \'%undefined%\' OR `user`.`user_id` LIKE \'%undefined\' OR `user`.`role` LIKE \'%undefined\') ORDER BY `user`.`id` ASC;',
+     parameters: undefined } }
+[2020-04-17T17:36:09.903] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAlluser is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:11:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\foods.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-17T17:36:10.891] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAlluser is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:11:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\foods.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-17T17:36:13.894] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAlluser is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:11:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\foods.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-17T17:36:15.363] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAlluser is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:11:34)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\foods.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-17T19:50:56.282] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getApplicationLogByPage is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:25:27) }
+[2020-04-17T19:57:56.177] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: Op is not defined
+       at Function.searchfenye (C:\Users\ASUS\Desktop\gamermis_server\service\food_dao.js:78:19)
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:23:35) }
+[2020-04-17T19:58:21.827] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:01:03.100] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:01:03.750] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }

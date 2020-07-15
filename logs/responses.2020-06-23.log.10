@@ -1,0 +1,2594 @@
+[2020-06-23T11:49:29.336] [INFO] response - { method: 'POST',
+  url: '/api/courses/foundcourse',
+  body: { id: '大鬼爱小米', name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:53:51.820] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 214,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:01.650] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 51,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:27.204] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:27.506] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 193,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:54:27.557] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:27.619] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:27.657] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:27.684] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:27.895] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:54:28.617] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:55:00.800] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 86,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:55:44.517] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 114,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:55:44.680] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 122,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:55:44.866] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:56:51.076] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:56:51.141] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:57:02.000] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:02.061] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:57:02.271] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:02.382] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:02.418] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:02.661] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 63,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:02.794] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 48,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:04.046] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 109,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:04.151] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:04.168] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 68,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:57:04.449] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:04.476] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:04.599] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:04.604] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:05.183] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 98,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:05.224] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:05.315] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:57:38.008] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:38.152] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:57:42.129] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:42.190] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T11:57:59.313] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 52,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T11:57:59.515] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:00:41.078] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 59,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:41.152] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:00:41.283] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:41.472] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:41.521] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 47,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:41.618] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:41.878] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:42.371] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:42.717] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:00:42.799] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:01:30.953] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:01:31.140] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:01:39.499] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:01:39.580] [INFO] response - { method: 'GET',
+  url: '/images/upload/undefined',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:03:28.885] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:28.979] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 50,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:03:29.223] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:29.259] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 32,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:29.279] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:29.572] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:29.593] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:30.617] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:30.749] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:30.757] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:03:31.079] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:31.112] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:31.191] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:31.208] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:31.707] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:32.038] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:33.341] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:33.395] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:03:33.575] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:33.708] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:33.711] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:33.919] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:34.047] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:34.128] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:03:34.469] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:21.669] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:21.718] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:06:21.883] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:22.049] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:22.051] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:22.225] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:22.397] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:22.620] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:22.954] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:30.065] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:30.110] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:06:30.396] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:30.439] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:30.648] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:30.721] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:30.768] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:31.605] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:31.933] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:33.104] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:33.152] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:06:33.468] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:33.484] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:33.701] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:33.819] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:33.824] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:57.519] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:06:57.582] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:07:56.303] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/plain; charset=utf-8',
+        'content-length': '12' },
+     body: 'Unauthorized' } }
+[2020-06-23T12:08:18.494] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/plain; charset=utf-8',
+        'content-length': '12' },
+     body: 'Unauthorized' } }
+[2020-06-23T12:13:32.138] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1010', password: '10' },
+  costTime: 58,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-23T12:13:32.193] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:32.837] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:33.917] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:33.989] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:13:34.149] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:34.316] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:34.321] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:34.475] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:34.669] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:35.086] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:13:35.484] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 70,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:14:00.423] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:14:00.619] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 88,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:14:33.370] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 87,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:14:33.693] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 205,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:15.809] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 83,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:15.888] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:15.897] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:24.689] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:25.362] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 455,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:28.360] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:29.345] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:35.774] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:36.031] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:36.808] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:36.879] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-23T12:15:37.175] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:37.205] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:37.427] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:37.494] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:37.531] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:38.428] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:38.775] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:15:38.780] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:16:10.044] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 52,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:16:10.196] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:18:55.241] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:18:55.469] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:19:49.183] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:19:49.411] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:19:54.243] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:19:54.297] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:19:54.397] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:20:34.783] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:20:34.993] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:20:47.987] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 75,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:20:48.156] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:21:28.059] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:21:28.271] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:21:44.541] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 50,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:21:44.723] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:22:49.091] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:22:49.301] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:24:10.532] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:24:10.750] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:27:47.294] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:27:47.483] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:28:09.923] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:28:09.928] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:28:12.715] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 69,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-23T12:28:12.789] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }

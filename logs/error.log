@@ -1,0 +1,932 @@
+[2020-06-23T11:53:52.090] [ERROR] error - { method: 'POST',
+  url: '/api/courses/foundcourse',
+  body: { name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T11:54:01.967] [ERROR] error - { method: 'POST',
+  url: '/api/courses/foundcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T11:54:28.642] [ERROR] error - { method: 'POST',
+  url: '/api/courses/foundcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T12:13:35.441] [ERROR] error - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   ReferenceError: materialDao is not defined
+       at findmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\data.js:432:13)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-23T12:14:00.561] [ERROR] error - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   ReferenceError: material is not defined
+       at Function.getmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\data_dao.js:242:5)
+       at findmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\data.js:432:27)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-23T16:50:04.528] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "material_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T16:51:12.623] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "material_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T16:52:52.852] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { material_id: [ 56 ] },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'[object Object]\' for column \'material_id\' at row 1',
+        sql:
+         'INSERT INTO `uploadmaterial` (`id`,`material_id`) VALUES (DEFAULT,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'[object Object]\' for column \'material_id\' at row 1',
+        sql:
+         'INSERT INTO `uploadmaterial` (`id`,`material_id`) VALUES (DEFAULT,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `uploadmaterial` (`id`,`material_id`) VALUES (DEFAULT,?);',
+     parameters: [ '[object Object]' ] } }
+[2020-06-23T16:56:26.393] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body:
+   { user_name: '小鬼bro',
+     material_id: { id: [Array], user_name: '小鬼bro' } },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'[object Object]\' for column \'material_id\' at row 1',
+        sql:
+         'INSERT INTO `uploadmaterial` (`id`,`material_id`,`user_name`) VALUES (DEFAULT,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'[object Object]\' for column \'material_id\' at row 1',
+        sql:
+         'INSERT INTO `uploadmaterial` (`id`,`material_id`,`user_name`) VALUES (DEFAULT,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `uploadmaterial` (`id`,`material_id`,`user_name`) VALUES (DEFAULT,?,?);',
+     parameters: [ '[object Object]', '小鬼bro' ] } }
+[2020-06-23T17:02:49.024] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "material_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T17:03:14.425] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [ 57 ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "material_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T17:06:47.032] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [ 57 ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "material_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T17:09:47.005] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [ 57, 333 ] },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'length' of null
+       at postuploadmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\uploadmaterial.js:30:21) }
+[2020-06-23T17:11:31.236] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [ 333 ] },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'length' of null
+       at postuploadmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\uploadmaterial.js:31:12) }
+[2020-06-23T17:11:56.268] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [ 333 ] },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'length' of null
+       at postuploadmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\uploadmaterial.js:31:12) }
+[2020-06-23T17:13:36.453] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [ 57, 56, 333 ] },
+  costTime: undefined,
+  err:
+   ReferenceError: c is not defined
+       at Function.updateuploadmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\uploadmaterial_dao.js:37:25)
+       at postuploadmaterial (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\uploadmaterial.js:41:37) }
+[2020-06-23T17:21:31.718] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/postuploadmaterial',
+  body: { user_name: '小鬼bro', id: [ 56 ] },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'[object Object]\' for column \'material_id\' at row 1',
+        sql:
+         'INSERT INTO `uploadmaterial` (`id`,`material_id`,`user_name`) VALUES (DEFAULT,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect integer value: '[object Object]' for column 'material_id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'[object Object]\' for column \'material_id\' at row 1',
+        sql:
+         'INSERT INTO `uploadmaterial` (`id`,`material_id`,`user_name`) VALUES (DEFAULT,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `uploadmaterial` (`id`,`material_id`,`user_name`) VALUES (DEFAULT,?,?);',
+     parameters: [ '[object Object]', '小鬼bro' ] } }
+[2020-06-23T17:34:06.689] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/uploadmaterialinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   TypeError: uploadmaterialDao.getuploadmaterialinfo is not a function
+       at uploadmaterialinfo (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\uploadmaterial.js:11:38)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-23T22:50:36.862] [ERROR] error - { method: 'POST',
+  url: '/api/stars/delect',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T22:58:56.861] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/uploadmaterialinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-23T23:00:30.129] [ERROR] error - { method: 'POST',
+  url: '/api/uploadmaterials/delect',
+  body: { id: 16 },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'uploadmaterial_id' in 'where clause'
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'uploadmaterial_id' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'uploadmaterial_id\' in \'where clause\'',
+        sql:
+         'DELETE FROM `uploadmaterial` WHERE `uploadmaterial_id` = 16',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'uploadmaterial_id' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'uploadmaterial_id\' in \'where clause\'',
+        sql:
+         'DELETE FROM `uploadmaterial` WHERE `uploadmaterial_id` = 16',
+        parameters: undefined },
+     sql:
+      'DELETE FROM `uploadmaterial` WHERE `uploadmaterial_id` = 16',
+     parameters: undefined } }
+[2020-06-24T14:59:01.248] [ERROR] error - { method: 'POST',
+  url: '/api/courses/searchCourse',
+  body: { id: '基础教程' },
+  costTime: undefined,
+  err:
+   TypeError: kindcourseDao.searchCourse is not a function
+       at searchCourse (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\course.js:361:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-25T10:25:16.319] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user: '大鬼爱小米',
+     item:
+      { id: 852,
+        money: 0,
+        kindchild: '抠头发',
+        picture: 'oop6pvt4g1592017302664.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '1',
+        introduce: '手把手免费教你文字抠图',
+        check_time: '2020-06-13T03:00:02.000Z',
+        status: '2',
+        check_people: '钢铁直男',
+        text:
+         '来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？~~' },
+     date: '2020-06-25T02:24:47.354Z' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-25T10:26:52.310] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user: '大鬼爱小米',
+     item:
+      { id: 852,
+        money: 0,
+        kindchild: '抠头发',
+        picture: 'oop6pvt4g1592017302664.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '1',
+        introduce: '手把手免费教你文字抠图',
+        check_time: '2020-06-13T03:00:02.000Z',
+        status: '2',
+        check_people: '钢铁直男',
+        text:
+         '来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？~~' },
+     date: '2020-06-25T02:24:47.354Z' },
+  costTime: undefined,
+  err:
+   ReferenceError: data is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:37:18)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-25T10:27:18.815] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user: '大鬼爱小米',
+     item:
+      { id: 852,
+        money: 0,
+        kindchild: '抠头发',
+        picture: 'oop6pvt4g1592017302664.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '1',
+        introduce: '手把手免费教你文字抠图',
+        check_time: '2020-06-13T03:00:02.000Z',
+        status: '2',
+        check_people: '钢铁直男',
+        text:
+         '来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？~~' },
+     date: '2020-06-25T02:24:47.354Z' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-25T11:00:22.683] [ERROR] error - { method: 'GET',
+  url: '/api/kindcourses/kindcourseinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.getkindcourseInFo (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\kindcourse_dao.js:22:27)
+       at kindcourseinfo (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\kindcourse.js:9:34)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-26T13:58:47.202] [ERROR] error - { method: 'POST',
+  url: '/api/courses/postcourse',
+  body:
+   { user_id: 1010,
+     id: '58589+4',
+     check_time: '2020-06-26T05:58:04.965Z',
+     money: null,
+     type: '1',
+     kind: '滤镜教程',
+     user_name: '大鬼爱小米',
+     user_photo: '9268bl5a161593151126716.png',
+     introduce: '12',
+     text: 'gf ' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Data truncated for column 'id' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Data truncated for column 'id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'WARN_DATA_TRUNCATED',
+        errno: 1265,
+        sqlState: '01000',
+        sqlMessage: 'Data truncated for column \'id\' at row 1',
+        sql:
+         'INSERT INTO `course` (`id`,`money`,`picture`,`kind`,`user_name`,`type`,`introduce`,`check_time`,`text`) VALUES (?,?,?,?,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Data truncated for column 'id' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'WARN_DATA_TRUNCATED',
+        errno: 1265,
+        sqlState: '01000',
+        sqlMessage: 'Data truncated for column \'id\' at row 1',
+        sql:
+         'INSERT INTO `course` (`id`,`money`,`picture`,`kind`,`user_name`,`type`,`introduce`,`check_time`,`text`) VALUES (?,?,?,?,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `course` (`id`,`money`,`picture`,`kind`,`user_name`,`type`,`introduce`,`check_time`,`text`) VALUES (?,?,?,?,?,?,?,?,?);',
+     parameters:
+      [ '58589+4',
+        null,
+        '9268bl5a161593151126716.png',
+        '滤镜教程',
+        '大鬼爱小米',
+        '1',
+        '12',
+        '2020-06-26 13:58:04',
+        'gf ' ] } }
+[2020-06-28T21:42:27.079] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1010', password: '10' },
+  costTime: undefined,
+  err:
+   { SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+       at Promise.tap.then.catch.err (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:725:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5)
+     name: 'SequelizeConnectionRefusedError',
+     parent:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true },
+     original:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true } } }

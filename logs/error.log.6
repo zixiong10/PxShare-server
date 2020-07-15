@@ -1,0 +1,1199 @@
+[2020-06-17T21:54:35.793] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   ReferenceError: a is not defined
+       at poststar (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\star.js:27:19)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-17T21:54:49.356] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T21:56:13.295] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T21:58:42.164] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '钢铁直男',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T22:00:20.107] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '钢铁直男',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T22:34:50.982] [ERROR] error - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.getstarInfo (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\star_dao.js:29:30)
+       at starinfo (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\star.js:14:28)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-17T22:37:01.348] [ERROR] error - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.getstarInfo (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\star_dao.js:29:30)
+       at starinfo (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\star.js:14:28)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-18T10:56:04.576] [ERROR] error - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-18T13:53:01.478] [ERROR] error - { method: 'POST',
+  url: '/api/stars/delect',
+  body: { item: 2, user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-18T13:53:35.108] [ERROR] error - { method: 'POST',
+  url: '/api/stars/delect',
+  body: { item: 2, user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-18T15:23:45.614] [ERROR] error - { method: 'POST',
+  url: '/api/courses/foundcourse',
+  body: { id: 89 },
+  costTime: undefined,
+  err:
+   ReferenceError: starDao is not defined
+       at foundcourse (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\course.js:358:11)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-18T15:24:23.892] [ERROR] error - { method: 'POST',
+  url: '/api/courses/foundcourse',
+  body: { id: 89 },
+  costTime: undefined,
+  err:
+   TypeError: courseDao.getCourseInfo10 is not a function
+       at foundcourse (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\course.js:358:27)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-18T15:25:23.013] [ERROR] error - { method: 'POST',
+  url: '/api/courses/foundcourse',
+  body: { id: 89 },
+  costTime: undefined,
+  err:
+   TypeError: courseDao.foundCourse is not a function
+       at foundcourse (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\course.js:358:27)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-19T14:29:41.576] [ERROR] error - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { text: '取消收藏',
+     record_date: '2020-06-19T06:29:39.064Z',
+     status: 1 },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Data too long for column 'record_date' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`text`) VALUES (DEFAULT,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`text`) VALUES (DEFAULT,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `record` (`id`,`record_date`,`status`,`text`) VALUES (DEFAULT,?,?,?);',
+     parameters: [ '2020-06-19T06:29:39.064Z', 1, '取消收藏' ] } }
+[2020-06-19T14:31:41.612] [ERROR] error - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { text: '取消收藏',
+     user_name: '大鬼爱小米',
+     record_date: '2020-06-19T06:31:35.379Z',
+     status: 1 },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Data too long for column 'record_date' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '2020-06-19T06:31:35.379Z', 1, '大鬼爱小米', '取消收藏' ] } }
+[2020-06-19T14:35:14.134] [ERROR] error - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { text: '取消收藏',
+     user_name: '大鬼爱小米',
+     record_date: '2020-06-19 14:35',
+     status: 1 },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Data too long for column 'record_date' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '2020-06-19 14:35', 1, '大鬼爱小米', '取消收藏' ] } }
+[2020-06-19T14:36:14.653] [ERROR] error - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { text: '取消收藏',
+     user_name: '大鬼爱小米',
+     record_date: '2020-06-19 14:35',
+     status: 1 },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Data too long for column 'record_date' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '2020-06-19 14:35', 1, '大鬼爱小米', '取消收藏' ] } }
+[2020-06-19T14:40:08.239] [ERROR] error - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { text: '取消收藏',
+     user_name: '大鬼爱小米',
+     record_date: '2020-06-19 14:35',
+     status: 1 },
+  costTime: undefined,
+  err:
+   Error: Missing where attribute in the options parameter passed to findOrCreate. Please note that the API has changed, and is now options only (an object with where, defaults keys, transaction etc.)
+       at Function.findOrCreate (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2286:13)
+       at Function.createrecord (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\record_dao.js:49:29)
+       at postrecord (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\record.js:29:23)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-19T14:45:03.894] [ERROR] error - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { text: '取消收藏',
+     user_name: '大鬼爱小米',
+     record_date: '2020-06-19 14:35',
+     status: 1 },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Data too long for column 'record_date' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Data too long for column 'record_date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DATA_TOO_LONG',
+        errno: 1406,
+        sqlState: '22001',
+        sqlMessage: 'Data too long for column \'record_date\' at row 1',
+        sql:
+         'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `record` (`id`,`record_date`,`status`,`user_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '2020-06-19 14:35', 1, '大鬼爱小米', '取消收藏' ] } }
+[2020-06-19T17:02:20.112] [ERROR] error - { method: 'POST',
+  url: '/api/records/delectrecord',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.delectrecord (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\record_dao.js:44:36)
+       at delectrecord (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\record.js:42:21)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-19T17:02:36.294] [ERROR] error - { method: 'POST',
+  url: '/api/records/delectrecord',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.delectrecord (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\record_dao.js:44:36)
+       at delectrecord (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\record.js:42:21)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-19T17:05:46.865] [ERROR] error - { method: 'POST',
+  url: '/api/records/delectrecord',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "record_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T17:06:17.091] [ERROR] error - { method: 'POST',
+  url: '/api/records/delectrecord',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T17:07:02.333] [ERROR] error - { method: 'POST',
+  url: '/api/records/delectrecord',
+  body: { user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-19T17:07:49.804] [ERROR] error - { method: 'POST',
+  url: '/api/records/delectrecord',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-20T13:21:10.189] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-20T13:26:06.985] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   ReferenceError: a is not defined
+       at alldelect (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\record.js:61:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-20T13:26:31.505] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.alldelect (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\record_dao.js:53:24)
+       at alldelect (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\record.js:61:21)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-20T13:27:12.701] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.alldelect (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\record_dao.js:53:24)
+       at alldelect (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\record.js:63:21)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-20T13:27:42.654] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at Function.alldelect (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\record_dao.js:53:24)
+       at alldelect (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\record.js:64:21)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-20T13:31:13.865] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-20T13:31:47.013] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-20T13:32:22.693] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-20T13:34:13.346] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-20T13:35:05.341] [ERROR] error - { method: 'POST',
+  url: '/api/records/alldelect',
+  body: { list: [ [Object], [Object] ] },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.deleteQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query-generator.js:293:18)
+       at QueryInterface.bulkDelete (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1113:27)
+       at Promise.try.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2946:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }

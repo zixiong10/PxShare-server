@@ -1,0 +1,508 @@
+[2020-06-24T18:16:23.257] [INFO] response - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { user_name: '大鬼爱小米',
+     status: 1,
+     text: '恭喜您，刚刚购买教程成功852,祝你学习愉快',
+     record_date: '2020-06-24 18:16' },
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-24T18:16:23.541] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:23.878] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        qianming: '我要当21世纪的比尔盖茨',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 5,
+        gold: 21.85,
+        benefit: 0 },
+     item:
+      { id: 852,
+        money: 0,
+        kindchild: '抠头发',
+        picture: 'oop6pvt4g1592017302664.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '1',
+        introduce: '手把手免费教你文字抠图',
+        check_time: '2020-06-13T03:00:02.000Z',
+        status: '2',
+        check_people: '钢铁直男',
+        text:
+         '来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？来来来，看看有哪些是你不知道的~~~\r\n\r\n  1、复制并重复上次变换效果\r\n        这个有点老调重弹了，但是我敢肯定还有小可爱不知道的！\r\nCtrl+T 自由变换，Ctrl+Shift+T 重复上次的变换，而 Ctrl+Shift+Alt+T 是复制本体并重复上次变换的效果。\r\n\r\n   2、曲线复位\r\n      对曲线调整一顿后，发现效果根本不是自己想要的，只能一步步撤销或取消关闭？然后重新打开调整....\r\n这时候就可以发动我们的隐藏技能啦！按住 Alt 键，“取消”变成“复位”。\r\n\r\n   3、快速复制图层\r\n复制图层大家肯定知道的两个方法，直接将图层拖动到图层面板下“文件角标”复制，或者快捷键ctrl+J进行复制。\r\n其实还有一个方法，就是按住Alt键，鼠标左键进行拖动，就能快速复制到图层啦！\r\n\r\n  4、显示单个图层\r\n     我们修图会有很多图层，而这时候只想显示指定的图层，一个个图层去把小眼睛关闭，天哪！这不是浪费生命吗？！！！\r\n噔噔噔~~~我有小妙招，按住Alt+指定图层前的小眼睛，其他的图层就隐藏啦，把其他图层重新显示再次Alt+单击眼睛就可以。\r\n\r\n  5、快速调整画笔\r\n      修图是用到画笔，调整笔刷的时候，你还在菜单栏慢慢地调吗？看这，你就向发现新大陆~~\r\n按住Alt+鼠标右键，画布上会出现一个红色的圆点，就是你笔刷现在的数值，拖动鼠标进行左右平移可以调整笔刷的大小，上下拖动可以调整硬度。\r\n按住Alt+Shift+鼠标右键，出现了一个色彩选取框。是的，没错！按住右键不放，把鼠标移过去就能换颜色啦！\r\n\r\n\r\n  6、吸取文件以外的颜色\r\n      在PS里我们用吸管可以吸，我们可以任意吸取窗口内的任何颜色，但是我们貌似没办法把它移到窗口外去吸取颜色。\r\n这个就厉害了，只要按住Alt，鼠标就可以直接移到窗口外去吸取颜色了。\r\n\r\n  7、快速新建图层\r\n大家都知道新建画布的快捷键是ctrl+N，快速新建图层也很简单，只需要多加2个键就可以快速新建图层啦~ （ctrl+shift+alt+N，快速新建图层）\r\n\r\n  8、图层下新建图层\r\n      快速新建图层你会了，如果想在当前图层的下新建图层，这时候该怎么做呢？\r\n按住ctrl+鼠标单击新建图层按钮，就可以图层下新建啦。\r\n\r\n  9、临时取消链接图层\r\n      链接图层是为了方便移动位置，但有时需要单独去修改链接图层中的某一图层时，又很麻烦！有没有简单一点的方法呀？\r\n按住shift+鼠标单击图层后方链接按钮，临时取消图层链接，这时，你就可以尽情移动、摇摆、摇摆啦…\r\n\r\n 10、快速筛选\r\n     有一种情况就是我们设计狮都会遇到的，甲方要求把详情页设计中的所有文字都统一调大一点，再大一点（虽然你很想骂人，但还是乖乖的打开PS修改）。然后一个个寻找文本图层修改，繁琐不说，简直是在浪费生命的美好时光呀！\r\n这时候我们的快速筛选就能用上啦，它不仅可以筛选文本，矢量图层，智能对象，还可以按名称、颜色、效果、模式进行筛选。\r\n\r\n好啦，今天就分享到这里了，以上有没有是你不知道的技巧呢？~~' },
+     date: '2020-06-24T10:16:21.416Z' },
+  costTime: 256,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-24T18:16:24.003] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.086] [INFO] response - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { user_name: '大鬼爱小米',
+     status: 1,
+     text: '恭喜您，刚刚购买教程成功852,祝你学习愉快',
+     record_date: '2020-06-24 18:16' },
+  costTime: 77,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-24T18:16:24.387] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.502] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.522] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.524] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-24T18:16:24.538] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.942] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.963] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.977] [INFO] response - { method: 'POST',
+  url: '/api/uploadmaterials/uploadmaterialinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:24.978] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:25.011] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 52,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:25.357] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:16:25.711] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:40.505] [INFO] response - { method: 'POST',
+  url: '/api/buys/delectbuy',
+  body: { id: 31 },
+  costTime: 85,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-24T18:17:40.707] [INFO] response - { method: 'POST',
+  url: '/api/records/postrecord',
+  body:
+   { user_name: '大鬼爱小米',
+     status: 1,
+     text: '已成功删除教程，请你放心',
+     record_date: '2020-06-24 18:16' },
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-24T18:17:41.592] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:41.797] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.217] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.295] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-24T18:17:50.471] [INFO] response - { method: 'POST',
+  url: '/api/reminds/remindinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.570] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.587] [INFO] response - { method: 'POST',
+  url: '/api/records/recordinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.836] [INFO] response - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.904] [INFO] response - { method: 'POST',
+  url: '/api/stars/starinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.923] [INFO] response - { method: 'POST',
+  url: '/api/uploadmaterials/uploadmaterialinfo',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.936] [INFO] response - { method: 'POST',
+  url: '/api/courses/findcourse',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-24T18:17:50.945] [INFO] response - { method: 'POST',
+  url: '/api/materials/findmaterial',
+  body: { user_name: '大鬼爱小米' },
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }

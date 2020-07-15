@@ -1,0 +1,1389 @@
+[2020-04-15T14:14:09.482] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E9%B8%AD%E8%82%89',
+  body: { food_name: '鸭肉', food_price: '30', food_number: '202' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:14:18.843] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '43', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:15:25.818] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '30', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:18:39.578] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '45', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:18:53.098] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '30', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:19:25.633] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '30', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:22:17.881] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '30', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:23:12.071] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '50', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:24:10.687] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '100', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:24:44.335] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E7%89%9B%E8%82%89',
+  body: { food_name: '牛肉', food_price: '100', food_number: '30斤' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:29:00.826] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '50', food_number: '20' },
+  costTime: undefined,
+  err:
+   { AssertionError [ERR_ASSERTION]: Missing where attribute in the options parameter
+       at Function._optionsMustContainWhere (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3427:5)
+       at Function.update (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:3053:10)
+       at Function.updateallfood (C:\Users\ASUS\Desktop\gamermis_server\service\allfood_dao.js:21:30)
+       at doedit (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:40:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+     generatedMessage: false,
+     name: 'AssertionError [ERR_ASSERTION]',
+     code: 'ERR_ASSERTION',
+     actual: undefined,
+     expected: true,
+     operator: '==' } }
+[2020-04-15T14:31:17.989] [ERROR] error - { method: 'POST',
+  url: '/allfoods/doedit/%E6%8E%92%E9%AA%A8',
+  body: { food_name: '排骨', food_price: '50', food_number: '20' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'allfoodlist' in 'where clause'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at handler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Prepare.Commands.Prepare [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:595:11)
+       at Prepare.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'allfoodlist' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Prepare.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'allfoodlist\' in \'where clause\'',
+        sql:
+         'UPDATE `allfood` SET `food_name`=?,`food_number`=?,`food_price`=? WHERE `allfoodlist` = ?',
+        parameters: [Array] },
+     original:
+      { Error: Unknown column 'allfoodlist' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Prepare.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'allfoodlist\' in \'where clause\'',
+        sql:
+         'UPDATE `allfood` SET `food_name`=?,`food_number`=?,`food_price`=? WHERE `allfoodlist` = ?',
+        parameters: [Array] },
+     sql:
+      'UPDATE `allfood` SET `food_name`=?,`food_number`=?,`food_price`=? WHERE `allfoodlist` = ?',
+     parameters: [ '排骨', '20', '50', '排骨' ] } }
+[2020-04-15T14:43:52.395] [ERROR] error - { method: 'POST',
+  url: '/allfoods/sent',
+  body: { food_name: '五花肉', food_price: '45元', food_number: '300斤' },
+  costTime: undefined,
+  err:
+   TypeError: allfoodDao.createallfood is not a function
+       at sent (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:37:41)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T16:42:13.447] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T17:19:16.447] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:05:52.643] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:08:32.301] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:08:33.757] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:08:37.294] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:19:16.064] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:20:15.589] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <!-- <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:20:18.654] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <!-- <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:21:00.949] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <!-- <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:21:10.850] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <!-- <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:21:13.598] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|         </div>
+       66|         <!-- <div class="pull-left">
+    >> 67|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|         </div>
+       69| 
+       70|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T18:33:17.801] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|           </ul>
+       66|           <div class="pull-left">
+    >> 67|             当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       68|           </div>
+       69| 
+       70|           <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T21:40:07.386] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:16:27) }
+[2020-04-15T21:40:12.422] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:16:27) }
+[2020-04-15T21:43:55.262] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:16:27) }
+[2020-04-15T21:54:46.735] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:16:27) }
+[2020-04-15T21:56:41.148] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:27)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T21:58:14.128] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:27)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T21:58:50.263] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:27)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T21:59:03.671] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:27)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T21:59:05.897] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:27)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T22:01:00.564] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:27)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T22:02:22.834] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'request' of undefined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:27)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-15T22:10:13.034] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       // totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       // currentPage:<%=page%>;
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:10:16.214] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       // totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       // currentPage:<%=page%>;
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:10:42.704] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       currentPage:<%=page%>;
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:10:46.781] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       currentPage:<%=page%>;
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:10:59.222] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       currentPage:<%=page%>;
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:12:10.537] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:67
+       65|       totalPages:totalPages,
+       66|       visiblePages:8,
+    >> 67|       currentPage:<%=page%>;
+       68|       onPageChange: 
+       69|       function (num, type) {
+       70|           console.log('当前第' + num + '页',type)
+   
+   page is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:20:51.649] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:("<%=totalPages%>"),
+       66|       visiblePages:8,
+       67|       currentPage:("<%=page%>"),
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:20:53.986] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:("<%=totalPages%>"),
+       66|       visiblePages:8,
+       67|       currentPage:("<%=page%>"),
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:28:29.307] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       currentPage:("#page"),
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:30:00.336] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       currentPage:("#page"),
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:30:25.595] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:65
+       63| <script >
+       64|       $('#page').jqPaginator({
+    >> 65|       totalPages:<%=totalPages%>,
+       66|       visiblePages:8,
+       67|       currentPage:("#page"),
+       68|       onPageChange: 
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:47:05.136] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: allfoodDao.getAllfood is not a function
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:10:37)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }

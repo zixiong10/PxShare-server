@@ -1,0 +1,459 @@
+[2020-05-16T13:34:12.745] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2059' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<h4 class="M4"><span></span>PxShare</h4>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li><h4 class="M10"><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t Admin</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf">Logout</span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">免费素材</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">付费素材</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">上传素材库</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">免费教程</a></div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/foods/hei\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-16T13:34:32.765] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2059' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<h4 class="M4"><span></span>PxShare</h4>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li><h4 class="M10"><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t Admin</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf">Logout</span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">免费素材</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">付费素材</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">上传素材库</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">免费教程</a></div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/foods/hei\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-16T13:51:24.538] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 587,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2059' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<h4 class="M4"><span></span>PxShare</h4>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li><h4 class="M10"><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t Admin</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf">Logout</span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">免费素材</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">付费素材</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">上传素材库</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">免费教程</a></div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/foods/hei\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-16T13:53:49.237] [INFO] response - { method: 'GET',
+  url: '/logout',
+  body: {},
+  costTime: 477,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '941' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n<div class="container">\r\n\t<section id="content">\r\n\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t     <h1>Px Share</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="text" placeholder="工号/帐号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- <div class="">\r\n\t\t\t\t\t <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div>  -->\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t</form>\r\n\t\t\t\r\n\t\t</section>\r\n\t</div>\r\n</body>\r\n</html>' } }
+[2020-05-16T13:54:01.103] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1003', password: '10' },
+  costTime: 3517,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-05-16T13:54:01.104] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1003', password: '10' },
+  costTime: 1086,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-05-16T13:54:01.156] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2059' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<h4 class="M4"><span></span>PxShare</h4>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li><h4 class="M10"><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t Admin</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf">Logout</span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">免费素材</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">付费素材</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">上传素材库</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">免费教程</a></div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/foods/hei\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-16T16:24:19.608] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 5727,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:24:20.028] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:24:20.322] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 106,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:24:21.041] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 645,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:24:21.395] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 53,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:24:34.899] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 75,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:26:17.757] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:27:01.350] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1003', password: '10' },
+  costTime: 176,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:54:16.679] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 153,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T16:57:27.697] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 79,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T17:26:09.461] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 177,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '941' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n<div class="container">\r\n\t<section id="content">\r\n\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t     <h1>Px Share</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="text" placeholder="工号/帐号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- <div class="">\r\n\t\t\t\t\t <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div>  -->\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t</form>\r\n\t\t\t\r\n\t\t</section>\r\n\t</div>\r\n</body>\r\n</html>' } }
+[2020-05-16T17:26:10.363] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T17:26:15.239] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1003', password: '10' },
+  costTime: 1248,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-05-16T17:26:15.381] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 72,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2059' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<h4 class="M4"><span></span>PxShare</h4>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li><h4 class="M10"><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t Admin</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf">Logout</span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">免费素材</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">付费素材</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">上传素材库</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">免费教程</a></div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/foods/hei\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-16T17:26:20.147] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 267,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5928' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=2">尾页</a></li>\r\n        <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1001</td>\r\n                      <td>childb</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1002</td>\r\n                      <td>childb</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1003</td>\r\n                      <td>cookie</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1004</td>\r\n                      <td>gigi</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>5</td>  \r\n                    <td>1006</td>\r\n                      <td>zixiong</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1006" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1006" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>6</td>  \r\n                    <td>2020</td>\r\n                      <td>gigi</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/2020" class="btn btn-danger">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/2页 共8条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-05-16T17:26:21.635] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T17:26:22.204] [INFO] response - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T17:26:22.702] [INFO] response - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-16T17:26:44.237] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2059' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<h4 class="M4"><span></span>PxShare</h4>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li><h4 class="M10"><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t Admin</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf">Logout</span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">免费素材</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">付费素材</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">上传素材库</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">免费教程</a></div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/foods/hei\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-16T17:26:50.803] [INFO] response - { method: 'GET',
+  url: '/logout',
+  body: {},
+  costTime: 52,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '941' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n<div class="container">\r\n\t<section id="content">\r\n\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t     <h1>Px Share</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="text" placeholder="工号/帐号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<!-- <div class="">\r\n\t\t\t\t\t <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div>  -->\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t</form>\r\n\t\t\t\r\n\t\t</section>\r\n\t</div>\r\n</body>\r\n</html>' } }

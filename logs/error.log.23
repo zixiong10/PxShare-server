@@ -1,0 +1,1350 @@
+[2019-11-23T21:06:54.630] [ERROR] error - { method: 'GET',
+  url: '/api/users/postlogin',
+  body: {},
+  costTime: undefined,
+  err: Error: WHERE parameter "user_id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+    at Utils.getComplexKeys.forEach.prop (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+    at QueryInterface.select (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+    at Promise.try.then.then.then (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+    at tryCatcher (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) }
+[2019-11-23T21:20:12.964] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin?user_id=1001&password=111111',
+  body: {},
+  costTime: undefined,
+  err: Error: WHERE parameter "user_id" has invalid "undefined" value
+    at MySQLQueryGenerator.whereItemQuery (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+    at Utils.getComplexKeys.forEach.prop (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+    at Array.forEach (<anonymous>)
+    at MySQLQueryGenerator.whereItemsQuery (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+    at MySQLQueryGenerator.getWhereConditions (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+    at MySQLQueryGenerator.selectQuery (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+    at QueryInterface.select (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+    at Promise.try.then.then.then (D:\projects\fullstack\gamermis\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+    at tryCatcher (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+    at Promise._settlePromise (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+    at Promise._settlePromise0 (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+    at Promise._settlePromises (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+    at _drainQueueStep (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+    at _drainQueue (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+    at Async._drainQueues (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+    at Immediate.Async.drainQueues (D:\projects\fullstack\gamermis\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+    at runCallback (timers.js:810:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5) }
+[2019-11-23T23:15:16.232] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: {},
+  costTime: undefined,
+  err: TypeError: Cannot convert object to primitive value
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:12:28)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at p.then.cont (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) }
+[2019-11-23T23:49:26.184] [ERROR] error - { method: 'GET',
+  url: '/',
+  body: undefined,
+  costTime: undefined,
+  err: TypeError: Cannot read property 'substr' of undefined
+    at Object.origin (D:\projects\fullstack\gamermis\gamermis_server\app.js:66:42)
+    at cors (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa2-cors\dist\index.js:31:24)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at p.then.cont (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+    at <anonymous> }
+[2019-11-24T00:08:24.127] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: {},
+  costTime: undefined,
+  err: TypeError: Cannot convert object to primitive value
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:12:28)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at cors (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at p.then.cont (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7) }
+[2019-11-24T14:40:49.474] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: undefined,
+  err: ReferenceError: token is not defined
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:21:21)
+    at <anonymous> }
+[2019-11-24T16:14:52.813] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: undefined,
+  err: ReferenceError: jwt is not defined
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:31:27)
+    at <anonymous> }
+[2019-11-24T16:29:52.051] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: 'wwww', password: 'wwww' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:29:55.978] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: 'wwww', password: 'wwww' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:30:10.576] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: 'dasddsd', password: 'wwwwsdsd' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:30:58.758] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: 'ww', password: 'www' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:31:31.241] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '15555555', password: 'www11' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:32:58.159] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '111', password: 'www11' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:34:28.543] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '11111111', password: '111111' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:34:51.541] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '10011', password: '111111111' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:35:54.268] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1222', password: '123456' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-24T16:36:00.500] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1222', password: '123456' },
+  costTime: undefined,
+  err: TypeError: Cannot read property 'user_name' of null
+    at postlogin (D:\projects\fullstack\gamermis\gamermis_server\controllers\user.js:16:34)
+    at <anonymous> }
+[2019-11-28T11:01:22.780] [ERROR] error - { method: 'GET',
+  url: '/api/users/userinfo?token=Bearer+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTAwMSIsInVzZXJfbmFtZSI6IuW8oOS4iSIsImlhdCI6MTU3NDkwODM3NCwiZXhwIjoxNTc0OTExOTc0fQ.Fn9aZFi63Cn7Kdc3zWZfBO4X5Y_S1fU_KfJrp0XB2Fo',
+  body: {},
+  costTime: undefined,
+  err: ReferenceError: passport is not defined
+    at router.all (D:\projects\fullstack\gamermis\gamermis_server\routes\api\users.js:15:5)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at cors (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+    at dispatch (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-compose\index.js:42:32)
+    at p.then.cont (D:\projects\fullstack\gamermis\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16)
+    at <anonymous> }
+[2020-03-25T10:36:35.865] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-03-25T10:38:20.264] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-03-25T10:38:21.592] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-03-25T10:38:33.959] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-03-25T10:43:04.228] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-03-25T10:43:44.203] [ERROR] error - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-03-25T23:52:22.468] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'used' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'used' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'used\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `password`, `user_name`, `solt`, `role`, `admin`, `used` FROM `user` AS `user`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'used' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'used\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `password`, `user_name`, `solt`, `role`, `admin`, `used` FROM `user` AS `user`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `password`, `user_name`, `solt`, `role`, `admin`, `used` FROM `user` AS `user`;',
+     parameters: undefined } }
+[2020-03-26T11:08:40.681] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\index.html:17
+       15| 		<ul>
+       16| 		 	<li>欢迎您！</li>
+    >> 17| 			<li><%=data.user_name%></li>
+       18| 			<li><a href="/logout">退出</a></li>
+       19| 		</ul>
+       20| 	</div>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\index.html' } }
+[2020-03-26T11:11:27.445] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\index.html:17
+       15| 		<ul>
+       16| 		 	<li>欢迎您！</li>
+    >> 17| 			<li><%=data.user_name%></li>
+       18| 			<li><a href="/logout">退出</a></li>
+       19| 		</ul>
+       20| 	</div>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\index.html' } }
+[2020-03-26T11:11:33.752] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\index.html:17
+       15| 		<ul>
+       16| 		 	<li>欢迎您！</li>
+    >> 17| 			<li><%=data.user_name%></li>
+       18| 			<li><a href="/logout">退出</a></li>
+       19| 		</ul>
+       20| 	</div>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\index.html' } }
+[2020-03-26T23:01:57.255] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\index.html:22
+       20| 	</div>
+       21| </div>
+    >> 22| <%if(userInfo.admin===管理员){%>
+       23| <div id="content">
+       24| 	<div class="left_menu">
+       25| 		<ul id="nav_dot">
+   
+   管理员 is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:27)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\index.html' } }
+[2020-03-26T23:02:14.377] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\index.html:22
+       20| 	</div>
+       21| </div>
+    >> 22| <%if(userInfo.admin==管理员){%>
+       23| <div id="content">
+       24| 	<div class="left_menu">
+       25| 		<ul id="nav_dot">
+   
+   管理员 is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:26)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\index.html' } }
+[2020-03-26T23:07:33.577] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\index.html:22
+       20| 	</div>
+       21| </div>
+    >> 22| <%if(userInfo.admin===管理员){%>
+       23| <div id="content">
+       24| 	<div class="left_menu">
+       25| 		<ul id="nav_dot">
+   
+   管理员 is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:14:27)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\index.html' } }
+[2020-03-26T23:20:21.903] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\user\userlist.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-26T23:25:42.133] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   SyntaxError: Unexpected token { in C:\Users\ASUS\Desktop\gamermis_server\views\user\userlist.html while compiling ejs
+       at new Function (<anonymous>)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-27T00:06:18.930] [ERROR] error - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Could not find matching close tag for "<%".
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:519:19
+       at Array.forEach (<anonymous>)
+       at Template.generateSource (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:505:15)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:427:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-27T00:20:14.567] [ERROR] error - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\user\userlist.html:63
+       61|                   <td><%=data[i].user_id%></td>
+       62|                     <td><%=data[i].user_name%></td>
+    >> 63|                     <td><%if(data[i].role==1||data[i].role==普通用户){%>
+       64|                      普通用户
+       65|                       <%}
+       66|                       else if(data[i].role==2){%>
+   
+   普通用户 is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:23:41)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\user\\userlist.html' } }
+[2020-03-27T13:10:53.547] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user_id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user_id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+     parameters: undefined } }
+[2020-03-27T13:10:54.280] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user_id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user_id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+     parameters: undefined } }
+[2020-03-27T13:12:55.065] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user_id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'user_id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `status` FROM `food` AS `food`;',
+     parameters: undefined } }
+[2020-03-27T13:33:08.153] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'food.user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     sql:
+      'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+     parameters: undefined } }
+[2020-03-27T13:36:01.467] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'food.user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     sql:
+      'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+     parameters: undefined } }
+[2020-03-27T13:37:28.309] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'food.user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     sql:
+      'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+     parameters: undefined } }
+[2020-03-27T13:37:32.180] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'food.user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     sql:
+      'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+     parameters: undefined } }
+[2020-03-27T13:42:53.483] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'food.user_id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'food.user_id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.user_id\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     sql:
+      'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+     parameters: undefined } }
+[2020-03-27T13:57:22.842] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'food.foodlist' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'food.foodlist' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.foodlist\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'food.foodlist' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'food.foodlist\' in \'field list\'',
+        sql:
+         'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+        parameters: undefined },
+     sql:
+      'SELECT `food`.`id`, `food`.`user_id`, `food`.`foodlist`, `food`.`number`, `food`.`status`, `user`.`id` AS `user.id`, `user`.`user_id` AS `user.user_id`, `user`.`password` AS `user.password`, `user`.`user_name` AS `user.user_name`, `user`.`solt` AS `user.solt`, `user`.`role` AS `user.role` FROM `food` AS `food` LEFT OUTER JOIN `user` AS `user` ON `food`.`user_id` = `user`.`user_id`;',
+     parameters: undefined } }
+[2020-03-28T10:17:14.065] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: Could not find matching close tag for "<%".
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:519:19
+       at Array.forEach (<anonymous>)
+       at Template.generateSource (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:505:15)
+       at Template.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:427:12)
+       at Object.compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:288:16)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:644:58
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3) }
+[2020-03-28T10:28:28.583] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.updatefoodlist is not a function
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:16:39) }
+[2020-03-28T11:49:42.964] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\edit.html:13
+       11|     </div>
+       12|     <div class="child">
+    >> 13|         <form action="/foods/doedit/<%=info.foodlist%>" method="POST">
+       14|         <table  style="BORDER-LEFT-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px" borderColor=#12b6b6 height=280 cellPadding=3 width=350 align=center bgColor=white >
+       15|             <thead>
+       16|                 <br>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\edit.html' } }
+[2020-03-28T11:49:44.133] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\edit.html:13
+       11|     </div>
+       12|     <div class="child">
+    >> 13|         <form action="/foods/doedit/<%=info.foodlist%>" method="POST">
+       14|         <table  style="BORDER-LEFT-WIDTH: 0px; BORDER-COLLAPSE: collapse; BORDER-RIGHT-WIDTH: 0px" borderColor=#12b6b6 height=280 cellPadding=3 width=350 align=center bgColor=white >
+       15|             <thead>
+       16|                 <br>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\edit.html' } }
+[2020-03-28T13:03:32.672] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:55
+       53|             <tbody>
+       54|               <tr>
+    >> 55|                 <td>订单号:<input type="text" name="food_list" value="<%=info.foodlist%>" required></td>
+       56|               </tr>
+       57|               <tr>
+       58|                   <td>用户名称: <input type="text"  name="food_name" value="<%=info.food_name%>" required></td>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:44:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }

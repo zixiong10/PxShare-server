@@ -1,0 +1,765 @@
+[2020-03-27T16:07:24.178] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:07:25.643] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:08:59.517] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1454' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/foods/foodlist\' target="iframe1">订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-27T16:09:01.184] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:09:01.901] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:09:48.048] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1454' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/foods/foodlist\' target="iframe1">订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-27T16:09:49.477] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:09:50.417] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:10:29.955] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1454' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/foods/foodlist\' target="iframe1">订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-27T16:10:31.428] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:10:32.097] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:10:53.133] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:10:53.963] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:10:55.618] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1454' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/foods/foodlist\' target="iframe1">订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-27T16:10:56.787] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:10:57.609] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:11:09.389] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 66,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:11:09.625] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:11:10.313] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:11:32.186] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:11:32.944] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:11:38.042] [INFO] response - { method: 'GET',
+  url: '/logout',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1035' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>无痕超市</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-27T16:11:44.104] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1003', password: '123456' },
+  costTime: 173,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-27T16:11:44.143] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1454' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/foods/foodlist\' target="iframe1">订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-27T16:11:45.976] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:11:46.780] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:12:00.760] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:12:01.356] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:13:30.047] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:13:31.121] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:13:32.119] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:14:55.395] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1454' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/foods/foodlist\' target="iframe1">订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-27T16:14:57.139] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:14:57.793] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:16:09.931] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:16:10.788] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:16:22.474] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:16:23.465] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:19:01.452] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:19:02.304] [INFO] response - { method: 'GET',
+  url: '/foods/jia',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:21:03.528] [INFO] response - { method: 'GET',
+  url: '/users/edit',
+  body: {},
+  costTime: 92,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '447' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>无权访问！</h1>\n            \n            <h2>401</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:21:03.912] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-27T16:21:33.713] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 115,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1454' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">超市后勤</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>cookie</li>\r\n\t\t\t<li>\r\n\t\t\t\t\t管理员\r\n\t\t\t</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n\t\t\t  \r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/foods/foodlist\' target="iframe1">订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-27T16:21:33.787] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 246,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-27T16:21:35.991] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3053' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">订单号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2"><br>\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <br>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr class="biao">\r\n                <th>序号</th>\r\n                <th>姓名</th>\r\n                <th>订单号</th>\r\n                <th>联系方式</th>\r\n                <th>审核状态</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>child</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td>1</td>\r\n                    <td><a href="/foods/delect/1" class="btn btn-primary">删除</a></td>\r\n                    <td><a href="/foods/edit/1" class="btn btn-primary">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <div>\r\n          <a href="./jia" class="btn btn-primary">增加订单</a>\r\n        </div> \r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }

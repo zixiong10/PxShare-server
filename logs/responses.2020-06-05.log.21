@@ -1,0 +1,851 @@
+[2020-06-05T22:40:50.903] [INFO] response - { method: 'GET',
+  url: '/datas/datalist?page=1',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '7789' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<!-- <div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div> -->\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:92px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/datas/datalist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/datas/datalist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/datas/datalist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/datas/datalist?page=4">尾页</a></li>\r\n        <!-- <li><a href="./pluse"><span style="color: rgb(67, 198, 250); font-weight: bolder;">上传素材</span></a></li> -->\r\n  </ul>\r\n</div>\r\n\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n  <form action="/datas/suo" method="POST">\r\n       <div class="col-md-offset-1 col-md-3 " style="padding:20px 3px;">\r\n           <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n           <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入关键字or原创作者">\r\n           <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n           </div>\r\n       <div class="col-md-2" style="padding:20px 3px;">\r\n           <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n           <button type="submit" class="btn btn-info">查询</button>   \r\n           </div>  \r\n </form>\r\n</div>\r\n  <!-- <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div> -->\r\n \r\n  <div class="row">\r\n    <div class="col-md-9 col-md-push-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">素材id</th>\r\n              <th style="text-align: center">素材img</th>\r\n              <th style="text-align: center">素材种类</th>\r\n              <th style="text-align: center">上传时间</th>\r\n              <th style="text-align: center">原创作者</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">31</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/4sghop9t981591330267906.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:10</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">123</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/31" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/31" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">32</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/2wbssh3o4a1591330293404.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:11</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">124</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/32" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/32" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">33</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/ezg7tk1on1591330314772.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:11</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">125</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/33" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/33" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">35</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/2z3vu8ovo81591330345656.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:12</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">128</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/35" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/35" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n    <!-- 分页记录 -->\r\n<div class="pull-right" >  <!-- 整体右浮动  -->\r\n  当前1/4页 共13条记录\r\n</div>  \r\n  \r\n\r\n</body>\r\n\r\n \r\n</html>' } }
+[2020-06-05T22:40:51.659] [INFO] response - { method: 'GET',
+  url: '/datas/datalist?page=1',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '7789' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<!-- <div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div> -->\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:92px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/datas/datalist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/datas/datalist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/datas/datalist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/datas/datalist?page=4">尾页</a></li>\r\n        <!-- <li><a href="./pluse"><span style="color: rgb(67, 198, 250); font-weight: bolder;">上传素材</span></a></li> -->\r\n  </ul>\r\n</div>\r\n\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n  <form action="/datas/suo" method="POST">\r\n       <div class="col-md-offset-1 col-md-3 " style="padding:20px 3px;">\r\n           <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n           <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入关键字or原创作者">\r\n           <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n           </div>\r\n       <div class="col-md-2" style="padding:20px 3px;">\r\n           <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n           <button type="submit" class="btn btn-info">查询</button>   \r\n           </div>  \r\n </form>\r\n</div>\r\n  <!-- <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div> -->\r\n \r\n  <div class="row">\r\n    <div class="col-md-9 col-md-push-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">素材id</th>\r\n              <th style="text-align: center">素材img</th>\r\n              <th style="text-align: center">素材种类</th>\r\n              <th style="text-align: center">上传时间</th>\r\n              <th style="text-align: center">原创作者</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">31</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/4sghop9t981591330267906.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:10</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">123</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/31" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/31" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">32</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/2wbssh3o4a1591330293404.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:11</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">124</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/32" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/32" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">33</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/ezg7tk1on1591330314772.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:11</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">125</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/33" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/33" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n           \r\n             <tr>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">35</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/2z3vu8ovo81591330345656.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">美食</td>\r\n              \r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-05 12:12</td>\r\n             \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">128</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/edit/35" class="btn btn-info">编辑</a>\r\n                 <a href="/datas/delect/35" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n            \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n    <!-- 分页记录 -->\r\n<div class="pull-right" >  <!-- 整体右浮动  -->\r\n  当前1/4页 共13条记录\r\n</div>  \r\n  \r\n\r\n</body>\r\n\r\n \r\n</html>' } }
+[2020-06-05T22:46:04.571] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:04.666] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:04.683] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:04.760] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:09.023] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:09.144] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:09.328] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:23.598] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:23.705] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:23.731] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:23.829] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:37.057] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:37.154] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:37.250] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:37.338] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:44.051] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:44.150] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:44.265] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:44.401] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:51.570] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:53.372] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:59.216] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:59.474] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:59.536] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:46:59.633] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:46:59.852] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:00.945] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:01.301] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:01.991] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 42,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:02.335] [INFO] response - { method: 'GET',
+  url: '/api/publishs/publishinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:02.569] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:03.294] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:04.302] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:04.545] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:04.624] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:47:05.019] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:05.636] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:05.671] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:05.738] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:47:06.884] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:10.622] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:10.791] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:31.407] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:31.646] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-05T22:47:31.735] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:48:09.228] [INFO] response - { method: 'GET',
+  url: '/datas/plus',
+  body: {},
+  costTime: 192,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5556' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>上传素材</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading" style="text-align: center;font-weight: bold;">\r\n        上传素材\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/datas/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li><span style="margin-left: 13px;">素材ID: </span><input type="text" name="id" /></li>\r\n\r\n                    <li> 作品原创: <input type="text" name="user_name" /></li>\r\n\r\n                    <li>上传时间: <input style="width: 180px;" id="check_time" name="check_time"></li>\r\n                    \r\n                    <li><label for="kind"><span style="font-weight:500;">素材种类:</span></label>\r\n                        <select name="kind">\r\n                            <option value="人像">人像</option>\r\n                            <option value="风景">风景</option>\r\n                            <option value="建筑">建筑</option>\r\n                            <option value="美食">美食</option>\r\n                            <option value="汽车">汽车</option>\r\n                       </select>\r\n                    </li>\r\n\r\n                    <li> 上传素材:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n    <script>\r\n        $(function() {\r\n            var now = new Date(),\r\n                minDate = new Date(now.getFullYear() -20, now.getMonth(), now.getDate()),\r\n                maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n  \r\n                mobiscroll.datetime(\'#check_time\',{\r\n                    theme:\'mobiscroll\',\r\n                    lang:\'zh\',\r\n                    display:\'center\',\r\n                    min:minDate,\r\n                    max:maxDate\r\n                })\r\n        })\r\n  </script> \r\n\r\n\r\n<script>\r\n//消息提醒\r\nfunction  fade(txt) {\r\n       $(\'.message\').text(txt) //内容撑开\r\n       $(\'.message\').animate({\r\n           top: 0\r\n       })\r\n       setTimeout(function () {\r\n           $(\'.message\').animate({\r\n               top: \'-100%\'\r\n           })\r\n       }, 1500)\r\n   }\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-06-05T22:48:34.139] [INFO] response - { method: 'POST',
+  url: '/datas/sent',
+  body:
+   { id: '50',
+     user_name: 'childb',
+     check_time: '2020/06/04 22:48',
+     kind: '人像',
+     userPhoto: '1qsqmn4scg01591368513706.png',
+     userPhotoVal:
+      'data:image/png;base64,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' },
+  costTime: 434,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/datas/check',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '55' },
+     body: 'Redirecting to <a href="/datas/check">/datas/check</a>.' } }
+[2020-06-05T22:48:34.251] [INFO] response - { method: 'GET',
+  url: '/datas/check',
+  body: {},
+  costTime: 61,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '8871' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>check素材</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<!-- <div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div> -->\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:92px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/datas/check">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/datas/check?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/datas/check?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/datas/check?page=4">尾页</a></li>\r\n        <!-- <li><a href="./pluse"><span style="color: rgb(67, 198, 250); font-weight: bolder;">上传素材</span></a></li> -->\r\n  </ul>\r\n</div>\r\n\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n  <form action="/datas/checksuo" method="POST">\r\n       <div class="col-md-offset-1 col-md-3 " style="padding:20px 3px;">\r\n           <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n           <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入关键字or原创作者">\r\n           <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n           </div>\r\n       <div class="col-md-2" style="padding:20px 3px;">\r\n           <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n           <button type="submit" class="btn btn-info">查询</button>   \r\n           </div>  \r\n </form>\r\n</div>\r\n  <!-- <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div> -->\r\n \r\n  <div class="row" style="margin-right: 10px;">\r\n    <div class="col-md-11 col-md-push-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">素材id</th>\r\n              <th style="text-align: center">素材img</th>\r\n              <th style="text-align: center">素材种类</th>\r\n              <th style="text-align: center">原创作者</th>\r\n              <th style="text-align: center">上传时间</th>\r\n              <th style="text-align: center">审核人</th>\r\n              <th style="text-align: center">上传状态</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">风景</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">大米</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">2020-06-04 23:15</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">钢铁直男大米先生</td>\r\n\r\n               <td style="width:120px;height:60px;text-align: center;line-height:60px">\r\n                \r\n                  未审核</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/check_child/30" class="btn btn-info">审核</a>\r\n                 <a href="/datas/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">31</td>\r\n               \r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/4sghop9t981591330267906.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">美食</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">123</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">2020-06-05 12:10</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">钢铁直男大米先生</td>\r\n\r\n               <td style="width:120px;height:60px;text-align: center;line-height:60px">\r\n                \r\n                  已审核\r\n                    </td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/check_child/31" class="btn btn-info">审核</a>\r\n                 <a href="/datas/delect1/31" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">32</td>\r\n               \r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/2wbssh3o4a1591330293404.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">美食</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">124</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">2020-06-05 12:11</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">给力芬</td>\r\n\r\n               <td style="width:120px;height:60px;text-align: center;line-height:60px">\r\n                \r\n                  已审核\r\n                    </td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/check_child/32" class="btn btn-info">审核</a>\r\n                 <a href="/datas/delect1/32" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">33</td>\r\n               \r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px"><img alt="预览" class="allpreview" src="/images/upload/ezg7tk1on1591330314772.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">美食</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">125</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">2020-06-05 12:11</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">给力芬</td>\r\n\r\n               <td style="width:120px;height:60px;text-align: center;line-height:60px">\r\n                \r\n                  已审核\r\n                    </td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/datas/check_child/33" class="btn btn-info">审核</a>\r\n                 <a href="/datas/delect1/33" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n    <!-- 分页记录 -->\r\n<div class="pull-right" >  <!-- 整体右浮动  -->\r\n  当前1/4页 共15条记录\r\n</div>  \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-05T22:48:34.290] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-05T22:48:37.134] [INFO] response - { method: 'GET',
+  url: '/datas/plus',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5556' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>上传素材</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading" style="text-align: center;font-weight: bold;">\r\n        上传素材\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/datas/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li><span style="margin-left: 13px;">素材ID: </span><input type="text" name="id" /></li>\r\n\r\n                    <li> 作品原创: <input type="text" name="user_name" /></li>\r\n\r\n                    <li>上传时间: <input style="width: 180px;" id="check_time" name="check_time"></li>\r\n                    \r\n                    <li><label for="kind"><span style="font-weight:500;">素材种类:</span></label>\r\n                        <select name="kind">\r\n                            <option value="人像">人像</option>\r\n                            <option value="风景">风景</option>\r\n                            <option value="建筑">建筑</option>\r\n                            <option value="美食">美食</option>\r\n                            <option value="汽车">汽车</option>\r\n                       </select>\r\n                    </li>\r\n\r\n                    <li> 上传素材:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n\r\n    <script>\r\n        $(function() {\r\n            var now = new Date(),\r\n                minDate = new Date(now.getFullYear() -20, now.getMonth(), now.getDate()),\r\n                maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n  \r\n                mobiscroll.datetime(\'#check_time\',{\r\n                    theme:\'mobiscroll\',\r\n                    lang:\'zh\',\r\n                    display:\'center\',\r\n                    min:minDate,\r\n                    max:maxDate\r\n                })\r\n        })\r\n  </script> \r\n\r\n\r\n<script>\r\n//消息提醒\r\nfunction  fade(txt) {\r\n       $(\'.message\').text(txt) //内容撑开\r\n       $(\'.message\').animate({\r\n           top: 0\r\n       })\r\n       setTimeout(function () {\r\n           $(\'.message\').animate({\r\n               top: \'-100%\'\r\n           })\r\n       }, 1500)\r\n   }\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-06-05T22:48:50.284] [INFO] response - { method: 'POST',
+  url: '/datas/sent',
+  body:
+   { id: '52',
+     user_name: 'childb',
+     check_time: '2020/06/05 22:48',
+     kind: '人像',
+     userPhoto: '60v0zukkw11591368530121.png',
+     userPhotoVal:
+      'data:image/png;base64,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' },
+  costTime: 164,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/datas/check',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '55' },
+     body: 'Redirecting to <a href="/datas/check">/datas/check</a>.' } }

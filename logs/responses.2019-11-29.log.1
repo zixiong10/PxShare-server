@@ -1,0 +1,27 @@
+[2019-11-29T22:49:35.755] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 146,
+  response: { status: 200,
+     message: 'OK',
+     header: 
+      { vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost::8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2019-11-29T22:49:35.822] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo?token=Bearer+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMTAwMSIsInVzZXJfbmFtZSI6IuW8oOS4iSIsImlhdCI6MTU3NTAzODk3NSwiZXhwIjoxNTc1MDQyNTc1fQ.CApiPCnLeiqFMpAvBfmY-nYHZ-N9uTwx6m1dLDotSoU',
+  body: {},
+  costTime: 2,
+  response: { status: 401,
+     message: 'Unauthorized',
+     header: 
+      { vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost::8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/plain; charset=utf-8',
+        'content-length': '12' },
+     body: 'Unauthorized' } }

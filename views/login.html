@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> 
+</head>
+<body>
+<div class="container">
+	<section id="content">
+		<form action="/checkLogin" method="post">
+				     <h1>Px Share</h1>
+				<div>
+					 <input type="text" placeholder="工号/帐号" required="" id="username" name="user_id"/>
+				</div>
+				<div>
+					 <input type="password" placeholder="密码" required="" id="password" name="password"/>
+				</div>
+				<div>
+					 <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>
+				</div>
+		</form>
+			<%if(error){%>
+				<div style="color: red;"><%=error%></div>
+			<%}%>
+		</section>
+	</div>
+</body>
+</html>

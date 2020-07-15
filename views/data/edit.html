@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">
+    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>
+
+    <!--引入Jq插件-->
+    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+
+    <title>编辑素材</title>
+</head>
+<body>
+    <!-- 编辑素材的页面 -->
+
+<div class="panel panel-default">
+    <div class="panel-heading" style="text-align: center;font-weight: bold;">
+        编辑素材
+    </div>
+
+
+
+    <div class="panel-body">
+        <div class="input-form">
+            <form action="/datas/doedit/<%=info.id%>" class="form" method="post">
+
+                <ul>
+                    <li> 素材ID: <input type="text"  name="id" value="<%=info.id%>" required></li>
+
+                    <li> 素材img: <input type="text" name="picture" value="<%=info.picture%>" required></li>
+                    
+                    <li> 原创作者: <input type="text"  name="user_name" value="<%=info.user_name%>" required></li>
+
+                    <li> 上传时间: <input type="text"  id="check_time" name="check_time" value="<%=info.check_time%>" required></li>
+
+                    <li><label for="kind"><span style="font-weight:500;">素材种类:</span></label>
+                        <select name="kind">
+                            <option value="人像">人像</option>
+                            <option value="风景">风景</option>
+                            <option value="建筑">建筑</option>
+                            <option value="美食">美食</option>
+                            <option value="汽车">汽车</option>
+                       </select>
+                    </li>
+
+                    <li> 上传头像:     
+                        <input type="file" name="userPhoto" id="userPhoto">
+                        <input type="hidden" id="userPhotoVal" name="userPhotoVal">
+                        <%if(info.picture){%>
+                        <img alt="预览头像" class="allpreview" src="/images/upload/<%=info.picture%>">
+                        <%}else{%>
+                        <img alt="预览头像" class="preview">
+                        <%}%>
+                    </li>
+
+                
+
+                        <li>
+                            <br />
+                            <button type="submit" class="btn btn-default submit" style="margin-left:100px;width:80px">提交</button>
+                        </li>
+
+                    </ul>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        $(function() {
+            var now = new Date(),
+                minDate = new Date(now.getFullYear() -20, now.getMonth(), now.getDate()),
+                maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());
+      
+                mobiscroll.datetime('#check_time',{
+                    theme:'mobiscroll',
+                    lang:'zh',
+                    display:'center',
+                    min:minDate,
+                    max:maxDate
+                })
+        })
+      </script> 
+
+    <script>
+     
+        //上传单张图片
+        $('#userPhoto').change(function () {
+
+            if (this.files.length != 0) {
+                var file = this.files[0], //当前文件对象
+                    reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型
+                if (!reader) {
+                    this.value = '';//计算机本地路径清空 例如: C:\fakepath\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容
+                    return;
+                };
+                console.log(file.size, file.type)
+                //  if(file.size >= 1024 * 1024 / 2){
+                //      fade("请上传小于512kb的图片！")
+                //      return
+                //  }
+                if (!/image/g.test(file.type)) {//判断类型是不是图片
+                    fade("请上传图片文件!")
+                    $('#userPhotoVal').val('')
+                    $('form .preview').attr('src', '')
+                    $('form .preview').fadeOut() //淡出效果来隐藏元素
+
+                    $('form .allpreview').attr('src', '')
+                    $('form .allpreview').fadeOut() //淡出效果来隐藏元素
+                    return
+                }
+                reader.onload = function (e) {
+                    this.value = '';
+                    $('form .preview').attr('src', e.target.result)   
+                    $('form .preview').fadeIn()
+                    
+                    $('form .allpreview').attr('src', e.target.result)
+                    $('form .allpreview').fadeIn()
+                    var image = new Image();
+                    //这里只是回调函数赋值给onload属性，并没有调用。异步事件
+                    image.onload = function () {
+                        var canvas = document.createElement('canvas');
+                        var ctx = canvas.getContext("2d");
+                        canvas.width = 100;
+                        canvas.height = 100;
+                        ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。
+                        ctx.drawImage(image, 0, 0, 100, 100);
+                        var blob = canvas.toDataURL("image/png");//canvas转换为base64
+                        $('#userPhotoVal').val(blob)
+                    }
+
+                    image.src = e.target.result
+
+                };
+                reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签
+            };
+        })
+
+
+    </script>

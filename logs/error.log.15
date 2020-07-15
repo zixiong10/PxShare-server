@@ -1,0 +1,1337 @@
+[2020-04-17T20:01:21.445] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:02:02.326] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:02:04.163] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:02:17.349] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:03:03.581] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAllInfo is not a function
+       at chakan (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:78:34) }
+[2020-04-17T20:03:04.042] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:03:05.709] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:03:08.290] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:04:00.942] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAllInfo is not a function
+       at chakan (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:78:34) }
+[2020-04-17T20:04:02.041] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAllInfo is not a function
+       at chakan (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:78:34) }
+[2020-04-17T20:04:04.651] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:04:05.604] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.getAllInfo is not a function
+       at chakan (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:78:34) }
+[2020-04-17T20:04:08.725] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:04:25.323] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:09:45.197] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:10:01.177] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: info is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:28:9) }
+[2020-04-17T20:10:28.459] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:41:36.230] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:42:07.576] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:42:09.061] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:42:11.536] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:42:12.837] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:43:32.116] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:43:32.974] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:43:33.622] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T20:43:34.171] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`foodlist` LIKE \'%undefined%\' OR `food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }

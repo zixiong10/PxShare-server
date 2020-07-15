@@ -1,0 +1,901 @@
+[2020-03-23T14:46:48.277] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 70,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T14:46:48.520] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-23T14:46:55.772] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 163,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T14:46:55.812] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1392' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n      <li>\r\n        <h4 class="M1"><span></span>科研资料管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>资料查询</a>\r\n        </div>\r\n      </li>\r\n\t\t\t<li>\r\n        <h4   class="M10"><span></span>用户管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:46:59.138] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1392' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n      <li>\r\n        <h4 class="M1"><span></span>科研资料管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>资料查询</a>\r\n        </div>\r\n      </li>\r\n\t\t\t<li>\r\n        <h4   class="M10"><span></span>用户管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:47:01.978] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 42,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3408' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>1</td>\r\n                    <td>1001</td>\r\n                    <td>张三</td>\r\n                    <td>老师</td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T14:47:18.870] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T14:47:24.196] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 22,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T14:47:24.218] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1392' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n      <li>\r\n        <h4 class="M1"><span></span>科研资料管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>资料查询</a>\r\n        </div>\r\n      </li>\r\n\t\t\t<li>\r\n        <h4   class="M10"><span></span>用户管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:51:41.074] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1392' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n      <li>\r\n        <h4 class="M1"><span></span>科研资料管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>资料查询</a>\r\n        </div>\r\n      </li>\r\n\t\t\t<li>\r\n        <h4   class="M10"><span></span>用户管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:51:44.181] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 7,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3408' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>1</td>\r\n                    <td>1001</td>\r\n                    <td>张三</td>\r\n                    <td>老师</td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T14:51:47.772] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1392' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n      <li>\r\n        <h4 class="M1"><span></span>科研资料管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>资料查询</a>\r\n        </div>\r\n      </li>\r\n\t\t\t<li>\r\n        <h4   class="M10"><span></span>用户管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:51:50.565] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1392' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n      <li>\r\n        <h4 class="M1"><span></span>科研资料管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>资料查询</a>\r\n        </div>\r\n      </li>\r\n\t\t\t<li>\r\n        <h4   class="M10"><span></span>用户管理</h4>\r\n        <div class="list-item none">\r\n          <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:53:20.344] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:53:25.425] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T14:53:27.257] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3408' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>1</td>\r\n                    <td>1001</td>\r\n                    <td>张三</td>\r\n                    <td>老师</td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T21:50:10.427] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 95,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T21:50:10.700] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-23T21:50:15.218] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 141,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T21:50:15.237] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T21:50:17.260] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 40,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3408' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>1</td>\r\n                    <td>1001</td>\r\n                    <td>张三</td>\r\n                    <td>老师</td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T21:50:21.033] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T21:50:24.196] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3408' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>1</td>\r\n                    <td>1001</td>\r\n                    <td>张三</td>\r\n                    <td>老师</td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T22:10:32.063] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 476,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:10:34.283] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T22:10:39.264] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 61,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T22:10:39.297] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:10:41.051] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 106,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-23T22:10:42.462] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 73,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-23T22:15:21.246] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:15:25.944] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T22:15:30.464] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 44,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T22:15:30.476] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:15:32.850] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 65,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3408' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr>\r\n                    <td>1</td>\r\n                    <td>1001</td>\r\n                    <td>张三</td>\r\n                    <td>老师</td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T22:25:15.934] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:25:18.371] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T22:25:23.124] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 15,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T22:25:23.134] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:25:25.298] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3551' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td></td>\r\n                    <td></td>\r\n                    <td></td>\r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td></td>\r\n                    <td></td>\r\n                    <td></td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T22:36:27.268] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:36:32.622] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T22:36:37.472] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 30,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T22:36:37.486] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:36:39.515] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-23T22:38:20.513] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:38:23.674] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T22:38:29.219] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 47,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-23T22:38:29.229] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:38:31.144] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3551' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/学号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>教师</option>\r\n              <option>学生</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th>删除</th>\r\n                <th>成为管理员</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td></td>\r\n                    <td></td>\r\n                    <td></td>\r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td></td>\r\n                    <td></td>\r\n                    <td></td>\r\n                    <td><a href="#" class="btn btn-default">删除</a></td>\r\n                    <td><a href="#" class="btn btn-default">admin</a></td>\r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-23T22:39:52.713] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:42:55.523] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1371' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>张三</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-23T22:42:57.903] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-23T22:43:02.806] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 30,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }

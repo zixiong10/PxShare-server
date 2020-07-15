@@ -1,0 +1,1521 @@
+[2020-04-23T21:57:50.258] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist?page=3',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4959' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:88px">\r\n  <ul class="pagination" id="paginator-example">\r\n    <li><a href="/foods/foodlist">首页</a></li>\r\n     <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n    <li><a href="/foods/foodlist?page=2">上一页</a></li>\r\n    <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n    <li><a href="/foods/foodlist?page=3">下一页</a></li>\r\n    <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n    <li><a href="/foods/foodlist?page=3">尾页</a></li>\r\n    <li><a href="./zhenjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加订单</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   \r\n      <form action="/foods/foodlist" method="POST">\r\n            <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n                    <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n                    <input type="text" class="form-control" name="chaxun" value="" placeholder="请输入订单号或昵称">\r\n                    <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n                    </div>\r\n            <div class="col-md-2" style="padding:20px 3px;">\r\n                    <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n                    <button type="submit" class="btn btn-info">查询</button>   \r\n                    </div>  \r\n        </form>\r\n  </div>\r\n\r\n\r\n<!--所有订单列表-->\r\n    <div class="dingdan">\r\n        <div class="col-md-10 col-md-offset-1" style="padding: 0;">\r\n        <table class="table table-striped table-hover table-bordered">\r\n           <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n            <thead >\r\n              <tr class="biao" >\r\n                <th >序号</th>\r\n                <th>订单号</th>\r\n                <th style="text-align:center;">昵称</th>\r\n                <th style="text-align:center;">联系方式</th>\r\n                <th style="text-align:center;">申请时间</th>\r\n                <th style="text-align:center;">审核状态</th>\r\n                <th style="text-align:center;">审核人</th>\r\n                <th style="text-align:center;">订单进展</th>\r\n                <th colspan="3" style="text-align:center;">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>1</td>  \r\n                    <td>1001</td>\r\n                    <td>23</td>\r\n                    <td>123</td>\r\n                    <td>2020-04-24 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>jordan</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/23" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/23" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/23" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>2</td>  \r\n                    <td>1001</td>\r\n                    <td>hallo</td>\r\n                    <td>18826744722</td>\r\n                    <td>2020-04-23 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/hallo" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/hallo" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/hallo" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n\r\n\r\n<!-- 分页记录 -->\r\n    <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n            当前3/3页 共14条记录\r\n    </div>\r\n        \r\n</body>\r\n</html>' } }
+[2020-04-23T21:57:54.570] [INFO] response - { method: 'GET',
+  url: '/foods/edit/hallo',
+  body: {},
+  costTime: 139,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '7829' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>审核订单</title>\r\n</head>\r\n<body>\r\n<div class="all">\r\n\r\n  <br><a href="/foods/foodlist" style="margin-left:24px ;" >返回</a>\r\n\r\n<!-- 审核表 -->\r\n\r\n<div class="row">\r\n  <div class="col-md-10 col-md-offset-1">\r\n      <table class="table table-striped table-hover table-bordered " style="box-shadow: 5px 5px 10px gray ;">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n            <thead>\r\n                  <tr class="biao">\r\n                    <th style="text-align:center;">订单号</th>\r\n                    <th style="text-align:center;">审核内容</th>\r\n                    <th style="text-align:center;">反馈内容</th>\r\n                    <th style="text-align:center;">审核中</th>\r\n                    <th style="text-align:center;">审核人</th>\r\n                    <th style="text-align:center;">操作</th>\r\n                  </tr>\r\n            </thead>\r\n            <tbody >\r\n                  \r\n                      <form action="/foods/doedit/hallo" method="POST">\r\n                          <tr style="text-align:center;">\r\n                              <td style="width:1px;">1001</td>   <!-- rows="行数" cols="列数"  cols=60，表示专一行中最多可容纳60个字节，也就是30个汉字 -->\r\n                              <td style="width:100px"><textarea style="border:none; "readonly   name="text" cols="16" rows="2"> 一瓶酱油，两斤五花肉</textarea></td>\r\n                              <td style="width:100px"><textarea style="border:none; "    name="back" cols="16" rows="2" placeholder="如果食品满足请求，则返回申请成功,如不满足则列出售空的食物">     继续买下大萨达是的撒的按时打算打算按时奥德赛打打的按时撒的按时打撒的撒的撒的去</textarea></td>   \r\n                              <td style="width:10px">\r\n                                    <select name="status" value="1">\r\n                                            <option value="1">未审核</option>\r\n                                            <option value="2">审核成功</option>\r\n                                            <option value="3">审核失败</option>\r\n                                    </select>\r\n                              </td>\r\n                            <td style="width:10px ;">\r\n                                   <select name="food_role" value="">\r\n                                            <option value="kobe">  店员A</option>\r\n                                            <option value="jordan">店员B</option>\r\n                                            <option value="child"> 店员C</option>\r\n                                   </select>\r\n                              <td style="width:20px;"><input type="submit" class=" btn-danger"></td>\r\n                              <!-- <td><button type="reset" class="btn btn-warning">重置</button></td> -->\r\n                          </tr>\r\n                      </form>\r\n                    \r\n            </tbody>\r\n  </table>\r\n  </div>\r\n  </div>\r\n\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:88px ; ">\r\n  <ul class="pagination" id="paginator-example">\r\n    \r\n    <li><a href="/foods/edit/hallo">首页</a></li>\r\n    <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n    <li><a href="/foods/edit/hallo?page=1">上一页</a></li>\r\n    <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n    <li><a href="/foods/edit/hallo?page=2">下一页</a></li>\r\n    <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n    <li><a href="/foods/edit/hallo?page=4">尾页</a></li>\r\n    \r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo"> \r\n  <form action="/foods/ha" method="POST">\r\n        <div class="col-xs-2" style="padding:20px 3px;">\r\n           <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n          <input type="text" class="form-control" name="chaxun" value="" placeholder="请输入单价/食品"></div>\r\n        <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n        <div class="col-md-1" style="padding:20px 2px;"><button type="submit" class="btn btn-info">查询</button>\r\n        </div>\r\n  </form>\r\n</div> \r\n\r\n\r\n<!-- 食品列表 -->\r\n<div class="row">\r\n<div class="col-md-10 col-md-offset-1" >\r\n  <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n  <table class="table table-striped table-hover table-bordered">\r\n           <thead>\r\n                  <tr class="biao">\r\n                     <th>序号</th>\r\n                     <th>食品</th>\r\n                     <th>单价</th>\r\n                     <th>数量</th>\r\n                     <th colspan="2">操作</th>\r\n                  </tr>\r\n           </thead>\r\n        <tbody>  <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n              \r\n                <tr>\r\n                    <td>1</td>  \r\n                    <td>鸡肉</td>\r\n                    <td>20</td>\r\n                    <td><span style="color:rgb(250, 8, 8);font-weight: bolder; font-size: 16px;" >30</span></td>\r\n                    <td><a href="/allfoods/edit/鸡肉" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/allfoods/delect/鸡肉" class="btn btn-danger">售罄</a></td>\r\n                    \r\n                <tr>\r\n                    <td>2</td>  \r\n                    <td>五花肉</td>\r\n                    <td>35</td>\r\n                    <td><span style="color:rgb(250, 8, 8);font-weight: bolder; font-size: 16px;" >12</span></td>\r\n                    <td><a href="/allfoods/edit/五花肉" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/allfoods/delect/五花肉" class="btn btn-danger">售罄</a></td>\r\n                    \r\n                <tr>\r\n                    <td>3</td>  \r\n                    <td>牛肉</td>\r\n                    <td>55</td>\r\n                    <td><span style="color:rgb(250, 8, 8);font-weight: bolder; font-size: 16px;" >12</span></td>\r\n                    <td><a href="/allfoods/edit/牛肉" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/allfoods/delect/牛肉" class="btn btn-danger">售罄</a></td>\r\n                    \r\n                <tr>\r\n                    <td>4</td>  \r\n                    <td>大葱</td>\r\n                    <td>1.2</td>\r\n                    <td><span style="color:rgb(250, 8, 8);font-weight: bolder; font-size: 16px;" >5</span></td>\r\n                    <td><a href="/allfoods/edit/大葱" class="btn btn-info">编辑</a></td>\r\n                    <td><a href="/allfoods/delect/大葱" class="btn btn-danger">售罄</a></td>\r\n                    \r\n                </tr>\r\n        </tbody>\r\n </table>\r\n\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<!-- 分页记录 -->\r\n        <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n              当前1/4页 共16条记录\r\n        </div>\r\n\r\n\r\n</div>\r\n</body>\r\n<style>\r\n  \r\n</style>\r\n</html>' } }
+[2020-04-23T21:58:08.302] [INFO] response - { method: 'POST',
+  url: '/foods/doedit/hallo',
+  body:
+   { text: ' 一瓶酱油，两斤五花肉',
+     back: '     继续买下大萨达是的撒的按时打算打算按时奥德赛打打的按时撒的按时打撒的撒的撒的去',
+     status: '3',
+     food_role: 'kobe' },
+  costTime: 106,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/foods/foodlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/foods/foodlist">/foods/foodlist</a>.' } }
+[2020-04-23T21:58:08.621] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 114,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '8099' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:88px">\r\n  <ul class="pagination" id="paginator-example">\r\n    <li><a href="/foods/foodlist">首页</a></li>\r\n     <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n    <li><a href="/foods/foodlist?page=1">上一页</a></li>\r\n    <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n    <li><a href="/foods/foodlist?page=2">下一页</a></li>\r\n    <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n    <li><a href="/foods/foodlist?page=3">尾页</a></li>\r\n    <li><a href="./zhenjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加订单</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   \r\n      <form action="/foods/foodlist" method="POST">\r\n            <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n                    <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n                    <input type="text" class="form-control" name="chaxun" value="" placeholder="请输入订单号或昵称">\r\n                    <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n                    </div>\r\n            <div class="col-md-2" style="padding:20px 3px;">\r\n                    <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n                    <button type="submit" class="btn btn-info">查询</button>   \r\n                    </div>  \r\n        </form>\r\n  </div>\r\n\r\n\r\n<!--所有订单列表-->\r\n    <div class="dingdan">\r\n        <div class="col-md-10 col-md-offset-1" style="padding: 0;">\r\n        <table class="table table-striped table-hover table-bordered">\r\n           <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n            <thead >\r\n              <tr class="biao" >\r\n                <th >序号</th>\r\n                <th>订单号</th>\r\n                <th style="text-align:center;">昵称</th>\r\n                <th style="text-align:center;">联系方式</th>\r\n                <th style="text-align:center;">申请时间</th>\r\n                <th style="text-align:center;">审核状态</th>\r\n                <th style="text-align:center;">审核人</th>\r\n                <th style="text-align:center;">订单进展</th>\r\n                <th colspan="3" style="text-align:center;">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>1</td>  \r\n                    <td>2020</td>\r\n                    <td>wo</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>kobe</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/wo" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/wo" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/wo" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>2</td>  \r\n                    <td>2021</td>\r\n                    <td>yao</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>child</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/yao" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/yao" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/yao" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>3</td>  \r\n                    <td>2022</td>\r\n                    <td>chongqi</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>kobe</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/chongqi" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/chongqi" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/chongqi" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>4</td>  \r\n                    <td>2023</td>\r\n                    <td>zhe</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                          审核失败\r\n                          </td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/zhe" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/zhe" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/zhe" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>5</td>  \r\n                    <td>2024</td>\r\n                    <td>yi</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/yi" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/yi" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/yi" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>6</td>  \r\n                    <td>2025</td>\r\n                    <td>nian</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/nian" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/nian" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/nian" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n\r\n\r\n<!-- 分页记录 -->\r\n    <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n            当前1/3页 共14条记录\r\n    </div>\r\n        \r\n</body>\r\n</html>' } }
+[2020-04-23T21:58:16.910] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 130,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T21:58:17.228] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 220,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:04:19.227] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 61,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:04:54.888] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 48,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:04:54.984] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:05:09.708] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 100,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:05:11.848] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 58,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:05:11.935] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:05:58.593] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 63,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:05:58.685] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:06:16.843] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 68,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:06:16.938] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:06:38.697] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 70,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:06:38.774] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:06:58.823] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 96,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:07:19.014] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 143,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:07:44.694] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:07:47.491] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 80,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:07:47.565] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:03.681] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:06.123] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 76,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:06.349] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 131,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:12.943] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 45,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:15.089] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 75,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:15.222] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 50,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:35.687] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 59,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:08:35.869] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 76,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:07.343] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 100,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:07.423] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:19.672] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 51,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:21.411] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:21.528] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 57,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:29.103] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 81,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:32.162] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:32.238] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:38.446] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 77,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:45.268] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:47.348] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 76,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:47.505] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 45,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:54.350] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 73,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:09:58.021] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 85,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:00.558] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 89,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:00.637] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:13.854] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 79,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:13.931] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:21.907] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 254,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:21.995] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:31.112] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 85,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:31.347] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 122,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:54.859] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 108,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:10:54.977] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 67,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:06.658] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:09.218] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:09.507] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 219,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:35.403] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 125,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:37.968] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 228,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:38.051] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:49.166] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 138,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:52.539] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 1110,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:11:52.998] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 356,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:01.331] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 79,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:03.446] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 79,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:03.520] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:24.886] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 44,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:27.183] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 106,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:27.266] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:44.400] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:46.547] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 121,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:12:46.649] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:12.665] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 49,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:14.633] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 75,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:14.744] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:23.549] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 52,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:25.468] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 107,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:25.552] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:37.235] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:39.319] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 90,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:39.408] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:13:55.825] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:14:18.244] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 77,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:14:20.428] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 108,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:14:20.512] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:14:51.641] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 48,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:14:51.762] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:15:50.562] [INFO] response - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: 86,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '7152' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>取货订单</title>\r\n</head>\r\n<body>\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:100px">\r\n    <ul class="pagination" id="paginator-example">\r\n      <li><a href="/foods/finish">首页</a></li>\r\n       <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n      <li><a href="/foods/finish?page=1">上一页</a></li>\r\n      <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n      <li><a href="/foods/finish?page=1">下一页</a></li>\r\n      <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n      <li><a href="/foods/finish?page=1">尾页</a></li>\r\n    </ul>\r\n  </div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n    <form action="/foods/finish" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n                <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n                <input type="text" class="form-control" name="chaxun" value="" placeholder="请输入订单号或食品昵称">\r\n                <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n                </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n                <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n                <button type="submit" class="btn btn-info">查询</button>   \r\n                </div>  \r\n    </form>\r\n</div>\r\n\r\n\r\n<!--取货订单-->\r\n    <div class="huo">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <table class="table table-striped table-hover table-bordered" >\r\n              <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n            <thead>\r\n                <tr class="biao">\r\n                   <th style="text-align:center;">订单号</th>\r\n                   <th style="text-align:center;">审核状态</th>\r\n                   <th style="text-align:center;">审核人</th>\r\n                   <th style="text-align:center;">取货进展</th>\r\n                   <th colspan="3" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n             <tbody>\r\n                 \r\n                <form action="/foods/doedit/2020" method="POST">\r\n                    <tr style="text-align:center;">\r\n                          \r\n                            <td>2020</td>  \r\n                            <td>\r\n                                \r\n                                    审核成功\r\n                             </td>\r\n                             <td>kobe</td>\r\n                              <td><span style="color:rgb(255, 25, 25);font-weight:bolder; font-size:14px;" >\r\n                                  \r\n                                        已取单</span>\r\n                              </td>\r\n                              <td><a href="/foods/jing/wo"   class="btn btn-info">进展</a></td>\r\n                              <td><a href="/foods/lahei/wo"  class="btn btn-success">拉黑</a></td>\r\n                              <td><a href="/foods/delect/wo" class="btn btn-danger">结束</a></td>\r\n                             \r\n                <form action="/foods/doedit/2021" method="POST">\r\n                    <tr style="text-align:center;">\r\n                          \r\n                            <td>2021</td>  \r\n                            <td>\r\n                                \r\n                                    审核成功\r\n                             </td>\r\n                             <td>child</td>\r\n                              <td><span style="color:rgb(255, 25, 25);font-weight:bolder; font-size:14px;" >\r\n                                  \r\n                                        已取单</span>\r\n                              </td>\r\n                              <td><a href="/foods/jing/yao"   class="btn btn-info">进展</a></td>\r\n                              <td><a href="/foods/lahei/yao"  class="btn btn-success">拉黑</a></td>\r\n                              <td><a href="/foods/delect/yao" class="btn btn-danger">结束</a></td>\r\n                             \r\n                <form action="/foods/doedit/2022" method="POST">\r\n                    <tr style="text-align:center;">\r\n                          \r\n                            <td>2022</td>  \r\n                            <td>\r\n                                \r\n                                    审核成功\r\n                             </td>\r\n                             <td>kobe</td>\r\n                              <td><span style="color:rgb(255, 25, 25);font-weight:bolder; font-size:14px;" >\r\n                                  \r\n                                        已取单</span>\r\n                              </td>\r\n                              <td><a href="/foods/jing/chongqi"   class="btn btn-info">进展</a></td>\r\n                              <td><a href="/foods/lahei/chongqi"  class="btn btn-success">拉黑</a></td>\r\n                              <td><a href="/foods/delect/chongqi" class="btn btn-danger">结束</a></td>\r\n                             \r\n                <form action="/foods/doedit/10" method="POST">\r\n                    <tr style="text-align:center;">\r\n                           \r\n                <form action="/foods/doedit/1001" method="POST">\r\n                    <tr style="text-align:center;">\r\n                          \r\n                            <td>1001</td>  \r\n                            <td>\r\n                                \r\n                                    审核成功\r\n                             </td>\r\n                             <td>kobe</td>\r\n                              <td><span style="color:rgb(255, 25, 25);font-weight:bolder; font-size:14px;" >\r\n                                  </span>\r\n                              </td>\r\n                              <td><a href="/foods/jing/sw"   class="btn btn-info">进展</a></td>\r\n                              <td><a href="/foods/lahei/sw"  class="btn btn-success">拉黑</a></td>\r\n                              <td><a href="/foods/delect/sw" class="btn btn-danger">结束</a></td>\r\n                            \r\n                        </tr>\r\n              </form>\r\n         </tbody>\r\n    </table>\r\n</div>\r\n  \r\n\r\n <!-- 分页记录 -->\r\n <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n    当前1/1页 共4条记录\r\n</div>     \r\n \r\n</body>\r\n</html>' } }
+[2020-04-23T22:15:51.031] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 52,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '8099' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:88px">\r\n  <ul class="pagination" id="paginator-example">\r\n    <li><a href="/foods/foodlist">首页</a></li>\r\n     <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n    <li><a href="/foods/foodlist?page=1">上一页</a></li>\r\n    <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n    <li><a href="/foods/foodlist?page=2">下一页</a></li>\r\n    <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n    <li><a href="/foods/foodlist?page=3">尾页</a></li>\r\n    <li><a href="./zhenjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加订单</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   \r\n      <form action="/foods/foodlist" method="POST">\r\n            <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n                    <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n                    <input type="text" class="form-control" name="chaxun" value="" placeholder="请输入订单号或昵称">\r\n                    <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n                    </div>\r\n            <div class="col-md-2" style="padding:20px 3px;">\r\n                    <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n                    <button type="submit" class="btn btn-info">查询</button>   \r\n                    </div>  \r\n        </form>\r\n  </div>\r\n\r\n\r\n<!--所有订单列表-->\r\n    <div class="dingdan">\r\n        <div class="col-md-10 col-md-offset-1" style="padding: 0;">\r\n        <table class="table table-striped table-hover table-bordered">\r\n           <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n            <thead >\r\n              <tr class="biao" >\r\n                <th >序号</th>\r\n                <th>订单号</th>\r\n                <th style="text-align:center;">昵称</th>\r\n                <th style="text-align:center;">联系方式</th>\r\n                <th style="text-align:center;">申请时间</th>\r\n                <th style="text-align:center;">审核状态</th>\r\n                <th style="text-align:center;">审核人</th>\r\n                <th style="text-align:center;">订单进展</th>\r\n                <th colspan="3" style="text-align:center;">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>1</td>  \r\n                    <td>2020</td>\r\n                    <td>wo</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>kobe</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/wo" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/wo" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/wo" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>2</td>  \r\n                    <td>2021</td>\r\n                    <td>yao</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>child</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/yao" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/yao" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/yao" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>3</td>  \r\n                    <td>2022</td>\r\n                    <td>chongqi</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>kobe</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/chongqi" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/chongqi" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/chongqi" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>4</td>  \r\n                    <td>2023</td>\r\n                    <td>zhe</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                          审核失败\r\n                          </td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/zhe" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/zhe" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/zhe" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>5</td>  \r\n                    <td>2024</td>\r\n                    <td>yi</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/yi" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/yi" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/yi" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>6</td>  \r\n                    <td>2025</td>\r\n                    <td>nian</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/nian" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/nian" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/nian" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n\r\n\r\n<!-- 分页记录 -->\r\n    <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n            当前1/3页 共14条记录\r\n    </div>\r\n        \r\n</body>\r\n</html>' } }
+[2020-04-23T22:15:51.950] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist?page=3',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4994' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:88px">\r\n  <ul class="pagination" id="paginator-example">\r\n    <li><a href="/foods/foodlist">首页</a></li>\r\n     <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n    <li><a href="/foods/foodlist?page=2">上一页</a></li>\r\n    <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n    <li><a href="/foods/foodlist?page=3">下一页</a></li>\r\n    <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n    <li><a href="/foods/foodlist?page=3">尾页</a></li>\r\n    <li><a href="./zhenjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加订单</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   \r\n      <form action="/foods/foodlist" method="POST">\r\n            <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n                    <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n                    <input type="text" class="form-control" name="chaxun" value="" placeholder="请输入订单号或昵称">\r\n                    <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n                    </div>\r\n            <div class="col-md-2" style="padding:20px 3px;">\r\n                    <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n                    <button type="submit" class="btn btn-info">查询</button>   \r\n                    </div>  \r\n        </form>\r\n  </div>\r\n\r\n\r\n<!--所有订单列表-->\r\n    <div class="dingdan">\r\n        <div class="col-md-10 col-md-offset-1" style="padding: 0;">\r\n        <table class="table table-striped table-hover table-bordered">\r\n           <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n            <thead >\r\n              <tr class="biao" >\r\n                <th >序号</th>\r\n                <th>订单号</th>\r\n                <th style="text-align:center;">昵称</th>\r\n                <th style="text-align:center;">联系方式</th>\r\n                <th style="text-align:center;">申请时间</th>\r\n                <th style="text-align:center;">审核状态</th>\r\n                <th style="text-align:center;">审核人</th>\r\n                <th style="text-align:center;">订单进展</th>\r\n                <th colspan="3" style="text-align:center;">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>1</td>  \r\n                    <td>1001</td>\r\n                    <td>23</td>\r\n                    <td>123</td>\r\n                    <td>2020-04-24 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>jordan</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/23" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/23" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/23" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>2</td>  \r\n                    <td>1001</td>\r\n                    <td>hallo</td>\r\n                    <td>18826744722</td>\r\n                    <td>2020-04-23 </td>\r\n                    <td>\r\n                          审核失败\r\n                          </td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/hallo" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/hallo" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/hallo" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n\r\n\r\n<!-- 分页记录 -->\r\n    <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n            当前3/3页 共14条记录\r\n    </div>\r\n        \r\n</body>\r\n</html>' } }
+[2020-04-23T22:16:26.326] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '8099' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>食品订单</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:88px">\r\n  <ul class="pagination" id="paginator-example">\r\n    <li><a href="/foods/foodlist">首页</a></li>\r\n     <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n    <li><a href="/foods/foodlist?page=1">上一页</a></li>\r\n    <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n    <li><a href="/foods/foodlist?page=2">下一页</a></li>\r\n    <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n    <li><a href="/foods/foodlist?page=3">尾页</a></li>\r\n    <li><a href="./zhenjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加订单</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   \r\n      <form action="/foods/foodlist" method="POST">\r\n            <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n                    <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n                    <input type="text" class="form-control" name="chaxun" value="" placeholder="请输入订单号或昵称">\r\n                    <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n                    </div>\r\n            <div class="col-md-2" style="padding:20px 3px;">\r\n                    <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n                    <button type="submit" class="btn btn-info">查询</button>   \r\n                    </div>  \r\n        </form>\r\n  </div>\r\n\r\n\r\n<!--所有订单列表-->\r\n    <div class="dingdan">\r\n        <div class="col-md-10 col-md-offset-1" style="padding: 0;">\r\n        <table class="table table-striped table-hover table-bordered">\r\n           <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n            <thead >\r\n              <tr class="biao" >\r\n                <th >序号</th>\r\n                <th>订单号</th>\r\n                <th style="text-align:center;">昵称</th>\r\n                <th style="text-align:center;">联系方式</th>\r\n                <th style="text-align:center;">申请时间</th>\r\n                <th style="text-align:center;">审核状态</th>\r\n                <th style="text-align:center;">审核人</th>\r\n                <th style="text-align:center;">订单进展</th>\r\n                <th colspan="3" style="text-align:center;">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>1</td>  \r\n                    <td>2020</td>\r\n                    <td>wo</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>kobe</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/wo" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/wo" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/wo" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>2</td>  \r\n                    <td>2021</td>\r\n                    <td>yao</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>child</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/yao" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/yao" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/yao" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>3</td>  \r\n                    <td>2022</td>\r\n                    <td>chongqi</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                        审核成功\r\n                        </td>\r\n                        <td>kobe</td>\r\n                        <td>\r\n                            已取单\r\n                            </td>\r\n                    <td><a href="/foods/edit/chongqi" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/chongqi" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/chongqi" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>4</td>  \r\n                    <td>2023</td>\r\n                    <td>zhe</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                          审核失败\r\n                          </td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/zhe" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/zhe" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/zhe" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>5</td>  \r\n                    <td>2024</td>\r\n                    <td>yi</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/yi" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/yi" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/yi" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                <tr style="text-align:center;">\r\n                    \r\n                    <td>6</td>  \r\n                    <td>2025</td>\r\n                    <td>nian</td>\r\n                    <td>24</td>\r\n                    <td>2020-01-27 </td>\r\n                    <td>\r\n                      未审核</td>\r\n                        <td>kobe</td>\r\n                        <td></td>\r\n                    <td><a href="/foods/edit/nian" class="btn btn-info">审核</a></td>\r\n                    <td><a href="/foods/jing/nian" class="btn btn-success">进展</a></td>\r\n                    <td><a href="/foods/delect/nian" class="btn btn-danger">删除</a></td>\r\n                    \r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n\r\n\r\n<!-- 分页记录 -->\r\n    <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n            当前1/3页 共14条记录\r\n    </div>\r\n        \r\n</body>\r\n</html>' } }
+[2020-04-23T22:16:31.052] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 102,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:16:31.141] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:17:03.088] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 85,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:17:03.247] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 90,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:17:20.449] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 98,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:17:20.689] [INFO] response - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: 91,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:17:26.427] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 117,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-04-23T22:17:26.612] [INFO] response - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }

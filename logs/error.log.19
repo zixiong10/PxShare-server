@@ -1,0 +1,1454 @@
+[2020-04-15T22:48:44.383] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:49:19.950] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:49:20.589] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:49:21.258] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:49:21.697] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:49:22.188] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:49:23.528] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:49:59.566] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:50:23.495] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:51:24.051] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T22:52:36.715] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+     parameters: undefined } }
+[2020-04-15T22:54:44.000] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+     parameters: undefined } }
+[2020-04-15T22:55:19.979] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+     parameters: undefined } }
+[2020-04-15T23:00:03.266] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+     parameters: undefined } }
+[2020-04-15T23:00:56.891] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 8;',
+     parameters: undefined } }
+[2020-04-15T23:04:35.969] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: adminDao is not defined
+       at allfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:28:7) }
+[2020-04-15T23:11:23.665] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:11:26.230] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:12:47.795] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:14:11.193] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:14:26.029] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:14:44.522] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:14:46.709] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:19:01.366] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:19:09.333] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:59
+       57|         </div>
+       58|         <div class="pull-left">
+    >> 59|           当前<%=paging.index%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       60|         </div>
+       61| 
+       62|         <div class="pull-right">
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:35:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:19:20.665] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:21:16.602] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:21:18.500] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-15T23:21:31.124] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:45
+       43|             </thead>
+       44|             <tbody>
+    >> 45|               <% for(var i=0;i<data.length;i++){%>
+       46|                 <tr>
+       47|                     <td><%=i+1%></td>  
+       48|                     <td><%=data[i].food_name%></td>
+   
+   data is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T00:06:04.906] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:81
+       79|   <script>
+       80|                 $('#page').jqPaginator({
+    >> 81|                     totalPages: <%=totalPages%>,
+       82|                     visiblePages: 8,
+       83|                     currentPage:  <%=paging.index%>,
+       84|                     onPageChange: function (num, type) {
+   
+   totalPages is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:51:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T00:11:42.331] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: page is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\allfood.js:28:55)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\allfoods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32) }
+[2020-04-16T00:20:59.273] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist?page=pading.page',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` LIMIT NaN, 6;',
+     parameters: undefined } }
+[2020-04-16T00:22:32.803] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:69
+       67|                 href="/allfoods/allfoodlist?page=<%=paging.index==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a>
+       68|             </li>
+    >> 69|                <li><a href="/allfoods/allfoodlist?page=<%=pading.page%>">2 <span class="sr-only">(current)</span></a></li>
+       70|           <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+       71|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       72|           </ul>
+   
+   pading is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T00:22:33.939] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:69
+       67|                 href="/allfoods/allfoodlist?page=<%=paging.index==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a>
+       68|             </li>
+    >> 69|                <li><a href="/allfoods/allfoodlist?page=<%=pading.page%>">2 <span class="sr-only">(current)</span></a></li>
+       70|           <li><a href="#">3 <span class="sr-only">(current)</span></a></li>
+       71|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       72|           </ul>
+   
+   pading is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T00:25:02.186] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:69
+       67|                 href="/allfoods/allfoodlist?page=<%=paging.index==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a>
+       68|             </li>
+    >> 69|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+page%>">2 <span class="sr-only">(current)</span></a></li>
+       70|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+page%>">3 <span class="sr-only">(current)</span></a></li>
+       71|     
+       72|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+   
+   page is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:35)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T00:25:04.215] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:69
+       67|                 href="/allfoods/allfoodlist?page=<%=paging.index==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a>
+       68|             </li>
+    >> 69|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+page%>">2 <span class="sr-only">(current)</span></a></li>
+       70|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+page%>">3 <span class="sr-only">(current)</span></a></li>
+       71|     
+       72|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+   
+   page is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:48:35)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T00:25:34.911] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:70
+       68|             </li>
+       69|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+paging.page%>">2 <span class="sr-only">(current)</span></a></li>
+    >> 70|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+page%>">3 <span class="sr-only">(current)</span></a></li>
+       71|     
+       72|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       73|           </ul>
+   
+   page is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:51:35)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T00:25:35.750] [ERROR] error - { method: 'GET',
+  url: '/allfoods/allfoodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\allfood\allfoodlist.html:70
+       68|             </li>
+       69|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+paging.page%>">2 <span class="sr-only">(current)</span></a></li>
+    >> 70|                <li><a href="/allfoods/allfoodlist?page=<%=paging.page+page%>">3 <span class="sr-only">(current)</span></a></li>
+       71|     
+       72|             <li><a href="/allfoods/allfoodlist?page=<%=paging.totalPages%>">尾页</a></li>
+       73|           </ul>
+   
+   page is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:51:35)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\allfood\\allfoodlist.html' } }
+[2020-04-16T13:26:59.499] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\foodlist.html:74
+       72| <!-- 分页记录 -->
+       73| <div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->
+    >> 74|   当前<%=paging.page%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+       75| </div>
+       76|         </div>
+       77|     </div>
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:75:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\foodlist.html' } }
+[2020-04-16T13:35:57.257] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\foodlist.html:14
+       12|   <div class="pull-left" style="margin-left:88px ; ">
+       13|     <ul class="pagination" id="paginator-example">
+    >> 14|       <% for(var i=0;i<info.length;i++){%>
+       15|       <li><a href="/foods/edit/<%=info[i].foodlist%>">首页</a></li>
+       16|       <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->
+       17|       <li><a href="/foods/edit/<%=info[i].foodlist%>?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\foodlist.html' } }
+[2020-04-16T13:35:58.276] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\foodlist.html:14
+       12|   <div class="pull-left" style="margin-left:88px ; ">
+       13|     <ul class="pagination" id="paginator-example">
+    >> 14|       <% for(var i=0;i<info.length;i++){%>
+       15|       <li><a href="/foods/edit/<%=info[i].foodlist%>">首页</a></li>
+       16|       <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->
+       17|       <li><a href="/foods/edit/<%=info[i].foodlist%>?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+   
+   info is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:22)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\foodlist.html' } }
+[2020-04-16T13:49:31.110] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: data is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:12:23)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\foods.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-16T13:49:42.104] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: data is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:12:23)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\foods.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-16T13:49:42.512] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: data is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:12:23)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\foods.js:11:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-compose\index.js:42:32)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-16T13:50:23.229] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: i is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:13:61) }
+[2020-04-16T13:50:23.971] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: i is not defined
+       at index (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:13:61) }
+[2020-04-16T14:25:27.900] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { ReferenceError: C:\Users\ASUS\Desktop\gamermis_server\views\food\finish.html:17
+       15|       <li><a href="/foods/foodlist">首页</a></li>
+       16|        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->
+    >> 17|       <li><a href="/foods/foodlist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+       18|       <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+       19|       <li><a href="/foods/foodlist?page=<%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+       20|       <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+   
+   paging is not defined
+       at eval (eval at compile (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:11:23)
+       at returnedFn (C:\Users\ASUS\Desktop\gamermis_server\node_modules\ejs\lib\ejs.js:493:17)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:645:16
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:161:5
+       at Promise._execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\debuggability.js:427:9)
+       at Promise._resolveFromExecutor (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:518:18)
+       at new Promise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:103:10)
+       at promisify (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:154:10)
+       at Function.exports.ejs.render (C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:641:10)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:181:27
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\consolidate\lib\consolidate.js:101:5
+       at FSReqWrap.readFileAfterClose [as oncomplete] (internal/fs/read_file_context.js:53:3)
+     path:
+      'C:\\Users\\ASUS\\Desktop\\gamermis_server\\views\\food\\finish.html' } }

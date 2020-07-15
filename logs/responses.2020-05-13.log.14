@@ -1,0 +1,697 @@
+[2020-05-13T14:42:43.592] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:43:32.692] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:43:51.144] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:44:04.643] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:44:15.120] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:46:50.812] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:47:35.655] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:47:49.557] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:47:54.016] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:48:12.313] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1786' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<!-- <div class="top"></div> -->\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:49:35.387] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:49:55.326] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:50:05.265] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:50:26.973] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:50:35.370] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:50:40.171] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:50:45.805] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:51:27.879] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:51:36.596] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:51:45.468] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:51:52.743] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:51:59.150] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:52:05.162] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:52:10.329] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:52:16.070] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:52:21.145] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:52:29.000] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:52:34.535] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:52:59.057] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:53:14.774] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:53:20.469] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:53:24.941] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:53:33.111] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:53:48.769] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:53:49.599] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:53:57.430] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:54:38.229] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:54:39.296] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:54:52.004] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:54:53.131] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-05-13T14:54:59.345] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1777' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">PxShare</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>欢迎您！</li>\r\n\t\t\t\t<li >cookie</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t 管理员\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout">注销</a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a></div>\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M4"><span></span>食品订单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/allfoods/allfoodlist\' target="iframe1">食品清单</a>\r\n\t\t\t\t <a href=\'/foods/foodlist\' target="iframe1">订单详情</a>\r\n\t\t\t\t <a href=\'/foods/finish\' target="iframe1">取货订单</a></div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>黑名单</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/foods/hei\' target="iframe1">黑名单</a></div>\r\n\t        </li>\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }

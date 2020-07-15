@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />
+
+   
+    <link type="text/css" rel="stylesheet" href="/stylesheets/switcher.css" />
+
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/javascripts/jquery.switcher.js"></script>
+
+    <title>审核教程</title>
+</head>
+<body>
+    <!-- 编辑素材的页面 -->
+
+<div class="panel panel-default">
+    <div class="panel-heading" style="text-align: center;font-weight: bold;">
+        审核教程
+    </div>
+
+    <div class="message">消息提醒</div>
+
+    <div class="panel-body">
+        <div class="input-form">
+            <form action="/courses/doedit_child/<%=info.id%>" class="form" method="post">
+
+                <ul>        
+                    <li >审核人：<input type="text" name="check_people" value="<%=userInfo.user_name%>"></li>
+                    <li >教程简介：<input type="textarea" name="introduce" value="<%=info.introduce%>"></li>
+                    
+                    <li><label for="kindchild"><span style="font-weight:500;">教程细分:</span></label>
+                        <%if(info.kind=='基础教程'){%>
+                            <select name="kindchild">
+                                <option value="新手教程">新手教程</option>
+                                <option value="技巧教程">技巧教程</option>
+                                <option value="工具教程">工具教程</option>
+                                <option value="通道教程">通道教程</option>
+                                <option value="其他教程">其他教程</option>
+                                <option value="理论教程">理论教程</option>
+                           </select><%}
+                            else if(info.kind=='滤镜教程'){%>
+                                <select name="kindchild">
+                                    <option value="滤镜作图">滤镜作图</option>
+                                    <option value="滤镜使用">滤镜使用</option>
+                                    <option value="边框教程">边框教程</option>
+                                    <option value="动画闪字">动画闪字</option>
+                                    <option value="动画教程">动画教程</option>
+                                    <option value="闪图闪字">闪图闪字</option>
+                               </select>
+                                <%}
+                                else if(info.kind=='文字特效'){%>
+                                    <select name="kindchild">
+                                        <option value="立体字">立体字</option>
+                                        <option value="普通字">普通字</option>
+                                        <option value="火焰字">火焰字</option>
+                                        <option value="冰雪字">冰雪字</option>
+                                        <option value="金属字">金属字</option>
+                                        <option value="可爱字">可爱字</option>
+                                   </select>
+                                    <%}
+                                    else if(info.kind=='美化教程'){%>
+                                        <select name="kindchild">
+                                            <option value="磨皮教程">磨皮教程</option>
+                                            <option value="人像精修">人像精修</option>
+                                            <option value="美白教程">美白教程</option>
+                                            <option value="上色教程">上色教程</option>
+                                            <option value="美色教程">美色教程</option>
+                                            <option value="其他教程">其他教程</option>
+                                       </select>
+                                        <%}
+                                        else if(info.kind=='调色教程'){%>
+                                            <select name="kindchild">
+                                                <option value="人物调色">人物调色</option>
+                                                <option value="风景调色">风景调色</option>
+                                                <option value="影楼调色">影楼调色</option>
+                                                <option value="LR教程">LR教程</option>
+                                                <option value="调色效果">调色效果</option>
+                                           </select>
+                                            <%}
+                                            else if(info.kind=='照片处理'){%>
+                                                <select name="kindchild">
+                                                    <option value="效果教程">效果教程</option>
+                                                    <option value="转手绘">转手绘</option>
+                                                    <option value="艺术特效">艺术特效</option>
+                                                    <option value="元素效果">元素效果</option>
+                                                    <option value="怀旧风格">怀旧风格</option>
+                                                    <option value="动漫签">动漫签</option>
+                                               </select>
+                                                <%}
+                                                else if(info.kind=='抠图教程'){%>
+                                                    <select name="kindchild">
+                                                        <option value="通道抠图">通道抠图</option>
+                                                        <option value="滤镜抠图">滤镜抠图</option>
+                                                        <option value="其他抠图">其他抠图</option>
+                                                        <option value="抠透明物">抠透明物</option>
+                                                        <option value="抠头发">抠头发</option>
+                                                        <option value="抠背景">抠背景</option>
+                                                   </select>
+                                                    <%}
+                                                    else if(info.kind=='修复教程'){%>
+                                                        <select name="kindchild">
+                                                            <option value="清除杂物">清除杂物</option>
+                                                            <option value="矫正调色">矫正调色</option>
+                                                            <option value="旧照翻新">旧照翻新</option>
+                                                            <option value="清除水印">清除水印</option>
+                                                            <option value="清除网纹">清除网纹</option>
+                                                            <option value="模糊锐化">模糊锐化</option>
+                                                       </select>
+                                                        <%}
+                                                        else if(info.kind=='合成教程'){%>
+                                                            <select name="kindchild">
+                                                                <option value="照片合成">照片合成</option>
+                                                                <option value="恶搞图片">恶搞图片</option>
+                                                                <option value="换脸换头">换脸换头</option>
+                                                                <option value="明星合成">明星合成</option>
+                                                           </select>
+                                                            <%}%>
+                       
+                    </li>
+                    <li>
+                        审核状态：<input class="form-check-input" type="checkbox" id="status" name="status" value="2">
+                    </li>
+                        <li>
+                            <button type="submit" class="btn btn-default submit" style="margin-left:100px;width:80px">提交</button>
+                        </li>
+
+                    </ul>
+
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+<script>
+    $(function(){
+    $.switcher();
+ });       
+</script>

@@ -1,0 +1,2257 @@
+[2020-06-14T15:10:34.682] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1010', password: '10' },
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T15:10:34.889] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:10:35.391] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:10:36.955] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:10:37.708] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:10:39.783] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男',
+        password: '97ca9b3ce35464af624ddb55b4283d29',
+        solt: '0b22d7d5-6422-4e8f-942c-26ff72b72a88',
+        cash: NaN } },
+  costTime: 93,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:17:20.409] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男',
+        password: '97ca9b3ce35464af624ddb55b4283d29',
+        solt: '0b22d7d5-6422-4e8f-942c-26ff72b72a88',
+        cash: NaN } },
+  costTime: 74,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:20:34.782] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 91,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:21:14.071] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 95,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:22:24.056] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 84,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:24:41.853] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 121,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:24:45.176] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:24:45.426] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:24:47.509] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:24:47.868] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:24:48.958] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:24:49.990] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:24:51.416] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 90,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:26:21.053] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 52,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:27:31.824] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 120,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:29:47.838] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 109,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:30:16.236] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 97,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:37:11.889] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 175,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:37:32.480] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 125,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:42:46.955] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 167,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:43:22.431] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 144,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:43:48.038] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:43:48.232] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 148,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T15:43:48.298] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:43:49.449] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:43:49.872] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:44:20.713] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:44:25.886] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:44:26.129] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:44:27.725] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:44:29.246] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:44:35.232] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 598,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 112,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:46:49.657] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 598,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 119,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization' },
+     body: undefined } }
+[2020-06-14T15:47:11.907] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:11.991] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T15:47:12.139] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:17.120] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:17.627] [INFO] response - { method: 'GET',
+  url: '/api/publishs/publishinfo',
+  body: {},
+  costTime: 256,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:18.307] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:18.925] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 225,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:21.992] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:22.301] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:24.439] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:47:25.742] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:51:53.523] [INFO] response - { method: 'GET',
+  url: '/courses/courselist',
+  body: {},
+  costTime: 112,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '8477' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<!-- <div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div> -->\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:92px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/courses/courselist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/courses/courselist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/courses/courselist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/courses/courselist?page=3">尾页</a></li>\r\n        <!-- <li><a href="./pluse"><span style="color: rgb(67, 198, 250); font-weight: bolder;">上传素材</span></a></li> -->\r\n  </ul>\r\n</div>\r\n\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n  <form action="/courses/suo" method="POST">\r\n       <div class="col-md-offset-1 col-md-3 " style="padding:20px 3px;">\r\n           <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n           <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入关键字or原创作者">\r\n           <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n           </div>\r\n       <div class="col-md-2" style="padding:20px 3px;">\r\n           <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n           <button type="submit" class="btn btn-info">查询</button>   \r\n           </div>  \r\n </form>\r\n</div>\r\n  <!-- <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div> -->\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-push-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <th style="text-align: center">教程分类</th>\r\n              <th style="text-align: center">上传时间</th>\r\n              <th style="text-align: center">原创作者</th>\r\n              <th style="text-align: center">收费金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">3</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/21h9ls0e7p1591971476275.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">照片处理</td>\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-23 03:00</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">香蕉兄弟</td>\r\n               \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;">免费</td>\r\n               \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/courses/edit/3" class="btn btn-info">编辑</a>\r\n                 <a href="/courses/delect1/3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">852</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/oop6pvt4g1592017302664.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">抠图教程</td>\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-13 11:00</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">小鬼bro</td>\r\n               \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;">免费</td>\r\n               \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/courses/edit/852" class="btn btn-info">编辑</a>\r\n                 <a href="/courses/delect1/852" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">89</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/1s4h4x3bece1592017198801.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">抠图教程</td>\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-13 10:57</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">小鬼bro</td>\r\n               \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">11</td>\r\n                \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/courses/edit/89" class="btn btn-info">编辑</a>\r\n                 <a href="/courses/delect1/89" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">抠图教程</td>\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-13 10:53</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">小鬼bro</td>\r\n               \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n                \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/courses/edit/30" class="btn btn-info">编辑</a>\r\n                 <a href="/courses/delect1/30" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n    <!-- 分页记录 -->\r\n<div class="pull-right" >  <!-- 整体右浮动  -->\r\n  当前1/3页 共9条记录\r\n</div>  \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T15:51:54.171] [INFO] response - { method: 'GET',
+  url: '/courses/plus',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6243' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  \r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n     <!--引入base.js用于添加提醒-->\r\n  <script type="text/javascript" src="/javascripts/submit.js"></script>\r\n\r\n    <title>上传教程</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading" style="text-align: center;font-weight: bold;">\r\n        上传教程\r\n    </div>\r\n\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/courses/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li><span style="font-weight: 500;">教程ID</span>: <input type="text" name="id" /></li>\r\n\r\n                    <li><span style="font-weight:500;">作品原创</span>: <input type="text" name="user_name" value="钢铁直男" /></li>\r\n\r\n                    <li><span style="font-weight:500;">上传时间</span>: <input style="width: 180px;" id="check_time" name="check_time"></li>\r\n                    \r\n                    <li><label for="kind"><span style="font-weight:500;">教程分类</span>: </label>\r\n                        <select name="kind">\r\n                            <option value="基础教程">基础教程</option>\r\n                            <option value="滤镜教程">滤镜教程</option>\r\n                            <option value="美化教程">美化教程</option>\r\n                            <option value="文字特效">文字特效</option>\r\n                            <option value="调色教程">调色教程</option>\r\n                            <option value="抠图教程">抠图教程</option>\r\n                            <option value="修复教程">修复教程</option>\r\n                            <option value="合成教程">合成教程</option>\r\n                            <option value="照片处理">照片处理</option>\r\n                       </select>\r\n                    </li>\r\n                    <li><label for="type"><span style="font-weight:500;">教程版权</span>: </label>\r\n                        <select name="type">\r\n                            <option value="1">免费</option>\r\n                            <option value="2">收费</option>\r\n                       </select>\r\n                    </li>\r\n\r\n                    <li><span style="font-weight: 500;">上传教程</span>:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-info submit" style="margin-left:100px;width:80px">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n     \r\n    </div>\r\n\r\n\r\n    <script>\r\n        $(function() {\r\n            var now = new Date(),\r\n                minDate = new Date(now.getFullYear() -20, now.getMonth(), now.getDate()),\r\n                maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n                mobiscroll.datetime(\'#check_time\',{\r\n                    theme:\'mobiscroll\',\r\n                    lang:\'zh\',\r\n                    display:\'center\',\r\n                    min:minDate,\r\n                    max:maxDate\r\n                })\r\n        })\r\n  </script> \r\n\r\n\r\n<script>\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-06-14T15:52:13.534] [INFO] response - { method: 'GET',
+  url: '/courses/plus',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6252' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  \r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <link rel="stylesheet" type="text/css" href="/stylesheets/mobiscroll-3.0.0.min.css">\r\n\r\n    <script type="text/javascript" src="/javascripts/mobiscroll-3.0.0.min.js"></script>\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n     <!--引入base.js用于添加提醒-->\r\n  <script type="text/javascript" src="/javascripts/submit.js"></script>\r\n\r\n    <title>上传教程</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading" style="text-align: center;font-weight: bold;">\r\n        上传教程\r\n    </div>\r\n\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/courses/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li><span style="font-weight: 500;">教程ID</span>: <input type="text" name="id" /></li>\r\n\r\n                    <li><span style="font-weight:500;">作品原创</span>: <input type="text" name="user_name" disabled value="钢铁直男" /></li>\r\n\r\n                    <li><span style="font-weight:500;">上传时间</span>: <input style="width: 180px;" id="check_time" name="check_time"></li>\r\n                    \r\n                    <li><label for="kind"><span style="font-weight:500;">教程分类</span>: </label>\r\n                        <select name="kind">\r\n                            <option value="基础教程">基础教程</option>\r\n                            <option value="滤镜教程">滤镜教程</option>\r\n                            <option value="美化教程">美化教程</option>\r\n                            <option value="文字特效">文字特效</option>\r\n                            <option value="调色教程">调色教程</option>\r\n                            <option value="抠图教程">抠图教程</option>\r\n                            <option value="修复教程">修复教程</option>\r\n                            <option value="合成教程">合成教程</option>\r\n                            <option value="照片处理">照片处理</option>\r\n                       </select>\r\n                    </li>\r\n                    <li><label for="type"><span style="font-weight:500;">教程版权</span>: </label>\r\n                        <select name="type">\r\n                            <option value="1">免费</option>\r\n                            <option value="2">收费</option>\r\n                       </select>\r\n                    </li>\r\n\r\n                    <li><span style="font-weight: 500;">上传教程</span>:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-info submit" style="margin-left:100px;width:80px">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n     \r\n    </div>\r\n\r\n\r\n    <script>\r\n        $(function() {\r\n            var now = new Date(),\r\n                minDate = new Date(now.getFullYear() -20, now.getMonth(), now.getDate()),\r\n                maxDate = new Date(now.getFullYear() + 20, now.getMonth(), now.getDate());\r\n\r\n                mobiscroll.datetime(\'#check_time\',{\r\n                    theme:\'mobiscroll\',\r\n                    lang:\'zh\',\r\n                    display:\'center\',\r\n                    min:minDate,\r\n                    max:maxDate\r\n                })\r\n        })\r\n  </script> \r\n\r\n\r\n<script>\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-06-14T15:55:45.164] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 50,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:55:45.376] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:55:46.978] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:55:47.024] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T15:55:47.346] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:01.903] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:02.125] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:04.361] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:07.055] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:11.509] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 578,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 107,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T15:56:11.662] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:11.855] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:30.160] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:30.208] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T15:56:30.423] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:35.240] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:35.483] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:57.543] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 50,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:56:57.585] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T15:56:57.747] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:57:13.316] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:57:13.575] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:57:16.660] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 45,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:57:16.704] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T15:57:17.012] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:57:28.273] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:57:28.504] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T15:57:36.042] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 79,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2747' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">1</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px">1</td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px"></td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">那就</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">20</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/1" class="btn btn-info">编辑</a> -->\r\n                 <a href="/courses/delect1/1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T15:57:36.108] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T16:00:56.468] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:00:56.547] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T16:00:56.705] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:09.766] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:10.030] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:14.835] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:16.305] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:23.109] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 568,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 857,
+        money: 20,
+        picture: 'y3on1hl1j61591971660554.png',
+        kind: '美化教程',
+        user_name: '大鬼爱小米',
+        type: '2',
+        introduce: '艺术效果的水墨头像',
+        check_time: '2020-05-24T00:22:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' } },
+  costTime: 126,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T16:03:23.269] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:23.456] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:25.294] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:03:25.372] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T16:03:25.538] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:16.126] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 43,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:16.343] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:29.635] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:32.000] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:51.176] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 42,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:51.283] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:52.816] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:53.550] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:53.968] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 49,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:54.710] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:56.669] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:04:59.467] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:05:01.451] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:05:01.702] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:05:03.477] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:05:04.725] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:11.321] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:11.570] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:15.907] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:17.969] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:23.251] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 548,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: 146,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T16:10:23.368] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:23.602] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:24.992] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T16:10:25.043] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T16:10:25.235] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }

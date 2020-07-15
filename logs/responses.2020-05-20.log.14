@@ -1,0 +1,551 @@
+[2020-05-20T17:01:14.724] [INFO] response - { method: 'GET',
+  url: '/uploads/1jev447y8e01589940329586.png',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:14.724] [INFO] response - { method: 'GET',
+  url: '/uploads/',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:16.706] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:17.373] [INFO] response - { method: 'GET',
+  url: '/datas/plus',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4144' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>上传素材</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        上传素材\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/datas/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 素材id: <input type="text" name="id" /></li>\r\n\r\n                    <li> 素材种类: <input type="text" name="kind"></li>\r\n\r\n                    <li> 作品原创: <input type="text" name="author" /></li>\r\n\r\n                    <li> 上传素材:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n//消息提醒\r\nfunction  fade(txt) {\r\n       $(\'.message\').text(txt) //内容撑开\r\n       $(\'.message\').animate({\r\n           top: 0\r\n       })\r\n       setTimeout(function () {\r\n           $(\'.message\').animate({\r\n               top: \'-100%\'\r\n           })\r\n       }, 1500)\r\n   }\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-05-20T17:01:18.134] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2930' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td><img src="/uploads/1jev447y8e01589940329586.png" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>4</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>james</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=4" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=4" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:18.214] [INFO] response - { method: 'GET',
+  url: '/uploads/1jev447y8e01589940329586.png',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:18.216] [INFO] response - { method: 'GET',
+  url: '/uploads/',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:19.457] [INFO] response - { method: 'GET',
+  url: '/datas/plus',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4144' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>上传素材</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        上传素材\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/datas/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 素材id: <input type="text" name="id" /></li>\r\n\r\n                    <li> 素材种类: <input type="text" name="kind"></li>\r\n\r\n                    <li> 作品原创: <input type="text" name="author" /></li>\r\n\r\n                    <li> 上传素材:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n//消息提醒\r\nfunction  fade(txt) {\r\n       $(\'.message\').text(txt) //内容撑开\r\n       $(\'.message\').animate({\r\n           top: 0\r\n       })\r\n       setTimeout(function () {\r\n           $(\'.message\').animate({\r\n               top: \'-100%\'\r\n           })\r\n       }, 1500)\r\n   }\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-05-20T17:01:20.073] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2930' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td><img src="/uploads/1jev447y8e01589940329586.png" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>4</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>james</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=4" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=4" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:20.185] [INFO] response - { method: 'GET',
+  url: '/uploads/1jev447y8e01589940329586.png',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:20.188] [INFO] response - { method: 'GET',
+  url: '/uploads/',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:21.048] [INFO] response - { method: 'GET',
+  url: '/datas/plus',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4144' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>上传素材</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        上传素材\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/datas/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 素材id: <input type="text" name="id" /></li>\r\n\r\n                    <li> 素材种类: <input type="text" name="kind"></li>\r\n\r\n                    <li> 作品原创: <input type="text" name="author" /></li>\r\n\r\n                    <li> 上传素材:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n//消息提醒\r\nfunction  fade(txt) {\r\n       $(\'.message\').text(txt) //内容撑开\r\n       $(\'.message\').animate({\r\n           top: 0\r\n       })\r\n       setTimeout(function () {\r\n           $(\'.message\').animate({\r\n               top: \'-100%\'\r\n           })\r\n       }, 1500)\r\n   }\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-05-20T17:01:21.600] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2930' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td><img src="/uploads/1jev447y8e01589940329586.png" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>4</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>james</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=4" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=4" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:21.642] [INFO] response - { method: 'GET',
+  url: '/uploads/1jev447y8e01589940329586.png',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:21.658] [INFO] response - { method: 'GET',
+  url: '/uploads/',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:22.210] [INFO] response - { method: 'GET',
+  url: '/datas/plus',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4144' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>上传素材</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        上传素材\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/datas/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 素材id: <input type="text" name="id" /></li>\r\n\r\n                    <li> 素材种类: <input type="text" name="kind"></li>\r\n\r\n                    <li> 作品原创: <input type="text" name="author" /></li>\r\n\r\n                    <li> 上传素材:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n//消息提醒\r\nfunction  fade(txt) {\r\n       $(\'.message\').text(txt) //内容撑开\r\n       $(\'.message\').animate({\r\n           top: 0\r\n       })\r\n       setTimeout(function () {\r\n           $(\'.message\').animate({\r\n               top: \'-100%\'\r\n           })\r\n       }, 1500)\r\n   }\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-05-20T17:01:22.901] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2930' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td><img src="/uploads/1jev447y8e01589940329586.png" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>4</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>james</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=4" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=4" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:22.971] [INFO] response - { method: 'GET',
+  url: '/uploads/1jev447y8e01589940329586.png',
+  body: {},
+  costTime: 32,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:22.993] [INFO] response - { method: 'GET',
+  url: '/uploads/',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:26.759] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5136' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1001</td>\r\n                      <td>child</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1002</td>\r\n                      <td>kobe</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共4条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:33.220] [INFO] response - { method: 'GET',
+  url: '/users/userlist?page=1',
+  body: {},
+  costTime: 42,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5136' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1001</td>\r\n                      <td>child</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1002</td>\r\n                      <td>kobe</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共4条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:36.520] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5402' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        编辑用户\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/doedit/1001" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 用户账号: <input type="text"  name="user_id" value="1001" required></li>\r\n\r\n                    <li> 用户密码: <input type="password" name="password" ></li>\r\n\r\n                    <li> 用户姓名: <input type="text"  name="user_name" value="child" required></li>\r\n\r\n                    <li><label for="role">用户角色:</label>\r\n                        <select name="role">\r\n                           <option value="1">普通用户</option>\r\n                           <option value="2">大V博主</option>\r\n                           <option value="3">管理员</option>\r\n                       </select>\r\n                    </li>\r\n\r\n                    <li> 上传头像:\r\n                        <input type="file" name="userPhoto" id="userPhoto">\r\n                        <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                        \r\n                        <img alt="预览头像" class="allpreview" src="/images/upload/1jev447y8e01589940329586.png">\r\n                        \r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n    <script>\r\n        //消息提醒\r\n        function fade(txt) {\r\n            $(\'.message\').text(txt) //内容撑开\r\n            $(\'.message\').animate({\r\n                top: 0\r\n            })\r\n            setTimeout(function () {\r\n                $(\'.message\').animate({\r\n                    top: \'-100%\'\r\n                })\r\n            }, 1500)\r\n        }\r\n\r\n        //上传单张图片\r\n        $(\'#userPhoto\').change(function () {\r\n\r\n            if (this.files.length != 0) {\r\n                var file = this.files[0], //当前文件对象\r\n                    reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n                if (!reader) {\r\n                    this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n                    return;\r\n                };\r\n                console.log(file.size, file.type)\r\n                //  if(file.size >= 1024 * 1024 / 2){\r\n                //      fade("请上传小于512kb的图片！")\r\n                //      return\r\n                //  }\r\n                if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n                    fade("请上传图片文件!")\r\n                    $(\'#userPhotoVal\').val(\'\')\r\n                    $(\'form .preview\').attr(\'src\', \'\')\r\n                    $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n\r\n                    $(\'form .allpreview\').attr(\'src\', \'\')\r\n                    $(\'form .allpreview\').fadeOut() //淡出效果来隐藏元素\r\n                    return\r\n                }\r\n                reader.onload = function (e) {\r\n                    this.value = \'\';\r\n                    $(\'form .preview\').attr(\'src\', e.target.result)   \r\n                    $(\'form .preview\').fadeIn()\r\n                    \r\n                    $(\'form .allpreview\').attr(\'src\', e.target.result)\r\n                    $(\'form .allpreview\').fadeIn()\r\n                    var image = new Image();\r\n                    //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n                    image.onload = function () {\r\n                        var canvas = document.createElement(\'canvas\');\r\n                        var ctx = canvas.getContext("2d");\r\n                        canvas.width = 100;\r\n                        canvas.height = 100;\r\n                        ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n                        ctx.drawImage(image, 0, 0, 100, 100);\r\n                        var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n                        $(\'#userPhotoVal\').val(blob)\r\n                    }\r\n\r\n                    image.src = e.target.result\r\n\r\n                };\r\n                reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n            };\r\n        })\r\n\r\n\r\n    </script>' } }
+[2020-05-20T17:01:39.316] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5136' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./zjia"><span style="color: rgb(67, 198, 250); font-weight: bolder;">增加用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1001</td>\r\n                      <td>child</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1001" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1001" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1002</td>\r\n                      <td>kobe</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共4条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:41.797] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2930' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td><img src="/uploads/1jev447y8e01589940329586.png" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>4</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>james</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=4" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=4" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:41.859] [INFO] response - { method: 'GET',
+  url: '/uploads/1jev447y8e01589940329586.png',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:41.867] [INFO] response - { method: 'GET',
+  url: '/uploads/',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:42.610] [INFO] response - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:43.342] [INFO] response - { method: 'GET',
+  url: '/datas/datalist',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '2930' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>素材包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div>\r\n\r\n  <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div>\r\n \r\n  <div class="row">\r\n    <div class="col-md-10 col-md-offset-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th>素材id</th>\r\n              <th>素材img</th>\r\n              <th>素材种类</th>\r\n              <th>原创作者</th>\r\n              <th>操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr>\r\n\r\n               <td>1</td>\r\n\r\n               <td><img src="/uploads/1jev447y8e01589940329586.png" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>风景</td>\r\n\r\n               <td>kobe</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=1" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>2</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>jordan</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=2" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=2" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr>\r\n\r\n               <td>4</td>\r\n\r\n               <td><img src="/uploads/" alt="" style="width: 80px;height: 80px;"></td>\r\n\r\n               <td>人文</td>\r\n\r\n               <td>james</td>\r\n              \r\n               <td>\r\n                 <a href="/roles/edit?id=4" class="btn btn-info">修改</a>\r\n                 <a href="/delete?model=data&id=4" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n\r\n\r\n\r\n\r\n        </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 450px;"></div>\r\n    </div>\r\n\r\n     \r\n    \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-05-20T17:01:43.399] [INFO] response - { method: 'GET',
+  url: '/uploads/1jev447y8e01589940329586.png',
+  body: {},
+  costTime: 8,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:01:43.407] [INFO] response - { method: 'GET',
+  url: '/uploads/',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-05-20T17:03:03.293] [INFO] response - { method: 'GET',
+  url: '/datas/plus',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4144' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>上传素材</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading">\r\n        上传素材\r\n    </div>\r\n\r\n    <div class="message">消息提醒</div>\r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/datas/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 素材id: <input type="text" name="id" /></li>\r\n\r\n                    <li> 素材种类: <input type="text" name="kind"></li>\r\n\r\n                    <li> 作品原创: <input type="text" name="author" /></li>\r\n\r\n                    <li> 上传素材:\r\n                         <input type="file"   name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览图片"   class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n//消息提醒\r\nfunction  fade(txt) {\r\n       $(\'.message\').text(txt) //内容撑开\r\n       $(\'.message\').animate({\r\n           top: 0\r\n       })\r\n       setTimeout(function () {\r\n           $(\'.message\').animate({\r\n               top: \'-100%\'\r\n           })\r\n       }, 1500)\r\n   }\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-05-20T17:03:14.398] [INFO] response - { method: 'POST',
+  url: '/datas/sent',
+  body:
+   { id: '4',
+     kind: '人文',
+     author: 'james',
+     userPhoto: 'k24qp88b8o1589965394319.png',
+     userPhotoVal:
+      'data:image/png;base64,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' },
+  costTime: 79,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/datas/datalist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/datas/datalist">/datas/datalist</a>.' } }

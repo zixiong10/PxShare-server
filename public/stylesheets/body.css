@@ -1,0 +1,54 @@
+@-webkit-keyframes animate-cloud {/* Safari and Chrome */
+  from {
+    background-position: 1400px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-moz-keyframes animate-cloud {/* Firefox */
+  from {
+    background-position: 1400px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-ms-keyframes animate-cloud {
+  from {
+    background-position: 1400px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@-o-keyframes animate-cloud {/* Opera */
+  from {
+    background-position: 1400px 100%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+html{
+   height: 100%;
+   width:100%
+}
+body{
+   background:url(../images/20.jpg) 0 bottom repeat-x rgb(40, 80, 109) ;
+  -webkit-animation: animate-cloud 20s linear infinite;
+  -moz-animation: animate-cloud 20s linear infinite;
+  -ms-animation: animate-cloud 20s linear infinite;
+  -o-animation: animate-cloud 20s linear infinite;
+  animation: animate-cloud 20s linear infinite;
+  width: 100%;
+  height: auto;
+}
+
+/* 
+     animationname：定义animation的名称；
+     keyframes-selector：动画持续时间的百分比，
+     可能的值：0-100%、from (和0%相同)、to (和100%相同).
+     您可以用一个动画keyframes-selectors；
+} */

@@ -1,0 +1,1389 @@
+[2020-04-17T20:59:00.762] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\' OR `food`.`foodlist` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\' OR `food`.`foodlist` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\' OR `food`.`foodlist` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T21:00:48.611] [ERROR] error - { method: 'GET',
+  url: '/foods/foodlist',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\' OR `food`.`foodlist` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\' OR `food`.`foodlist` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%undefined%\' OR `food`.`number` LIKE \'%undefined%\' OR `food`.`foodlist` LIKE \'%undefined%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-17T21:03:34.117] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: foodDao.seachfenye is not a function
+       at chakan (C:\Users\ASUS\Desktop\gamermis_server\controllers\food.js:83:37) }
+[2020-04-17T21:03:55.967] [ERROR] error - { method: 'GET',
+  url: '/foods/finish',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Undeclared variable: NaN
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%1%\' OR `food`.`number` LIKE \'%1%\' OR `food`.`foodlist` LIKE \'%1%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     original:
+      { Error: Undeclared variable: NaN
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_SP_UNDECLARED_VAR',
+        errno: 1327,
+        sqlState: '42000',
+        sqlMessage: 'Undeclared variable: NaN',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%1%\' OR `food`.`number` LIKE \'%1%\' OR `food`.`foodlist` LIKE \'%1%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason` FROM `food` AS `food` WHERE (`food`.`food_name` LIKE \'%1%\' OR `food`.`number` LIKE \'%1%\' OR `food`.`foodlist` LIKE \'%1%\') ORDER BY `food`.`id` ASC LIMIT NaN, 10000000000000;',
+     parameters: undefined } }
+[2020-04-19T13:02:15.048] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '62626',
+     food_name: 'dsas',
+     number: '123',
+     date: '2020-4-19',
+     text: 'sdad' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'user_id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '62626', '123', 'dsas', 'sdad' ] } }
+[2020-04-19T13:09:07.950] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '62626',
+     food_name: 'dsas',
+     number: '123',
+     date: '2020-4-19',
+     text: 'sdad' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'user_id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '62626', '123', 'dsas', 'sdad' ] } }
+[2020-04-19T13:11:46.190] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '6666',
+     food_name: 'ma',
+     number: '123456',
+     date: '2020-4-19',
+     text: 'haha' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'user_id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`) VALUES (DEFAULT,?,?,?,?);',
+     parameters: [ '6666', '123456', 'ma', 'haha' ] } }
+[2020-04-19T13:16:21.051] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '6666',
+     food_name: 'ma',
+     number: '123456',
+     date: '2020-4-19',
+     text: 'haha' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'user_id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ '6666', '123456', 'ma', 'haha', '2020-04-19 00:00:00' ] } }
+[2020-04-19T13:19:19.623] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '100',
+     food_name: 'sda',
+     number: '123',
+     date: '2020-4-19',
+     text: 'ascdasd' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'user_id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ '100', '123', 'sda', 'ascdasd', '2020-04-19 00:00:00' ] } }
+[2020-04-19T13:20:34.193] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '20',
+     food_name: 'sa',
+     number: '123',
+     date: '2020-4-19',
+     text: 'dcsc' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'user_id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'user_id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'user_id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ '20', '123', 'sa', 'dcsc', '2020-04-19 00:00:00' ] } }
+[2020-04-19T13:31:15.717] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '20',
+     food_name: 'sa',
+     number: '123',
+     date: '2020-4-19',
+     text: 'dcsc' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+     parameters: undefined } }
+[2020-04-19T13:31:52.337] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '20',
+     food_name: 'sa',
+     number: '123',
+     date: '2020-4-19',
+     text: 'dcsc' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+     parameters: undefined } }
+[2020-04-19T13:34:43.067] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '20',
+     food_name: 'sa',
+     number: '123',
+     date: '2020-4-19',
+     text: 'dcsc' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'id' in 'field list'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'id' in 'field list'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'id\' in \'field list\'',
+        sql:
+         'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `user_id`, `foodlist`, `number`, `food_name`, `status`, `food_role`, `buy`, `reason`, `text`, `back`, `date` FROM `food` AS `food` WHERE `food`.`foodlist` = \'20\' LIMIT 1;',
+     parameters: undefined } }
+[2020-04-19T13:55:45.031] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: '2',
+     food_name: 'sd',
+     number: '132',
+     date: '2020-4-19',
+     text: 'dsa' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ '2', '132', 'sd', 'dsa', '2020-04-19 00:00:00' ] } }
+[2020-04-19T22:41:21.797] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "food_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-19T22:42:04.497] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   ReferenceError: id is not defined
+       at allfoodinfo (C:\Users\ASUS\Desktop\gamermis_server\controllers\foods.js:12:46)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\api\foods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-19T22:42:19.363] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "food_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-19T22:54:50.155] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "food_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-20T07:43:53.950] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "food_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-20T07:43:59.074] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "food_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-20T07:45:23.207] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'allfood.attributes' in 'where clause'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'allfood.attributes' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'allfood.attributes\' in \'where clause\'',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`attributes` IN (\'food_name\') LIMIT 1;',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'allfood.attributes' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'allfood.attributes\' in \'where clause\'',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`attributes` IN (\'food_name\') LIMIT 1;',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`attributes` IN (\'food_name\') LIMIT 1;',
+     parameters: undefined } }
+[2020-04-20T07:46:30.402] [ERROR] error - { method: 'GET',
+  url: '/api/foods/allfoodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Unknown column 'allfood.attributes' in 'where clause'
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Unknown column 'allfood.attributes' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'allfood.attributes\' in \'where clause\'',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`attributes` IN (\'food_name\');',
+        parameters: undefined },
+     original:
+      { Error: Unknown column 'allfood.attributes' in 'where clause'
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_BAD_FIELD_ERROR',
+        errno: 1054,
+        sqlState: '42S22',
+        sqlMessage: 'Unknown column \'allfood.attributes\' in \'where clause\'',
+        sql:
+         'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`attributes` IN (\'food_name\');',
+        parameters: undefined },
+     sql:
+      'SELECT `id`, `food_name`, `food_number`, `food_price` FROM `allfood` AS `allfood` WHERE `allfood`.`attributes` IN (\'food_name\');',
+     parameters: undefined } }
+[2020-04-21T15:53:04.900] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: 1001,
+     food_name: 'sw',
+     number: '2',
+     date: '2020-4-21w',
+     text: '2' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect datetime value: 'Invalid date' for column 'date' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect datetime value: 'Invalid date' for column 'date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect datetime value: \'Invalid date\' for column \'date\' at row 1',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect datetime value: 'Invalid date' for column 'date' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\gamermis_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE',
+        errno: 1292,
+        sqlState: '22007',
+        sqlMessage:
+         'Incorrect datetime value: \'Invalid date\' for column \'date\' at row 1',
+        sql:
+         'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `food` (`id`,`foodlist`,`number`,`food_name`,`text`,`date`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ 1001, '2', 'sw', '2', 'Invalid date' ] } }
+[2020-04-21T15:57:09.236] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: 1001,
+     food_name: '23',
+     number: '123',
+     date: '2020-4-24',
+     text: 'ds' },
+  costTime: undefined,
+  err:
+   ReferenceError: msg is not defined
+       at Function.createfood (C:\Users\ASUS\Desktop\gamermis_server\service\food_dao.js:183:22)
+       at postfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\foods.js:35:23)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\api\foods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-21T15:57:49.603] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: 1001,
+     food_name: '23',
+     number: '123',
+     date: '2020-4-24',
+     text: 'ds' },
+  costTime: undefined,
+  err:
+   ReferenceError: msg is not defined
+       at Function.createfood (C:\Users\ASUS\Desktop\gamermis_server\service\food_dao.js:183:22)
+       at postfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\foods.js:35:23)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\api\foods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-21T15:58:24.189] [ERROR] error - { method: 'POST',
+  url: '/api/foods/postfood',
+  body:
+   { foodlist: 1001,
+     food_name: '23',
+     number: '123',
+     date: '2020-4-24',
+     text: 'ds' },
+  costTime: undefined,
+  err:
+   Error: Missing where attribute in the options parameter passed to findOrCreate. Please note that the API has changed, and is now options only (an object with where, defaults keys, transaction etc.)
+       at Function.findOrCreate (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:2286:13)
+       at Function.createfood (C:\Users\ASUS\Desktop\gamermis_server\service\food_dao.js:180:27)
+       at postfood (C:\Users\ASUS\Desktop\gamermis_server\controllers\foods.js:35:23)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\api\foods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }
+[2020-04-21T22:48:26.197] [ERROR] error - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "foodlist" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-21T22:48:29.417] [ERROR] error - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "foodlist" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-21T22:57:08.783] [ERROR] error - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "foodlist" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-21T22:58:03.798] [ERROR] error - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "foodlist" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\gamermis_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\gamermis_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-04-21T23:00:04.615] [ERROR] error - { method: 'GET',
+  url: '/api/foods/foodinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'foodlist' of undefined
+       at foodinfo (C:\Users\ASUS\Desktop\gamermis_server\controllers\foods.js:23:61)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at router.all (C:\Users\ASUS\Desktop\gamermis_server\routes\api\foods.js:10:11)
+       at dispatch (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at p.then.cont (C:\Users\ASUS\Desktop\gamermis_server\node_modules\koa-passport\lib\framework\koa.js:150:16) }

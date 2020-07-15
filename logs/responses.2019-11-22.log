@@ -1,0 +1,150 @@
+[2019-11-22T15:18:21.484] [INFO] response - { method: 'GET',
+  url: '/userinfo?0=122222',
+  body: {},
+  costTime: 3,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:21:25.368] [INFO] response - { method: 'GET',
+  url: '/userinfo?0=1001',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:27:20.136] [INFO] response - { method: 'GET',
+  url: '/userinfo?username=1001&password=11111',
+  body: {},
+  costTime: 3,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:31:06.587] [INFO] response - { method: 'POST',
+  url: '/userinfo?user_id=1001&password=1111',
+  body: {},
+  costTime: 2,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:32:28.897] [INFO] response - { method: 'POST',
+  url: '/postlogin?user_id=1001&password=1111',
+  body: {},
+  costTime: 2,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:32:29.859] [INFO] response - { method: 'POST',
+  url: '/postlogin?user_id=1001&password=1111',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:32:30.688] [INFO] response - { method: 'POST',
+  url: '/postlogin?user_id=1001&password=1111',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:32:30.849] [INFO] response - { method: 'POST',
+  url: '/postlogin?user_id=1001&password=1111',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:32:31.306] [INFO] response - { method: 'POST',
+  url: '/postlogin?user_id=1001&password=1111',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:34:14.902] [INFO] response - { method: 'POST',
+  url: '/postlogin?user_id=1001&password=111',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:35:28.115] [INFO] response - { method: 'POST',
+  url: '/users/postlogin?user_id=1001&password=111',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:35:29.455] [INFO] response - { method: 'POST',
+  url: '/users/postlogin?user_id=1001&password=111',
+  body: {},
+  costTime: 3,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:35:29.627] [INFO] response - { method: 'POST',
+  url: '/users/postlogin?user_id=1001&password=111',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:37:06.131] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin?user_id=1001&password=1111',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:43:38.523] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:44:06.219] [INFO] response - { method: 'GET',
+  url: '/api/users/postlogin',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:44:06.473] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:44:36.906] [INFO] response - { method: 'GET',
+  url: '/api/users/postlogin',
+  body: {},
+  costTime: 3,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:45:31.317] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:46:16.318] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:46:16.453] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:46:16.582] [INFO] response - { method: 'GET',
+  url: '/favicon.ico',
+  body: {},
+  costTime: 1,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:46:27.790] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:46:39.374] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:46:43.996] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:46:51.622] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:47:39.434] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:47:50.937] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 0,
+  response: { status: 404, message: 'Not Found', header: {}, body: undefined } }
+[2019-11-22T15:49:41.423] [INFO] response - { method: 'GET',
+  url: '/',
+  body: {},
+  costTime: 137,
+  response: { status: 200,
+     message: 'OK',
+     header: 
+      { 'content-type': 'text/html; charset=utf-8',
+        'content-length': '1029' },
+     body: '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }

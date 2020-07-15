@@ -1,0 +1,966 @@
+[2020-06-06T13:36:43.659] [INFO] response - { method: 'GET',
+  url: '/users/userlist?page=2',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3811' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=2">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>224</td>\r\n                      <td>小艾</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/224" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/224" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前2/2页 共7条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:36:44.910] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6154' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=2">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1002</td>\r\n                      <td>巧P人心</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1005</td>\r\n                      <td>给力芬</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1005" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>5</td>  \r\n                    <td>2020</td>\r\n                      <td>haha</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/2020" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>6</td>  \r\n                    <td>3333</td>\r\n                      <td>wuyu</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/3333" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/3333" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/2页 共7条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:37:02.448] [INFO] response - { method: 'GET',
+  url: '/users/userlist?page=2',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3811' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=2">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>224</td>\r\n                      <td>小艾</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/224" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/224" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前2/2页 共7条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:37:03.723] [INFO] response - { method: 'GET',
+  url: '/users/delect/224',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-06-06T13:37:03.783] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 47,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6154' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=2">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=2">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1002</td>\r\n                      <td>巧P人心</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1005</td>\r\n                      <td>给力芬</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1005" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>5</td>  \r\n                    <td>2020</td>\r\n                      <td>haha</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/2020" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>6</td>  \r\n                    <td>3333</td>\r\n                      <td>wuyu</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/3333" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/3333" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/2页 共7条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:37:05.078] [INFO] response - { method: 'GET',
+  url: '/users/userlist?page=2',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3369' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=3">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前2/1页 共6条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:37:30.810] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '6274' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n        <!--引入jq插件-->\r\n        <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1002</td>\r\n                      <td>巧P人心</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1005</td>\r\n                      <td>给力芬</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1005" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>5</td>  \r\n                    <td>2020</td>\r\n                      <td>haha</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/2020" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>6</td>  \r\n                    <td>3333</td>\r\n                      <td>wuyu</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/3333" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/3333" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共6条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:37:34.053] [INFO] response - { method: 'GET',
+  url: '/users/delect/3333',
+  body: {},
+  costTime: 1,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-06-06T13:37:34.092] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5831' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n        <!--引入jq插件-->\r\n        <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1002</td>\r\n                      <td>巧P人心</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1005</td>\r\n                      <td>给力芬</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1005" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>5</td>  \r\n                    <td>2020</td>\r\n                      <td>haha</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/2020" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共5条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:37:36.548] [INFO] response - { method: 'GET',
+  url: '/publishs/publishlist',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3064' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    \r\n\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n\r\n\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/publishs/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="publish">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">账号id</th>\r\n                    <th style="text-align:center;">发表动态</th>\r\n                    <th style="text-align:center;">发布时间</th>\r\n                    <th style="text-align:center;">发布位置</th>\r\n                    <th style="text-align:center;">发表图片</th>\r\n                    <!-- <th style="text-align:center;">角色</th>  -->\r\n                    <th style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1003</td>\r\n                    <td>终于好了</td>\r\n                      <td>2020-06-06 13:29</td>\r\n                      <td>白云区</td>\r\n                      <td>3b5e0apua51591421414059.png</td>\r\n                      <!-- <td></td> -->\r\n                      <td><a href="/publishs/delect/1035" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n\r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:37:41.675] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:37:41.906] [INFO] response - { method: 'GET',
+  url: '/api/publishs/publishinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:37:52.872] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:37:52.966] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-06T13:37:53.107] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:37:54.185] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:38:00.924] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1002', password: '10' },
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-06T13:38:12.182] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 60,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:38:14.375] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:38:14.761] [INFO] response - { method: 'GET',
+  url: '/api/publishs/publishinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:38:15.121] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:38:15.199] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:38:49.167] [INFO] response - { method: 'POST',
+  url: '/api/publishs/postpublish',
+  body:
+   { user_id: 1002,
+     publish: '我觉得行',
+     date: '2020-06-06T05:38:15.127Z',
+     location: '从化区',
+     user_photo: '9q4t6e305k1591421929058.png' },
+  costTime: 4409,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-06T13:38:49.217] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:38:49.635] [INFO] response - { method: 'GET',
+  url: '/api/publishs/publishinfo',
+  body: {},
+  costTime: 49,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:39:34.948] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:39:35.000] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-06T13:39:35.207] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 38,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:39:38.027] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5831' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n        <!--引入jq插件-->\r\n        <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1002</td>\r\n                      <td>巧P人心</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1005</td>\r\n                      <td>给力芬</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1005" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>5</td>  \r\n                    <td>2020</td>\r\n                      <td>haha</td>\r\n                      <td>\r\n                          大V博主\r\n                          </td>\r\n                      <td><a href="/users/edit/2020" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/2020" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共5条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:39:48.966] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:39:54.750] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '2020', password: '10' },
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-06-06T13:39:57.125] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '2020', password: '10' },
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 0, data: [Object] } } }
+[2020-06-06T13:40:03.930] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 41,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:05.534] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:05.580] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-06T13:40:05.598] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:17.160] [INFO] response - { method: 'GET',
+  url: '/users/delect/2020',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
+[2020-06-06T13:40:17.219] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5360' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n        <!--引入jq插件-->\r\n        <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1002</td>\r\n                      <td>巧P人心</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1005</td>\r\n                      <td>给力芬</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1005" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共5条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:40:20.548] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:25.725] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1005', password: '10' },
+  costTime: 8,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-06T13:40:30.563] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:31.531] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:31.582] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-06T13:40:31.603] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:33.966] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:34.203] [INFO] response - { method: 'GET',
+  url: '/api/materials/materialinfo',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:35.136] [INFO] response - { method: 'GET',
+  url: '/images/upload/null',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-06T13:40:35.697] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:35.938] [INFO] response - { method: 'GET',
+  url: '/api/publishs/publishinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:36.681] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:40:37.069] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:43:02.749] [INFO] response - { method: 'POST',
+  url: '/api/publishs/postpublish',
+  body:
+   { user_id: 1005,
+     publish: '听说nba复赛了,学习ps可动力十足',
+     date: '2020-06-06T05:40:36.686Z',
+     location: '白云区',
+     user_photo: 'vhro1riwtt1591422182658.png' },
+  costTime: 654,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-06T13:43:02.808] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:43:03.178] [INFO] response - { method: 'GET',
+  url: '/api/publishs/publishinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:43:18.027] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:43:18.086] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-06T13:43:18.278] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-06T13:43:20.809] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5360' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n        <!--引入jq插件-->\r\n        <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n     <!--引入base.js用于删除提醒-->\r\n    <script type="text/javascript" src="/javascripts/base.js"></script>\r\n    <title>用户列表</title>\r\n    \r\n</head>\r\n<body>\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:105px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/users/userlist">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/users/userlist?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/users/userlist?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/users/userlist?page=1">尾页</a></li>\r\n        <li><a href="./plus"><span style="color: rgb(67, 198, 250); font-weight: bolder;">新增用户</span></a></li>\r\n  </ul>\r\n</div>\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n   <form action="/users/suo" method="POST">\r\n        <div class="col-md-offset-2 col-md-3 " style="padding:20px 3px;">\r\n            <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n            <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入ID或昵称">\r\n            <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n            </div>\r\n        <div class="col-md-2" style="padding:20px 3px;">\r\n            <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n            <button type="submit" class="btn btn-info">查询</button>   \r\n            </div>  \r\n  </form>\r\n</div>\r\n   \r\n    \r\n<!--用户列表-->\r\n<div class="user">\r\n   <div class="col-md-10 col-md-offset-1">\r\n      <!-- table-hover：鼠标悬停高亮的表格 table-bordered：带边框的表格 table-striped：斑马线表格 -->\r\n      <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n                <tr class="biao">\r\n                    <th style="text-align:center;">序号</th>\r\n                    <th style="text-align:center;">工号/帐号</th>\r\n                    <th style="text-align:center;">昵称</th>\r\n                    <th style="text-align:center;">角色</th>\r\n                    <th colspan="2" style="text-align:center;">操作</th>\r\n                </tr>\r\n            </thead>\r\n\r\n           <tbody>\r\n              \r\n                <tr style="text-align:center;">\r\n                    <td>1</td>  \r\n                    <td>1002</td>\r\n                      <td>巧P人心</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1002" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1002" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>2</td>  \r\n                    <td>1003</td>\r\n                      <td>钢铁直男大米先生</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1003" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1003" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>3</td>  \r\n                    <td>1004</td>\r\n                      <td>香蕉兄弟</td>\r\n                      <td>\r\n                        普通用户</td>\r\n                      <td><a href="/users/edit/1004" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1004" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                <tr style="text-align:center;">\r\n                    <td>4</td>  \r\n                    <td>1005</td>\r\n                      <td>给力芬</td>\r\n                      <td>\r\n                           管理员\r\n                            </td>\r\n                      <td><a href="/users/edit/1005" class="btn btn-info">编辑</a></td>\r\n                      <td><a href="/users/delect/1005" class="btn btn-danger delete">删除</a></td>\r\n                      \r\n                 </tr>\r\n             </tbody>\r\n        </table>\r\n  </div>\r\n    \r\n\r\n<!-- 分页记录 -->\r\n<div class="pull-right" style="margin-right:88px ;">  <!-- 整体右浮动  -->\r\n  当前1/1页 共4条记录\r\n</div>  \r\n  \r\n</body>\r\n\r\n</html>' } }
+[2020-06-06T13:43:24.228] [INFO] response - { method: 'GET',
+  url: '/users/plus',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4292' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading" style="text-align: center;font-weight: bold;">\r\n        新增用户\r\n    </div>\r\n\r\n    \r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 账号: <input type="text" name="user_id" /></li>\r\n\r\n                    <li> 密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 姓名: <input type="text" name="user_name" /></li>\r\n\r\n                    <li><label for="role"><span style="font-weight:500;">用户角色:</span></label>\r\n                        <select name="role">\r\n                                <option value="1">普通用户</option>\r\n                                <option value="2">大V博主</option>\r\n                                <option value="3">管理员</option>\r\n                        </select>\r\n                    </li>\r\n\r\n                    <li> 上传头像:\r\n                         <input type="file" name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览头像" class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-06-06T13:44:20.161] [INFO] response - { method: 'POST',
+  url: '/users/sent',
+  body:
+   { user_id: '1010',
+     password: '6681c854928fdb978e3f091ef1de1b17',
+     user_name: '大鬼爱小米',
+     role: '3',
+     userPhoto: 'mi1m701jcl1591422259944.png',
+     userPhotoVal:
+      'data:image/png;base64,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',
+     solt: '0ec96146-87af-4c44-b3ec-7bcda1098abb' },
+  costTime: 219,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }

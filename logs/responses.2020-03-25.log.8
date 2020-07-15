@@ -1,0 +1,630 @@
+[2020-03-25T16:12:43.751] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:12:44.987] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1817' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n                \r\n        \r\n        </tbody>\r\n\r\n        </table>\r\n\r\n        </div>\r\n\r\n    \r\n</body>\r\n</html>' } }
+[2020-03-25T16:14:03.041] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:14:04.049] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 11,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1817' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n                \r\n        \r\n        </tbody>\r\n\r\n        </table>\r\n\r\n        </div>\r\n\r\n    \r\n</body>\r\n</html>' } }
+[2020-03-25T16:16:27.316] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:16:30.159] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1848' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/doedit/1001" method="POST">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:16:31.487] [INFO] response - { method: 'POST',
+  url: '/users/doedit/1001',
+  body: { role: '普通用户', admin: '非管理员' },
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-25T16:17:32.355] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:17:33.378] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1875' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        \r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <form action="/users/doedit/1001" method="POST"></form>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n    </form>\r\n        </table>\r\n    \r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:18:01.294] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1365' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li></li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-25T16:18:02.761] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:18:04.061] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1848' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/doedit/1001" method="POST">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:18:05.029] [INFO] response - { method: 'POST',
+  url: '/users/doedit/1001',
+  body: { role: '普通用户', admin: '非管理员' },
+  costTime: 7,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-25T16:20:29.516] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:20:30.691] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1848' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/doedit/1001" method="POST">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:20:31.891] [INFO] response - { method: 'POST',
+  url: '/users/doedit/1001',
+  body: { role: '普通用户', admin: '非管理员' },
+  costTime: 52,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-25T16:28:30.430] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 38,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:28:31.601] [INFO] response - { method: 'GET',
+  url: '/users/edit/1003',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '447' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>无权访问！</h1>\n            \n            <h2>401</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-25T16:28:34.349] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:28:35.387] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '447' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>无权访问！</h1>\n            \n            <h2>401</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-25T16:29:32.796] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 40,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1086' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n\t<div class="container">\r\n\t\t<section id="content">\r\n\t\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t<h1>登录</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="text" placeholder="工号/学号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t<input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class="">\r\n\t\t\t\t\t<span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div> \r\n\t\t\t\t<div>\r\n\t\t\t\t\t<!-- <input type="submit" value="Log in" /> -->\r\n\t\t\t\t\t<input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t\t</form><!-- form -->\r\n\t\t\t\r\n\t\t\t\t<div style="color: red;">请重新登陆</div>\r\n\t\t\t\r\n\t\t</section><!-- content -->\r\n\t</div>\r\n\t<!-- container -->\r\n</body>\r\n</html>' } }
+[2020-03-25T16:29:36.987] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1001', password: '123456' },
+  costTime: 80,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-03-25T16:29:37.006] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1369' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>kobe</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-25T16:29:38.877] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:29:39.890] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1848' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/doedit/1001" method="POST">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:29:41.563] [INFO] response - { method: 'POST',
+  url: '/users/doedit/1001',
+  body: { role: '普通用户', admin: '非管理员' },
+  costTime: 154,
+  response:
+   { status: 500,
+     message: 'Internal Server Error',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '462' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，服务器神游去了！</h1>\n            \n            <h2></h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-25T16:30:24.671] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:30:25.971] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1848' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/doedit/1001" method="POST">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="非管理员">非管理员</option>\r\n                        <option value="是管理员">是管理员</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:30:36.866] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:31:11.680] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 3,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1369' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>后台管理系统</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">后台管理</div>\r\n\t<div class="navigation">\r\n\t\t<ul>\r\n\t\t \t<li>欢迎您！</li>\r\n\t\t\t<li>kobe</li>\r\n\t\t\t<li><a href="/logout">退出</a></li>\r\n\t\t</ul>\r\n\t</div>\r\n</div>\r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t<li>\r\n\t\t\t\t<h4   class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t</div>\r\n\t\t\t  </li>\r\n        <li>\r\n        <h4 class="M1"><span></span>食品订单</h4>\r\n        <div class="list-item none">\r\n          <a href=\'\'>订单查询</a>\r\n        </div>\r\n      </li>\r\n    </ul>\r\n\t</div>\r\n\t<div class="m-right">\r\n\t\t\t<div class="main">\r\n\t\t\t\t<iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t</iframe>\r\n\t\t\t</div>\r\n\t</div>\r\n</div>\r\n<script>navList(12);</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-03-25T16:31:13.279] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3981' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:31:14.755] [INFO] response - { method: 'GET',
+  url: '/users/edit/1003',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1805' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/doedit/1003" method="POST">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1003</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="child" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="1">1</option>\r\n                        <option value="2">2</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:31:15.739] [INFO] response - { method: 'POST',
+  url: '/users/doedit/1003',
+  body: { role: '普通用户', admin: '1' },
+  costTime: 189,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/user/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '59' },
+     body:
+      'Redirecting to <a href="/user/userlist">/user/userlist</a>.' } }
+[2020-03-25T16:31:15.771] [INFO] response - { method: 'GET',
+  url: '/user/userlist',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-03-25T16:32:14.233] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 80,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3919' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:32:15.526] [INFO] response - { method: 'GET',
+  url: '/users/edit/1001',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1804' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <title>Document</title>\r\n</head>\r\n<body>\r\n    <div class="child">\r\n        <form action="/users/doedit/1001" method="POST">\r\n        <table  borderColor=pink height=300 cellPadding=3 width=350 align=center border=5>\r\n            <thead>\r\n              <tr>\r\n                  <th>编辑用户</th><br><br>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              <tr>\r\n                  <td>用户ID:1001</td>\r\n              </tr>\r\n              <tr>\r\n                  <td>用户名称: <input type="text" value="kobe" required></td>\r\n              </tr>\r\n              <tr>\r\n                  <td>\r\n                      <label for="role">用户角色:</label>\r\n                      <select name="role">\r\n                          <option value="普通用户">普通用户</option>\r\n                          <option value="超市店员">超市店员</option>\r\n                          <option value="超级管理员">超级管理员</option>\r\n                      </select>\r\n                    </td>\r\n              </tr>\r\n            <tr>\r\n                <td>\r\n                    <label for="admin">成为管理员:</label>\r\n                    <select name="admin">\r\n                        <option value="1">1</option>\r\n                        <option value="2">2</option>\r\n                    </select>\r\n                  </td>\r\n             </tr>\r\n              <tr>\r\n                <th>\r\n                <button type="submit">提交</button> <button type="reset">重置</button>\r\n                </th> \r\n             </tr>           \r\n        </tbody>\r\n        </table>\r\n    </form>\r\n        </div>\r\n</body>\r\n</html>' } }
+[2020-03-25T16:32:17.582] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3919' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <title>用户列表</title>\r\n</head>\r\n<body>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <form>\r\n        <div class="col-md-offset-1 col-md-2 margin-bottom-15">\r\n          <label for="firstName" class="control-label">工号/帐号</label>\r\n          <input type="text" class="form-control" id="firstName" value="">                  \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n          <label for="lastName" class="control-label">姓名</label>\r\n          <input type="text" class="form-control" id="lastName" value="">                 \r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label for="singleSelect">身份</label>\r\n            <select class="form-control margin-bottom-15" id="singleSelect">\r\n              <option>全部</option>\r\n              <option>普通用户</option>\r\n              <option>超市店员</option>\r\n            </select>\r\n        </div>\r\n        <div class="col-md-2 margin-bottom-15">\r\n            <label class="checkbox-inline">\r\n              <input type="checkbox" id="inlineCheckbox1" value="option1"> 管理员\r\n            </label>                    \r\n        </div>\r\n        <div class="row templatemo-form-buttons">\r\n                <div class="col-md-2">\r\n                  <button type="submit" class="btn btn-primary">查询</button>\r\n                  <button type="reset" class="btn btn-default">重置</button>    \r\n                </div>\r\n        </div>\r\n        </form>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n    <div class="row">\r\n        <div class="col-md-10 col-md-offset-1">\r\n        <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n            <thead>\r\n              <tr>\r\n                <th>序号</th>\r\n                <th>工号/学号</th>\r\n                <th>姓名</th>\r\n                <th>身份</th>\r\n                <th colspan="2">操作</th>\r\n              </tr>\r\n            </thead>\r\n            <tbody>\r\n              \r\n                <tr>\r\n                  <td>1</td>  \r\n                  <td>1001</td>\r\n                    <td>kobe</td>\r\n                    <td>\r\n                       普通用户\r\n                       \r\n                    </td>\r\n                    <td><a href="/users/delect/1001" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1001" class="btn btn-default">编辑</a></td>\r\n                    \r\n                <tr>\r\n                  <td>2</td>  \r\n                  <td>1003</td>\r\n                    <td>child</td>\r\n                    <td>\r\n                    </td>\r\n                    <td><a href="/users/delect/1003" class="btn btn-default">删除</a></td>\r\n                    <td><a href="/users/edit/1003" class="btn btn-default">编辑</a></td>\r\n                    \r\n                </tr>\r\n            </tbody>\r\n        </table>\r\n        </div>\r\n        <ul class="pagination pull-right">\r\n            <li class="disabled"><a href="#">&laquo;</a></li>\r\n            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">2 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">3 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">4 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">5 <span class="sr-only">(current)</span></a></li>\r\n            <li><a href="#">&raquo;</a></li>\r\n          </ul>\r\n        </div>\r\n    </div>\r\n</body>\r\n</html>' } }

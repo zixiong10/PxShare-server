@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />
+  <title>教程包</title>
+
+  <!--引入jq插件-->
+  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>
+
+  <!--引入base.js用于删除提醒-->
+  <script type="text/javascript" src="/javascripts/base.js"></script>
+
+</head>
+
+<body>   
+<!-- 交易记录分页 -->
+<div class="pull-left" style="margin-left:180px">
+  <ul class="pagination" id="paginator-example">
+        <li><a href="/buys/buylist">首页</a></li>
+        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->
+        <li><a href="/buys/buylist?page=<%=paging.page==1?1:(parseInt(paging.page)-1)%>">上一页</a></li>
+        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->
+        <li><a href="/buys/buylist?page=<%=paging.page==paging.totalPages?paging.totalPages:(parseInt(paging.page)+1)%>">下一页</a></li>
+        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->
+        <li><a href="/buys/buylist?page=<%=paging.totalPages%>">尾页</a></li>
+        <!-- <li><a href="./pluse"><span style="color: rgb(67, 198, 250); font-weight: bolder;">上传素材</span></a></li> -->
+  </ul>
+</div>
+
+  <div class="row">
+    <div class="col-md-8 col-md-push-2" style="margin-top:-25px">
+      <div class="table-responsive"><br>
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+            <tr>
+              <th style="text-align: center">教程id</th>
+              <th style="text-align: center">教程封面</th>
+              <th style="text-align: center">交易时间</th>
+              <th style="text-align: center">下单用户</th>
+              <th style="text-align: center">交易金额</th>
+              <th style="text-align: center">操作</th>
+            </tr>
+          </thead>
+          <tbody>
+
+             <%for(var i=0;i<data.length;i++) {%>
+             <tr >
+
+               <td style="width:100px;height:60px;text-align: center;line-height:60px"><%=data[i].buy_id%></td>
+               
+               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/<%=data[i].picture%>" style="width: 60px;height: 60px;"></td>
+
+               <td style="width:150px;height:60px;text-align: center;line-height:60px"><%=data[i].buy_time%></td>
+
+               <td style="width:100px;height:60px;text-align: center;line-height:60px"><%=data[i].user_name%></td>
+            
+                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)"><%=data[i].money%></td>
+          
+               <td style="text-align: center;line-height:60px;height:60px;">
+                 <a href="/buys/delect/<%=data[i].id%>" class="btn btn-danger delete">删除</a>
+               </td>
+
+             </tr>
+              
+             <%}%>
+
+            </tbody>
+        </table> 
+  <!-- 分页记录 -->
+  <div class="pull-right" style="margin-right:0px" >  <!-- 整体右浮动  -->
+    当前<%if(paging.totalPages==0){%><%=paging.page-1%><%}
+    else {%><%=paging.page%><%}%>/<%=paging.totalPages%>页 共<%=paging.size%>条记录
+  </div>  
+</body>
+
+</html>

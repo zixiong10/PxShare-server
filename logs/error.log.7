@@ -1,0 +1,1743 @@
+[2020-06-06T13:24:47.657] [ERROR] error - { method: 'POST',
+  url: '/api/publishs/postpublish',
+  body:
+   { user_id: 1003,
+     publish: '大神',
+     date: '2020-06-06T05:24:34.649Z',
+     location: '从化区',
+     user_photo: [ [Object] ] },
+  costTime: undefined,
+  err:
+   TypeError: data.user_photo.replace is not a function
+       at postpublish (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\publish.js:38:41)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@3.2.1@koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa2-cors@2.0.6@koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32) }
+[2020-06-06T23:10:03.243] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1006', password: '10' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'password' of null
+       at postlogin (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\user.js:309:26) }
+[2020-06-06T23:13:37.751] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '98989', password: '10' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'password' of null
+       at postlogin (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\user.js:309:26) }
+[2020-06-06T23:16:15.012] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: 'adasads', password: 'ds' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'password' of null
+       at postlogin (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\user.js:309:26) }
+[2020-06-06T23:17:40.068] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: 'ad', password: '10' },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'password' of null
+       at postlogin (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\user.js:309:26) }
+[2020-06-08T09:22:14.094] [ERROR] error - { method: 'POST',
+  url: '/api/publishs/postpublish',
+  body: undefined,
+  costTime: undefined,
+  err:
+   { PayloadTooLargeError: request entity too large
+       at readStream (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:155:17)
+       at executor (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:112:5)
+       at new Promise (<anonymous>)
+       at getRawBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:111:10)
+       at AsyncFunction.module.exports [as json] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\co-body\lib\json.js:39:21)
+       at parseBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:91:26)
+       at bodyParser (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:76:25)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at session (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-session\index.js:41:13)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:34:12
+       at Application.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:162:12)
+       at Server.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:144:19)
+       at Server.emit (events.js:198:13)
+       at parserOnIncoming (_http_server.js:677:12)
+       at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+     message: 'request entity too large',
+     expected: 1503099,
+     length: 1503099,
+     limit: 1048576,
+     type: 'entity.too.large' } }
+[2020-06-08T09:22:27.922] [ERROR] error - { method: 'POST',
+  url: '/api/publishs/postpublish',
+  body: undefined,
+  costTime: undefined,
+  err:
+   { PayloadTooLargeError: request entity too large
+       at readStream (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:155:17)
+       at executor (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:112:5)
+       at new Promise (<anonymous>)
+       at getRawBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:111:10)
+       at AsyncFunction.module.exports [as json] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\co-body\lib\json.js:39:21)
+       at parseBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:91:26)
+       at bodyParser (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:76:25)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at session (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-session\index.js:41:13)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:34:12
+       at Application.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:162:12)
+       at Server.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:144:19)
+       at Server.emit (events.js:198:13)
+       at parserOnIncoming (_http_server.js:677:12)
+       at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+     message: 'request entity too large',
+     expected: 1503099,
+     length: 1503099,
+     limit: 1048576,
+     type: 'entity.too.large' } }
+[2020-06-09T20:41:22.253] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '2020', password: '10' },
+  costTime: undefined,
+  err:
+   { SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+       at Promise.tap.then.catch.err (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:725:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5)
+     name: 'SequelizeConnectionRefusedError',
+     parent:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true },
+     original:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true } } }
+[2020-06-09T20:42:33.954] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '2020', password: '10' },
+  costTime: undefined,
+  err:
+   { SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+       at Promise.tap.then.catch.err (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:725:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5)
+     name: 'SequelizeConnectionRefusedError',
+     parent:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true },
+     original:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true } } }
+[2020-06-09T20:43:16.720] [ERROR] error - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1010', password: '10' },
+  costTime: undefined,
+  err:
+   { SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:3306
+       at Promise.tap.then.catch.err (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\connection-manager.js:123:19)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:725:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5)
+     name: 'SequelizeConnectionRefusedError',
+     parent:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true },
+     original:
+      { Error: connect ECONNREFUSED 127.0.0.1:3306
+          at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1106:14)
+        errno: 'ECONNREFUSED',
+        code: 'ECONNREFUSED',
+        syscall: 'connect',
+        address: '127.0.0.1',
+        port: 3306,
+        fatal: true } } }
+[2020-06-10T19:55:53.154] [ERROR] error - { method: 'GET',
+  url: '/api/publishs/delectpublish?id=1040',
+  body: {},
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'id' of undefined
+       at delectpublish (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\publish.js:86:19)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at cors (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa2-cors\dist\index.js:91:15)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32) }
+[2020-06-10T20:30:15.335] [ERROR] error - { method: 'POST',
+  url: '/api/publishs/delectpublish',
+  body: undefined,
+  costTime: undefined,
+  err:
+   { Error: invalid JSON, only supports object and array
+       at parse (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\co-body\lib\json.js:55:13)
+       at AsyncFunction.module.exports [as json] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\co-body\lib\json.js:41:20)
+       at process._tickCallback (internal/process/next_tick.js:68:7) status: 400, body: '1040' } }
+[2020-06-10T23:23:06.957] [ERROR] error - { method: 'POST',
+  url: '/api/publishs/postpublish',
+  body: undefined,
+  costTime: undefined,
+  err:
+   { PayloadTooLargeError: request entity too large
+       at readStream (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:155:17)
+       at executor (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:112:5)
+       at new Promise (<anonymous>)
+       at getRawBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:111:10)
+       at AsyncFunction.module.exports [as json] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\co-body\lib\json.js:39:21)
+       at parseBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:91:26)
+       at bodyParser (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:76:25)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at session (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-session\index.js:41:13)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:34:12
+       at Application.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:162:12)
+       at Server.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:144:19)
+       at Server.emit (events.js:198:13)
+       at parserOnIncoming (_http_server.js:677:12)
+       at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+     message: 'request entity too large',
+     expected: 1503095,
+     length: 1503095,
+     limit: 1048576,
+     type: 'entity.too.large' } }
+[2020-06-10T23:24:02.755] [ERROR] error - { method: 'POST',
+  url: '/api/publishs/postpublish',
+  body: undefined,
+  costTime: undefined,
+  err:
+   { PayloadTooLargeError: request entity too large
+       at readStream (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:155:17)
+       at executor (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:112:5)
+       at new Promise (<anonymous>)
+       at getRawBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\raw-body\index.js:111:10)
+       at AsyncFunction.module.exports [as json] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\co-body\lib\json.js:39:21)
+       at parseBody (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:91:26)
+       at bodyParser (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-bodyparser\index.js:76:25)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at session (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-session\index.js:41:13)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:34:12
+       at Application.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:162:12)
+       at Server.handleRequest (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa\lib\application.js:144:19)
+       at Server.emit (events.js:198:13)
+       at parserOnIncoming (_http_server.js:677:12)
+       at HTTPParser.parserOnHeadersComplete (_http_common.js:109:17)
+     message: 'request entity too large',
+     expected: 1503095,
+     length: 1503095,
+     limit: 1048576,
+     type: 'entity.too.large' } }
+[2020-06-12T15:40:01.331] [ERROR] error - { method: 'POST',
+  url: '/api/courses/postcourse',
+  body:
+   { user_id: 2020,
+     id: '8494',
+     check_time: '2020-06-12T07:39:47.814Z',
+     money: '',
+     type: '1',
+     kind: '滤镜教程',
+     user_name: '小鬼bro',
+     user_photo: '81m93e4fr11591947601176.png',
+     introduce: '经过' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Incorrect integer value: '' for column 'money' at row 1
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Incorrect integer value: '' for column 'money' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'\' for column \'money\' at row 1',
+        sql:
+         'INSERT INTO `course` (`id`,`money`,`picture`,`kind`,`user_name`,`type`,`introduce`,`check_time`) VALUES (?,?,?,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Incorrect integer value: '' for column 'money' at row 1
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_TRUNCATED_WRONG_VALUE_FOR_FIELD',
+        errno: 1366,
+        sqlState: 'HY000',
+        sqlMessage:
+         'Incorrect integer value: \'\' for column \'money\' at row 1',
+        sql:
+         'INSERT INTO `course` (`id`,`money`,`picture`,`kind`,`user_name`,`type`,`introduce`,`check_time`) VALUES (?,?,?,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `course` (`id`,`money`,`picture`,`kind`,`user_name`,`type`,`introduce`,`check_time`) VALUES (?,?,?,?,?,?,?,?);',
+     parameters:
+      [ '8494',
+        '',
+        '81m93e4fr11591947601176.png',
+        '滤镜教程',
+        '小鬼bro',
+        '1',
+        '经过',
+        '2020-06-12 15:39:47' ] } }
+[2020-06-14T12:57:01.665] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 34,
+        user_id: 1003,
+        password: '',
+        user_name: '钢铁直男',
+        solt: '',
+        role: '3',
+        user_photo: '29swaihvjj1590828788505.png',
+        cash: 6,
+        gold: 0,
+        benefit: 1 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'length' of null
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:39:23) }
+[2020-06-14T13:05:33.691] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 34,
+        user_id: 1003,
+        password: '',
+        user_name: '钢铁直男',
+        solt: '',
+        role: '3',
+        user_photo: '29swaihvjj1590828788505.png',
+        cash: 6,
+        gold: 0,
+        benefit: 1 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: undefined,
+  err:
+   TypeError: Cannot read property 'length' of null
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:50:23) }
+[2020-06-14T14:44:15.123] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-14T15:38:02.221] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: undefined,
+  err:
+   ReferenceError: trouble is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:56:23) }
+[2020-06-14T15:38:07.249] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: undefined,
+  err:
+   ReferenceError: trouble is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:56:23) }
+[2020-06-14T15:42:23.084] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 456,
+        gold: 0,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: undefined,
+  err:
+   ReferenceError: trouble is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:57:23) }
+[2020-06-14T16:55:21.948] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 46,
+        user_id: 2020,
+        password: '',
+        user_name: '小鬼bro',
+        solt: '',
+        role: '3',
+        user_photo: '2o9nixfb8w41591539573781.png',
+        cash: 627,
+        gold: 148,
+        benefit: 0 },
+     item:
+      { id: 5555,
+        money: 32,
+        picture: '3fy8clp401591971573370.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' } },
+  costTime: undefined,
+  err:
+   Error: Missing where attribute in the options parameter passed to findOrCreate. Please note that the API has changed, and is now options only (an object with where, defaults keys, transaction etc.)
+       at Function.findOrCreate (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2286:13)
+       at Function.createBuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\buy_dao.js:46:26)
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:59:29) }
+[2020-06-14T16:56:51.682] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 46,
+        user_id: 2020,
+        password: '',
+        user_name: '小鬼bro',
+        solt: '',
+        role: '3',
+        user_photo: '2o9nixfb8w41591539573781.png',
+        cash: 627,
+        gold: 148,
+        benefit: 0 },
+     item:
+      { id: 5555,
+        money: 32,
+        picture: '3fy8clp401591971573370.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' } },
+  costTime: undefined,
+  err:
+   Error: Missing where attribute in the options parameter passed to findOrCreate. Please note that the API has changed, and is now options only (an object with where, defaults keys, transaction etc.)
+       at Function.findOrCreate (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:2286:13)
+       at Function.createBuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\buy_dao.js:46:26)
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:59:29) }
+[2020-06-14T17:04:41.134] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 46,
+        user_id: 2020,
+        password: '',
+        user_name: '小鬼bro',
+        solt: '',
+        role: '3',
+        user_photo: '2o9nixfb8w41591539573781.png',
+        cash: 521,
+        gold: 158,
+        benefit: 0 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' } },
+  costTime: undefined,
+  err:
+   ReferenceError: id is not defined
+       at Function.createBuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\buy_dao.js:48:17)
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:60:23) }
+[2020-06-14T17:40:41.625] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 399,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 5555,
+        money: 32,
+        picture: '3fy8clp401591971573370.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' },
+     date: '2020-06-14T09:40:40.018Z' },
+  costTime: undefined,
+  err:
+   Error: Invalid value { id: 5555 }
+       at Object.escape (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\sql-string.js:65:11)
+       at MySQLQueryGenerator.escape (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:986:22)
+       at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2556:41)
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2274:19)
+       at Utils.getComplexKeys.map.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2331:21)
+       at Array.map (<anonymous>)
+       at MySQLQueryGenerator._whereBind (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2329:43)
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2264:19)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9) }
+[2020-06-14T17:40:44.842] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 399,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 5555,
+        money: 32,
+        picture: '3fy8clp401591971573370.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' },
+     date: '2020-06-14T09:40:40.018Z' },
+  costTime: undefined,
+  err:
+   Error: Invalid value { id: 5555 }
+       at Object.escape (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\sql-string.js:65:11)
+       at MySQLQueryGenerator.escape (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:986:22)
+       at MySQLQueryGenerator._whereParseSingleValueObject (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2556:41)
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2274:19)
+       at Utils.getComplexKeys.map.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2331:21)
+       at Array.map (<anonymous>)
+       at MySQLQueryGenerator._whereBind (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2329:43)
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2264:19)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9) }
+[2020-06-14T17:54:57.490] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 35,
+        user_id: 1004,
+        password: '',
+        user_name: '香蕉兄弟',
+        solt: '',
+        role: '1',
+        user_photo: '1wparqwwiov1589965009239.png',
+        cash: 240,
+        gold: 0,
+        benefit: 1 },
+     item:
+      { id: 5555,
+        money: 32,
+        picture: '3fy8clp401591971573370.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' },
+     date: '2020-06-14T09:54:56.025Z' },
+  costTime: undefined,
+  err:
+   { SequelizeUniqueConstraintError: Validation error
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeUniqueConstraintError',
+     errors: [ [ValidationErrorItem] ],
+     fields: { PRIMARY: '5555' },
+     parent:
+      { Error: Duplicate entry '5555' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'5555\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `buy` (`id`,`money`,`picture`,`user_name`,`user_id`,`buy_time`) VALUES (?,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Duplicate entry '5555' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'5555\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `buy` (`id`,`money`,`picture`,`user_name`,`user_id`,`buy_time`) VALUES (?,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `buy` (`id`,`money`,`picture`,`user_name`,`user_id`,`buy_time`) VALUES (?,?,?,?,?,?);' } }
+[2020-06-14T17:55:01.092] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 35,
+        user_id: 1004,
+        password: '',
+        user_name: '香蕉兄弟',
+        solt: '',
+        role: '1',
+        user_photo: '1wparqwwiov1589965009239.png',
+        cash: 240,
+        gold: 0,
+        benefit: 1 },
+     item:
+      { id: 5555,
+        money: 32,
+        picture: '3fy8clp401591971573370.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' },
+     date: '2020-06-14T09:54:56.025Z' },
+  costTime: undefined,
+  err:
+   { SequelizeUniqueConstraintError: Validation error
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeUniqueConstraintError',
+     errors: [ [ValidationErrorItem] ],
+     fields: { PRIMARY: '5555' },
+     parent:
+      { Error: Duplicate entry '5555' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'5555\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `buy` (`id`,`money`,`picture`,`user_name`,`user_id`,`buy_time`) VALUES (?,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Duplicate entry '5555' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'5555\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `buy` (`id`,`money`,`picture`,`user_name`,`user_id`,`buy_time`) VALUES (?,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `buy` (`id`,`money`,`picture`,`user_name`,`user_id`,`buy_time`) VALUES (?,?,?,?,?,?);' } }
+[2020-06-14T19:39:50.422] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 46,
+        user_id: 2020,
+        password: '',
+        user_name: '小鬼bro',
+        solt: '',
+        role: '3',
+        user_photo: '2o9nixfb8w41591539573781.png',
+        cash: 308,
+        gold: 499,
+        benefit: 0 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T11:39:48.961Z' },
+  costTime: undefined,
+  err:
+   ReferenceError: ROUND is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:54:9) }
+[2020-06-14T19:40:10.437] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 46,
+        user_id: 2020,
+        password: '',
+        user_name: '小鬼bro',
+        solt: '',
+        role: '3',
+        user_photo: '2o9nixfb8w41591539573781.png',
+        cash: 308,
+        gold: 499,
+        benefit: 0 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T11:39:48.961Z' },
+  costTime: undefined,
+  err:
+   ReferenceError: round is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:54:9) }
+[2020-06-14T20:58:31.505] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 33,
+        user_id: 1002,
+        password: '',
+        user_name: '巧P人心',
+        solt: '',
+        role: '1',
+        user_photo: 'ujn6ir5rb1591079934776.png',
+        cash: 48,
+        gold: 30,
+        benefit: 2 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T12:58:28.937Z' },
+  costTime: undefined,
+  err:
+   ReferenceError: round is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:54:16) }
+[2020-06-14T21:27:45.245] [ERROR] error - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 52,
+        user_id: 888,
+        password: '',
+        user_name: 'Boss',
+        solt: '',
+        role: '2',
+        user_photo: 'ajbi72qlb1592141174425.png',
+        cash: 1000,
+        gold: 10000,
+        benefit: 10 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T13:27:43.517Z' },
+  costTime: undefined,
+  err:
+   ReferenceError: Boss is not defined
+       at postbuy (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\buy.js:53:15) }
+[2020-06-17T15:20:48.291] [ERROR] error - { method: 'POST',
+  url: '/api/buys/buyinfo',
+  body: {},
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "user_name" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T20:08:42.019] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 5555,
+        money: 32,
+        picture: '243wx1fq4l1592395721937.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' } },
+  costTime: undefined,
+  err:
+   { SequelizeUniqueConstraintError: Validation error
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeUniqueConstraintError',
+     errors: [ [ValidationErrorItem] ],
+     fields: { PRIMARY: '5555' },
+     parent:
+      { Error: Duplicate entry '5555' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'5555\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `star` (`id`,`money`,`user_name`,`picture`,`author`) VALUES (?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Duplicate entry '5555' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'5555\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `star` (`id`,`money`,`user_name`,`picture`,`author`) VALUES (?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `star` (`id`,`money`,`user_name`,`picture`,`author`) VALUES (?,?,?,?,?);' } }
+[2020-06-17T20:10:20.483] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 5555,
+        money: 32,
+        picture: '8dy65s1rwb1592395820433.png',
+        kind: '抠图教程',
+        user_name: '给力芬',
+        type: '2',
+        introduce: '特色的抠图技巧',
+        check_time: '2020-05-24T01:12:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' } },
+  costTime: undefined,
+  err:
+   { SequelizeUniqueConstraintError: Validation error
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeUniqueConstraintError',
+     errors: [ [ValidationErrorItem] ],
+     fields: { PRIMARY: '0' },
+     parent:
+      { Error: Duplicate entry '0' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'0\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `star` (`id`,`star_id`,`money`,`user_name`,`picture`,`author`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Duplicate entry '0' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'0\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `star` (`id`,`star_id`,`money`,`user_name`,`picture`,`author`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `star` (`id`,`star_id`,`money`,`user_name`,`picture`,`author`) VALUES (DEFAULT,?,?,?,?,?);' } }
+[2020-06-17T20:37:08.071] [ERROR] error - { method: 'GET',
+  url: '/images/upload/qpdze41p11592017027435.png',
+  body: {},
+  costTime: undefined,
+  err:
+   { Error: read ECONNRESET
+       at TCP.onStreamRead (internal/stream_base_commons.js:111:27)
+     errno: 'ECONNRESET',
+     code: 'ECONNRESET',
+     syscall: 'read',
+     headerSent: true } }
+[2020-06-17T21:22:02.625] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+        parameters: undefined },
+     original:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+        parameters: undefined },
+     sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+     parameters: undefined } }
+[2020-06-17T21:23:03.860] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+        parameters: undefined },
+     original:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+        parameters: undefined },
+     sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+     parameters: undefined } }
+[2020-06-17T21:23:38.107] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   { SequelizeUniqueConstraintError: Validation error
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:223:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeUniqueConstraintError',
+     errors: [ [ValidationErrorItem] ],
+     fields: { PRIMARY: '250' },
+     parent:
+      { Error: Duplicate entry '250' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'250\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `star` (`id`,`money`,`user_name`,`picture`,`author`) VALUES (?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Duplicate entry '250' for key 'PRIMARY'
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_DUP_ENTRY',
+        errno: 1062,
+        sqlState: '23000',
+        sqlMessage: 'Duplicate entry \'250\' for key \'PRIMARY\'',
+        sql:
+         'INSERT INTO `star` (`id`,`money`,`user_name`,`picture`,`author`) VALUES (?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `star` (`id`,`money`,`user_name`,`picture`,`author`) VALUES (?,?,?,?,?);' } }
+[2020-06-17T21:25:30.237] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Execute.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `star` (`id`,`star_id`,`money`,`user_name`,`picture`,`author`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     original:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Execute.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql:
+         'INSERT INTO `star` (`id`,`star_id`,`money`,`user_name`,`picture`,`author`) VALUES (DEFAULT,?,?,?,?,?);',
+        parameters: [Array] },
+     sql:
+      'INSERT INTO `star` (`id`,`star_id`,`money`,`user_name`,`picture`,`author`) VALUES (DEFAULT,?,?,?,?,?);',
+     parameters: [ 250, 85, '大鬼爱小米', '45cbt5ekmk1591971789426.png', '香蕉兄弟' ] } }
+[2020-06-17T21:26:37.750] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   { SequelizeDatabaseError: Field 'id' doesn't have a default value
+       at Query.formatError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:244:16)
+       at Query.handler [as onResult] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\mysql\query.js:51:23)
+       at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:30:14)
+       at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+       at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+       at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+       at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+       at Socket.emit (events.js:198:13)
+       at addChunk (_stream_readable.js:288:12)
+       at readableAddChunk (_stream_readable.js:269:11)
+       at Socket.Readable.push (_stream_readable.js:224:10)
+       at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+     name: 'SequelizeDatabaseError',
+     parent:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+        parameters: undefined },
+     original:
+      { Error: Field 'id' doesn't have a default value
+          at Packet.asError (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packets\packet.js:708:17)
+          at Query.execute (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\commands\command.js:28:26)
+          at Connection.handlePacket (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:408:32)
+          at PacketParser.Connection.packetParser.p [as onPacket] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:70:12)
+          at PacketParser.executeStart (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\packet_parser.js:75:16)
+          at Socket.Connection.stream.on.data (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\mysql2\lib\connection.js:77:25)
+          at Socket.emit (events.js:198:13)
+          at addChunk (_stream_readable.js:288:12)
+          at readableAddChunk (_stream_readable.js:269:11)
+          at Socket.Readable.push (_stream_readable.js:224:10)
+          at TCP.onStreamRead [as onread] (internal/stream_base_commons.js:94:17)
+        code: 'ER_NO_DEFAULT_FOR_FIELD',
+        errno: 1364,
+        sqlState: 'HY000',
+        sqlMessage: 'Field \'id\' doesn\'t have a default value',
+        sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+        parameters: undefined },
+     sql: 'INSERT INTO `star` (`id`) VALUES (DEFAULT);',
+     parameters: undefined } }
+[2020-06-17T21:32:40.875] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   ReferenceError: id is not defined
+       at Function.createstar (C:\Users\ASUS\Desktop\Px share\PxShare_server\service\star_dao.js:54:17)
+       at poststar (C:\Users\ASUS\Desktop\Px share\PxShare_server\controllers\star.js:27:21)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at next (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:346:16
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+       at C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:351:31)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-compose\index.js:42:32)
+       at dispatch (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\koa-router\lib\router.js:332:32) }
+[2020-06-17T21:53:43.218] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }
+[2020-06-17T21:54:13.282] [ERROR] error - { method: 'POST',
+  url: '/api/stars/poststar',
+  body:
+   { item:
+      { id: 250,
+        money: 85,
+        picture: '45cbt5ekmk1591971789426.png',
+        kind: '美化教程',
+        user_name: '香蕉兄弟',
+        type: '2',
+        introduce: '唯美的光斑效果',
+        check_time: '2020-06-12T07:24:00.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     user_name: '大鬼爱小米' },
+  costTime: undefined,
+  err:
+   Error: WHERE parameter "star_id" has invalid "undefined" value
+       at MySQLQueryGenerator.whereItemQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2184:13)
+       at Utils.getComplexKeys.forEach.prop (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2173:25)
+       at Array.forEach (<anonymous>)
+       at MySQLQueryGenerator.whereItemsQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2171:35)
+       at MySQLQueryGenerator.getWhereConditions (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2583:19)
+       at MySQLQueryGenerator.selectQuery (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1315:28)
+       at QueryInterface.select (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\query-interface.js:1122:27)
+       at Promise.try.then.then.then (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\sequelize\lib\model.js:1757:34)
+       at tryCatcher (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\util.js:16:23)
+       at Promise._settlePromiseFromHandler (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:547:31)
+       at Promise._settlePromise (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:604:18)
+       at Promise._settlePromise0 (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:649:10)
+       at Promise._settlePromises (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\promise.js:729:18)
+       at _drainQueueStep (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:93:12)
+       at _drainQueue (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:86:9)
+       at Async._drainQueues (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:102:5)
+       at Immediate.Async.drainQueues [as _onImmediate] (C:\Users\ASUS\Desktop\Px share\PxShare_server\node_modules\bluebird\js\release\async.js:15:14)
+       at runCallback (timers.js:705:18)
+       at tryOnImmediate (timers.js:676:5)
+       at processImmediate (timers.js:658:5) }

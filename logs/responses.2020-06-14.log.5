@@ -1,0 +1,1885 @@
+[2020-06-14T19:06:12.097] [INFO] response - { method: 'GET',
+  url: '/courses/check',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5158' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>check教程</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<!-- <div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div> -->\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:92px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/courses/check">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/courses/check?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/courses/check?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/courses/check?page=1">尾页</a></li>\r\n        <!-- <li><a href="./pluse"><span style="color: rgb(67, 198, 250); font-weight: bolder;">上传素材</span></a></li> -->\r\n  </ul>\r\n</div>\r\n\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n  <form action="/courses/checksuo" method="POST">\r\n       <div class="col-md-offset-1 col-md-3 " style="padding:20px 3px;">\r\n           <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n           <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入关键字or原创作者">\r\n           <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n           </div>\r\n       <div class="col-md-2" style="padding:20px 3px;">\r\n           <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n           <button type="submit" class="btn btn-info">查询</button>   \r\n           </div>  \r\n </form>\r\n</div>\r\n  <!-- <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div> -->\r\n \r\n  <div class="row" style="margin-right: 10px;">\r\n    <div class="col-md-11 col-md-push-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">素材id</th>\r\n              <th style="text-align: center">素材img</th>\r\n              <th style="text-align: center">素材种类</th>\r\n              <th style="text-align: center">原创作者</th>\r\n              <th style="text-align: center">上传时间</th>\r\n              <th style="text-align: center">收费金额 /元</th>\r\n              <th style="text-align: center">上传状态</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">5867</td>\r\n               \r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/eodtdnvdoj1591947735857.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">滤镜教程</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">小鬼bro</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">2020-06-12 15:41</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">0</td>\r\n               \r\n               <td style="width:120px;height:60px;text-align: center;line-height:60px">\r\n                \r\n                  未审核</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/courses/check_child/5867" class="btn btn-info">审核</a>\r\n                 <a href="/courses/delect1/5867" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n    <!-- 分页记录 -->\r\n<div class="pull-right" >  <!-- 整体右浮动  -->\r\n  当前1/1页 共1条记录\r\n</div>  \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T19:06:23.751] [INFO] response - { method: 'GET',
+  url: '/courses/check',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5158' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <title>check教程</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<!-- <div class="panel panel-default" style="margin: 10px 10px;">\r\n  <div class="panel-heading">\r\n    素材表\r\n  </div> -->\r\n\r\n\r\n<!-- 食品分页 -->\r\n<div class="pull-left" style="margin-left:92px">\r\n  <ul class="pagination" id="paginator-example">\r\n        <li><a href="/courses/check">首页</a></li>\r\n        <!-- 使用parseInt()函数可解析一个字符串,并返回一个整数 -->\r\n        <li><a href="/courses/check?page=1">上一页</a></li>\r\n        <!-- ?指的是分页链接 向action或者jsp传参 通过?前面链接来处理分页 并通过url传参的形式将page=多少传给链接 -->\r\n        <li><a href="/courses/check?page=1">下一页</a></li>\r\n        <!-- 后面的?在这里指的是条件表达式，前面的成立就返回，否则就返回后面 -->\r\n        <li><a href="/courses/check?page=1">尾页</a></li>\r\n        <!-- <li><a href="./pluse"><span style="color: rgb(67, 198, 250); font-weight: bolder;">上传素材</span></a></li> -->\r\n  </ul>\r\n</div>\r\n\r\n\r\n\r\n<!-- 搜索框 --> \r\n<div class="suo">\r\n  <form action="/courses/checksuo" method="POST">\r\n       <div class="col-md-offset-1 col-md-3 " style="padding:20px 3px;">\r\n           <!-- from-control的效果 宽度为100% 边框为浅灰色 控件具有4px的圆角 阴影效果，元素得到焦点时，阴影和边框效果会发生变化设置 placeholder的颜色为#999 -->\r\n           <input type="text" class="form-control" name="chaxun" id="firstName" value="" placeholder="请输入关键字or原创作者">\r\n           <!-- col-md-offset-3（在左侧补充3列）col-md-push-8（从左侧往右侧推8列）col-md-pull-2（往左侧拉2列）  -->\r\n           </div>\r\n       <div class="col-md-2" style="padding:20px 3px;">\r\n           <!-- col-xs-6 col-md-3  在超小屏幕中占6列 在中单屏幕中占3列  bootstrap栅格系统中的列是通过指定1到12的值来表示其跨越的范围-->\r\n           <button type="submit" class="btn btn-info">查询</button>   \r\n           </div>  \r\n </form>\r\n</div>\r\n  <!-- <div class="clearfix" style="margin-bottom: 10px;"></div>\r\n  <div class="row">\r\n  </div> -->\r\n \r\n  <div class="row" style="margin-right: 10px;">\r\n    <div class="col-md-11 col-md-push-1">\r\n      <div class="table-responsive">\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">素材id</th>\r\n              <th style="text-align: center">素材img</th>\r\n              <th style="text-align: center">素材种类</th>\r\n              <th style="text-align: center">原创作者</th>\r\n              <th style="text-align: center">上传时间</th>\r\n              <th style="text-align: center">收费金额 /元</th>\r\n              <th style="text-align: center">上传状态</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">5867</td>\r\n               \r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/eodtdnvdoj1591947735857.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <td style="width:80px;height:60px;text-align: center;line-height:60px">滤镜教程</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">小鬼bro</td>\r\n\r\n               <td style="width:130px;height:60px;text-align: center;line-height:60px">2020-06-12 15:41</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">0</td>\r\n               \r\n               <td style="width:120px;height:60px;text-align: center;line-height:60px">\r\n                \r\n                  未审核</td>\r\n              \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <a href="/courses/check_child/5867" class="btn btn-info">审核</a>\r\n                 <a href="/courses/delect1/5867" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n    <!-- 分页记录 -->\r\n<div class="pull-right" >  <!-- 整体右浮动  -->\r\n  当前1/1页 共1条记录\r\n</div>  \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T19:06:26.267] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 58,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:26.431] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 10,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:42.805] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 45,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:44.823] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:45.078] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 5,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:46.162] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:49.312] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:51.746] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:53.279] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:06:53.515] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 4,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:00.164] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:04.421] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:04.813] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:06.940] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:33.320] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 40,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:33.516] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:49.232] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 50,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:50.953] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:09:51.335] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:12:06.950] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 53,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:12:15.472] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:14:40.142] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 45,
+        user_id: 1010,
+        password: '',
+        user_name: '大鬼爱小米',
+        solt: '',
+        role: '1',
+        user_photo: 'mi1m701jcl1591422259944.png',
+        cash: 199,
+        gold: 20,
+        benefit: 0 },
+     item:
+      { id: 30,
+        money: 10,
+        picture: 'qpdze41p11592017027435.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '抠的是图——图的是快乐',
+        check_time: '2020-06-13T02:53:56.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T11:12:15.479Z' },
+  costTime: 138,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T19:14:40.284] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:14:40.472] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:14:42.389] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:14:42.452] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T19:14:42.769] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:14:54.554] [INFO] response - { method: 'GET',
+  url: '/buys/buylist',
+  body: {},
+  costTime: 43,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '5132' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n\r\n<head>\r\n  <meta charset="UTF-8">\r\n  <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n  <meta http-equiv="X-UA-Compatible" content="ie=edge">\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n  <link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n  <title>教程包</title>\r\n\r\n  <!--引入jq插件-->\r\n  <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n  <!--引入base.js用于删除提醒-->\r\n  <script type="text/javascript" src="/javascripts/base.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n\r\n\r\n\r\n\r\n\r\n  \r\n \r\n  <div class="row">\r\n    <div class="col-md-8 col-md-push-1">\r\n      <div class="table-responsive"><br>\r\n        <table class="table table-striped table-hover table-bordered">\r\n          <thead>\r\n            <tr>\r\n              <th style="text-align: center">教程id</th>\r\n              <th style="text-align: center">教程封面</th>\r\n              <!-- <th style="text-align: center">教程分类</th> -->\r\n              <th style="text-align: center">交易时间</th>\r\n              <th style="text-align: center">下单用户</th>\r\n              <th style="text-align: center">交易金额</th>\r\n              <th style="text-align: center">操作</th>\r\n            </tr>\r\n          </thead>\r\n          <tbody>\r\n\r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 18:58</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/1" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/1" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">5555</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/3fy8clp401591971573370.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 19:00</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">32</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/3" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/3" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n             <tr >\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">30</td>\r\n               \r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px"><img alt="预览头像" class="allpreview" src="/images/upload/qpdze41p11592017027435.png" style="width: 60px;height: 60px;"></td>\r\n\r\n               <!-- <td style="width:100px;height:60px;text-align: center;line-height:60px"></td> -->\r\n\r\n               <td style="width:150px;height:60px;text-align: center;line-height:60px">2020-06-14 19:12</td>\r\n\r\n               <td style="width:100px;height:60px;text-align: center;line-height:60px">大鬼爱小米</td>\r\n            \r\n                <td style="width:100px;height:60px;text-align: center;line-height:60px;font-weight: bold;color:rgb(247, 14, 14)">10</td>\r\n          \r\n               <td style="text-align: center;line-height:60px;height:60px;">\r\n                 <!-- <a href="/courses/edit/4" class="btn btn-info">编辑</a> -->\r\n                 <a href="/buys/delect/4" class="btn btn-danger delete">删除</a>\r\n               </td>\r\n\r\n             </tr>\r\n              \r\n             \r\n\r\n            </tbody>\r\n        </table>\r\n        <!-- </div>\r\n        </div>\r\n    </div>\r\n    <div class="clearfix" style="margin-bottom: 650px;"></div>\r\n    </div> -->\r\n\r\n     \r\n \r\n  \r\n\r\n</body>\r\n\r\n</html>' } }
+[2020-06-14T19:15:17.978] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 33,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:18.215] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:20.537] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:24.277] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:26.232] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:27.467] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 25,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:27.842] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 9,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:29.469] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:30.865] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:15:31.109] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:16:26.518] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:16:26.567] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T19:16:26.636] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 34,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:23.409] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/plain; charset=utf-8',
+        'content-length': '12' },
+     body: 'Unauthorized' } }
+[2020-06-14T19:28:23.723] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 2,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/plain; charset=utf-8',
+        'content-length': '12' },
+     body: 'Unauthorized' } }
+[2020-06-14T19:28:44.639] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1002', password: '10' },
+  costTime: 73,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T19:28:44.863] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:45.125] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:47.818] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 30,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:49.066] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:49.329] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 12,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:51.531] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:52.164] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:55.159] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 33,
+        user_id: 1002,
+        password: '',
+        user_name: '巧P人心',
+        solt: '',
+        role: '1',
+        user_photo: 'ujn6ir5rb1591079934776.png',
+        cash: 90,
+        gold: 30,
+        benefit: 2 },
+     item:
+      { id: 857,
+        money: 20,
+        picture: 'y3on1hl1j61591971660554.png',
+        kind: '美化教程',
+        user_name: '大鬼爱小米',
+        type: '2',
+        introduce: '艺术效果的水墨头像',
+        check_time: '2020-05-24T00:22:00.000Z',
+        status: '2',
+        check_people: '钢铁直男大米先生' },
+     date: '2020-06-14T11:28:52.170Z' },
+  costTime: 257,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T19:28:55.201] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:28:55.602] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:29:59.768] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 40,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:01.262] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 26,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:01.660] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:03.282] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:04.597] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 20,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:07.847] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 33,
+        user_id: 1002,
+        password: '',
+        user_name: '巧P人心',
+        solt: '',
+        role: '1',
+        user_photo: 'ujn6ir5rb1591079934776.png',
+        cash: 70,
+        gold: 30,
+        benefit: 2 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T11:30:04.604Z' },
+  costTime: 264,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T19:30:07.892] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:08.519] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:47.109] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:48.728] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:52.560] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:30:52.798] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 6,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:31:05.630] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 29,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:31:05.827] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 147,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T19:31:05.929] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 69,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:06.359] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:06.549] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:08.270] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 47,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:09.425] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:10.982] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 33,
+        user_id: 1002,
+        password: '',
+        user_name: '巧P人心',
+        solt: '',
+        role: '1',
+        user_photo: 'ujn6ir5rb1591079934776.png',
+        cash: 59,
+        gold: 30,
+        benefit: 2 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T11:32:09.442Z' },
+  costTime: 199,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T19:32:11.335] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 32,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:11.571] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:14.274] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:14.325] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T19:32:14.672] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 56,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:17.008] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 47,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:17.247] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 36,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:57.305] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 43,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:57.359] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 16,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T19:32:57.615] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 43,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:32:57.871] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 23,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:33:03.488] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '2020', password: '10' },
+  costTime: 19,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T19:33:03.683] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:33:03.835] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:33:04.453] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:33:04.503] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 14,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T19:33:04.820] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:36:05.063] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 46,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:36:05.156] [INFO] response - { method: 'GET',
+  url: '/images/upload/',
+  body: {},
+  costTime: 13,
+  response:
+   { status: 404,
+     message: 'Not Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '474' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>抱歉，找不到你的诗和远方了！</h1>\n            \n            <h2>404</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T19:36:05.196] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 17,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:36:26.039] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 54,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:36:26.491] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 27,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:39:47.775] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 37,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T19:39:48.953] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 44,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T20:58:15.083] [INFO] response - { method: 'POST',
+  url: '/api/users/postlogin',
+  body: { user_id: '1002', password: '10' },
+  costTime: 52,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T20:58:15.171] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 28,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T20:58:15.432] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 15,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T20:58:27.839] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 39,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T20:58:28.933] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 22,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T21:07:59.852] [INFO] response - { method: 'POST',
+  url: '/api/buys/postbuy',
+  body:
+   { user:
+      { id: 33,
+        user_id: 1002,
+        password: '',
+        user_name: '巧P人心',
+        solt: '',
+        role: '1',
+        user_photo: 'ujn6ir5rb1591079934776.png',
+        cash: 48,
+        gold: 30,
+        benefit: 2 },
+     item:
+      { id: 89,
+        money: 11,
+        picture: '1s4h4x3bece1592017198801.png',
+        kind: '抠图教程',
+        user_name: '小鬼bro',
+        type: '2',
+        introduce: '混合模式功能非常强大',
+        check_time: '2020-06-13T02:57:16.000Z',
+        status: '2',
+        check_people: '钢铁直男' },
+     date: '2020-06-14T12:58:28.937Z' },
+  costTime: 706,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { code: 1, data: [Object] } } }
+[2020-06-14T21:07:59.930] [INFO] response - { method: 'GET',
+  url: '/api/users/userinfo',
+  body: {},
+  costTime: 21,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T21:08:00.388] [INFO] response - { method: 'GET',
+  url: '/api/courses/courseinfo',
+  body: {},
+  costTime: 43,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'application/json; charset=utf-8' },
+     body: { data: [Object] } } }
+[2020-06-14T21:11:13.851] [INFO] response - { method: 'GET',
+  url: '/users/userlist',
+  body: {},
+  costTime: 129,
+  response:
+   { status: 401,
+     message: 'Unauthorized',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '447' },
+     body:
+      '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <meta http-equiv="X-UA-Compatible" content="ie=edge">\n    <link rel="stylesheet" href="/stylesheets/error.css">\n    <title>错误信息</title>\n</head>\n<body>\n    <div class="content">\n            <h1>无权访问！</h1>\n            \n            <h2>401</h2>\n            \n    </div>\n</body>\n</html>\n\n' } }
+[2020-06-14T21:11:16.602] [INFO] response - { method: 'GET',
+  url: '/logout',
+  body: {},
+  costTime: 24,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '947' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n<div class="container">\r\n\t<section id="content">\r\n\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t     <h1>Px Share</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="text" placeholder="工号/帐号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t<!-- <div class="">\r\n\t\t\t\t\t <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div>  -->\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t</form>\r\n\t\t\t\r\n\t\t</section>\r\n\t</div>\r\n</body>\r\n</html>' } }
+[2020-06-14T21:11:20.289] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '2020', password: '10' },
+  costTime: 18,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '1001' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n\t<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n\t<title>登录</title>\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />\r\n\t<link rel="stylesheet" type="text/css" href="/stylesheets/body.css"/> \r\n</head>\r\n<body>\r\n<div class="container">\r\n\t<section id="content">\r\n\t\t<form action="/checkLogin" method="post">\r\n\t\t\t\t     <h1>Px Share</h1>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="text" placeholder="工号/帐号" required="" id="username" name="user_id"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="password" placeholder="密码" required="" id="password" name="password"/>\r\n\t\t\t\t</div>\r\n\t\t\t\t\r\n\t\t\t\t<!-- <div class="">\r\n\t\t\t\t\t <span class="help-block u-errormessage" id="js-server-helpinfo">&nbsp;</span>\t\t\t\r\n\t\t\t\t</div>  -->\r\n\t\t\t\t<div>\r\n\t\t\t\t\t <input type="submit" value="登录" class="btn btn-primary" id="js-btn-login"/>\r\n\t\t\t\t</div>\r\n\t\t</form>\r\n\t\t\t\r\n\t\t\t\t<div style="color: red;">账号异常</div>\r\n\t\t\t\r\n\t\t</section>\r\n\t</div>\r\n</body>\r\n</html>' } }
+[2020-06-14T21:11:24.052] [INFO] response - { method: 'POST',
+  url: '/checkLogin',
+  body: { user_id: '1003', password: '10' },
+  costTime: 18,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/index',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '43' },
+     body: 'Redirecting to <a href="/index">/index</a>.' } }
+[2020-06-14T21:11:24.099] [INFO] response - { method: 'GET',
+  url: '/index',
+  body: {},
+  costTime: 31,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '3641' },
+     body:
+      '<!DOCTYPE html>\r\n<head>\r\n<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\r\n<title>PxShare server</title>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/style_index.css" />\r\n<script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n<link type="text/css" rel="stylesheet" href="/stylesheets/font-awesome-4.7.0/css/font-awesome.css" />\r\n<script type="text/javascript" src="/javascripts/menu.js"></script>\r\n\r\n</head>\r\n\r\n<body>\r\n<div class="top"></div>\r\n<div id="header">\r\n\t<div class="logo">\r\n\t\t<li><i class="fa-li fa fa-spinner fa-spin" style="margin-left: 60px;margin-top: 20px;"></i><span style="margin-left: 30px;">PxShare</span></li>\r\n\t</div>\r\n\t    <div class="navigation">\r\n\t\t    <ul>\r\n\t\t\t\t<li>Welcome to study PS</li>\r\n\t\t\t\t<li><img src="" alt="user_photo" class="photo"></li>\r\n\t\t\t\t<li >钢铁直男</li>\r\n\t\t\t\t<li><span></span>\r\n\t\t\t\t\t\r\n\t\t\t\t\t\t<i class="fa fa-user-plus" aria-hidden="true" style="font-size:18px;"></i> 管理员</h4>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li><a href="/logout"><span style="color:#e65fcf;font-size: 22px;"><i class="fa fa-power-off" aria-hidden="true"></i></span></a></li>\r\n\t\t    </ul>\r\n\t    </div>\r\n</div>\r\n     \r\n<div id="content">\r\n\t<div class="left_menu">\r\n\t\t<ul id="nav_dot">\r\n\t\t\t\r\n\t\t\t<li>\r\n\t\t\t\t  <h4 class="M10"><span></span>用户管理</h4>\r\n\t\t\t\t  <div class="list-item none">\r\n\t\t\t\t  <a href=\'/users/userlist\' target="iframe1">用户列表</a>\r\n\t\t\t\t  <a href=\'/users/plus\' target="iframe1">新增用户</a></div>\r\n\r\n\r\n\t\t\t\t  <!-- <div class="btn-group open">\r\n\t\t\t\t\t<a class="btn btn-primary" href="#"><i class="fa fa-user fa-fw"></i> 用户管理</a>\r\n\t\t\t\t\t<a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">\r\n\t\t\t\t\t  <span class="fa fa-caret-down" title="打开下拉菜单"></span>\r\n\t\t\t\t\t</a>\r\n\t\t\t\t\t<ul class="dropdown-menu">\r\n\t\t\t\t\t  <li><a href="/users/userlist"><i class="fa fa-pencil fa-fw"></i> 用户列表</a></li>\r\n\t\t\t\t\t  <li><a href="/users/zjia"><i class="fa fa-trash-o fa-fw"></i> 新增用户</a></li>\r\n\t\t\t\t\t</ul>\r\n\t\t\t\t  </div> -->\r\n\r\n\r\n\t\t\t</li>\r\n            <li>\r\n\t\t\t\t <h4 class="M1"><span></span>素材库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/datas/datalist\' target="iframe1">素材备库</a>\r\n\t\t\t\t <a href=\'/datas/check\' target="iframe1">审核素材</a>\r\n\t\t\t\t <a href=\'/datas/plus\' target="iframe1">上传素材</a>\r\n\t\t\t\t</div>\r\n\t        </li>\r\n\t        <li>\r\n\t\t\t\t <h4 class="M9" ><span></span>教程库</h4>\r\n\t\t\t\t <div class="list-item none">\r\n\t\t\t\t <a href=\'/courses/courselist\' target="iframe1">教程备库</a>\r\n\t\t\t\t <a href=\'/courses/check\' target="iframe1">审核教程</a>\r\n\t\t\t\t <a href=\'/courses/plus\' target="iframe1">上传教程</a>\r\n\t\t\t\t</div>\r\n\t\t\t</li>\r\n\t\t\t<li>\r\n\t\t\t\t<h4 class="M6" ><span></span>分享圈</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/publishs/publishlist\' target="iframe1">圈内论坛</a></div>\r\n\t\t   </li>\r\n\t\t   <li>\r\n\t\t\t\t<h4 class="M4" ><span></span>交易详情</h4>\r\n\t\t\t\t<div class="list-item none">\r\n\t\t\t\t<a href=\'/buys/buylist\' target="iframe1">购买记录</a></div>\r\n\t\t   </li>\r\n\t\t   \r\n\t\t\r\n        </ul>\r\n</div>\r\n\t<div class="m-right">\r\n\t\t\t  <div class="main">\r\n\t\t\t\t  <iframe frameborder="0" name="iframe1"  width="100%" height="100%">\r\n\t\t\t\t\t 您的浏览器不支持嵌入式框架，或者当前配置为不显示嵌入式框架。\r\n\t\t\t\t  </iframe>\r\n\t\t\t  </div>\r\n\t</div>\r\n</div>\r\n\r\n<script>navList(12);</script>\r\n<script>\r\n\r\n\t$(function() {\r\n\t\t  if(\'29swaihvjj1590828788505.png\'){\r\n\t\t\t  $(\'.photo\').attr(\'src\', \'/images/upload/29swaihvjj1590828788505.png\')\r\n\t\t  }else{\r\n\t\t\t  $(\'.photo\').parents(\'li\').remove();\r\n\t\t  }\r\n\t\r\n\t})\r\n\t\r\n\t</script>\r\n</body>\r\n</html>\r\n' } }
+[2020-06-14T21:11:26.493] [INFO] response - { method: 'GET',
+  url: '/users/plus',
+  body: {},
+  costTime: 35,
+  response:
+   { status: 200,
+     message: 'OK',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '4329' },
+     body:
+      '<!DOCTYPE html>\r\n<html lang="en">\r\n<head>\r\n    <meta charset="UTF-8">\r\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/bootstrap.min.css" />\r\n    <link type="text/css" rel="stylesheet" href="/stylesheets/add.css" />\r\n\r\n    <!--引入Jq插件-->\r\n    <script type="text/javascript" src="/javascripts/jquery-1.8.3.min.js"></script>\r\n\r\n    <title>增加用户</title>\r\n</head>\r\n<body>\r\n    <!-- 增加用户的页面 -->\r\n\r\n<div class="panel panel-default">\r\n    <div class="panel-heading" style="text-align: center;font-weight: bold;">\r\n        新增用户\r\n    </div>\r\n\r\n    \r\n\r\n    <div class="panel-body">\r\n        <div class="input-form">\r\n            <form action="/users/sent" class="form" method="post">\r\n\r\n                <ul>\r\n                    <li> 账号: <input type="text" name="user_id" /></li>\r\n\r\n                    <li> 密码: <input type="password" name="password"></li>\r\n\r\n                    <li> 姓名: <input type="text" name="user_name" /></li>\r\n\r\n                    <li><label for="role"><span style="font-weight:500;">用户角色:</span></label>\r\n                        <select name="role">\r\n                                <option value="1">普通用户</option>\r\n                                <option value="2">大V博主</option>\r\n                                <option value="3">管理员</option>\r\n                        </select>\r\n                    </li>\r\n\r\n                    <li> 上传头像:\r\n                         <input type="file" name="userPhoto" id="userPhoto">\r\n                         <input type="hidden" id="userPhotoVal" name="userPhotoVal">\r\n                         <img alt="预览头像" class="preview">\r\n                    </li>\r\n\r\n                \r\n\r\n                        <li>\r\n                            <br />\r\n                            <button type="submit" class="btn btn-default submit" style="margin-left:100px;width:80px">提交</button>\r\n                        </li>\r\n\r\n                    </ul>\r\n\r\n\r\n                </form>\r\n            </div>\r\n        </div>\r\n\r\n    </div>\r\n\r\n<script>\r\n\r\n//上传单张图片\r\n$(\'#userPhoto\').change(function () {\r\n   if (this.files.length != 0) {\r\n       var file = this.files[0], //当前文件对象\r\n           reader = new FileReader(); //FileReader接口提供了读取文件的方法和包含读取结果的事件模型\r\n       if (!reader) {\r\n           this.value = \'\';//计算机本地路径清空 例如: C:\\fakepath\\1.jpg---由于浏览器的安全机制，input file的路径时被fakepath代替，隐藏了真实物理路径，保护用户电脑隐私。因为文件路径会暴露你的用户名或者其他内容\r\n           return;\r\n       };\r\n       console.log(file.size, file.type)\r\n       //  if(file.size >= 1024 * 1024 / 2){\r\n       //      fade("请上传小于512kb的图片！")\r\n       //      return\r\n       //  }\r\n       if (!/image/g.test(file.type)) {//判断类型是不是图片\r\n           fade("请上传图片文件!")\r\n           $(\'#userPhotoVal\').val(\'\')\r\n           $(\'form .preview\').attr(\'src\', \'\')\r\n           $(\'form .preview\').fadeOut() //淡出效果来隐藏元素\r\n           return\r\n       }\r\n       reader.onload = function (e) {\r\n           this.value = \'\';\r\n           $(\'form .preview\').attr(\'src\', e.target.result)\r\n           $(\'form .preview\').fadeIn()\r\n           var image = new Image();\r\n           //这里只是回调函数赋值给onload属性，并没有调用。异步事件\r\n           image.onload = function () {\r\n               var canvas = document.createElement(\'canvas\');\r\n               var ctx = canvas.getContext("2d");\r\n               canvas.width = 100;\r\n               canvas.height = 100;\r\n               ctx.clearRect(0, 0, 100, 100);//clearRect() 方法清空给定矩形内的指定像素。\r\n               ctx.drawImage(image, 0, 0, 100, 100);\r\n               var blob = canvas.toDataURL("image/png");//canvas转换为base64\r\n               $(\'#userPhotoVal\').val(blob)\r\n           }\r\n           \r\n           image.src = e.target.result\r\n\r\n       };\r\n       reader.readAsDataURL(file);//readAsDataURL方法可以将读取到的文件编码成Data URL,镶嵌在网页中，显示需要用img标签\r\n   };\r\n})\r\n</script>\r\n</body>\r\n</html>' } }
+[2020-06-14T21:12:00.762] [INFO] response - { method: 'POST',
+  url: '/users/sent',
+  body:
+   { user_id: '2020',
+     password: 'eceb19fb8e2aafa9c9b6caf33ac77586',
+     user_name: '小鬼bro',
+     role: '3',
+     userPhoto: '21tn7jm2mr1592140320575.png',
+     userPhotoVal:
+      'data:image/png;base64,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',
+     solt: 'eeaa1e61-438e-4556-8157-55df7524b887' },
+  costTime: 188,
+  response:
+   { status: 302,
+     message: 'Found',
+     header:
+      [Object: null prototype] {
+        vary: 'Origin',
+        'access-control-allow-origin': 'http://localhost:8080',
+        'access-control-allow-credentials': 'true',
+        'access-control-expose-headers': 'WWW-Authenticate,Server-Authorization',
+        location: '/users/userlist',
+        'content-type': 'text/html; charset=utf-8',
+        'content-length': '61' },
+     body:
+      'Redirecting to <a href="/users/userlist">/users/userlist</a>.' } }
